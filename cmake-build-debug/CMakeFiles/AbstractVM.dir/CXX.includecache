@@ -1,0 +1,118 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/rmalkevy/Downloads/AbstractVM 2/AbstractVM_SingletonClass/AbstractVM.cpp
+AbstractVM.hpp
+/Users/rmalkevy/Downloads/AbstractVM 2/AbstractVM_SingletonClass/AbstractVM.hpp
+
+/Users/rmalkevy/Downloads/AbstractVM 2/AbstractVM_SingletonClass/AbstractVM.hpp
+../General.hpp
+/Users/rmalkevy/Downloads/AbstractVM 2/General.hpp
+
+/Users/rmalkevy/Downloads/AbstractVM 2/General.hpp
+iostream
+-
+PrecisionHandlingClass/PrecisionHandleClass.hpp
+/Users/rmalkevy/Downloads/AbstractVM 2/PrecisionHandlingClass/PrecisionHandleClass.hpp
+
+/Users/rmalkevy/Downloads/AbstractVM 2/OperandFactoryClass/OperandFactory.cpp
+OperandFactory.hpp
+/Users/rmalkevy/Downloads/AbstractVM 2/OperandFactoryClass/OperandFactory.hpp
+
+/Users/rmalkevy/Downloads/AbstractVM 2/OperandFactoryClass/OperandFactory.hpp
+array
+-
+../OperandTypeClasses/IOperand.hpp
+/Users/rmalkevy/Downloads/AbstractVM 2/OperandTypeClasses/IOperand.hpp
+../OperandTypeClasses/Int8_Operand.hpp
+/Users/rmalkevy/Downloads/AbstractVM 2/OperandTypeClasses/Int8_Operand.hpp
+
+/Users/rmalkevy/Downloads/AbstractVM 2/OperandTypeClasses/Double_Operand.cpp
+Double_Operand.hpp
+/Users/rmalkevy/Downloads/AbstractVM 2/OperandTypeClasses/Double_Operand.hpp
+
+/Users/rmalkevy/Downloads/AbstractVM 2/OperandTypeClasses/Double_Operand.hpp
+IOperand.hpp
+/Users/rmalkevy/Downloads/AbstractVM 2/OperandTypeClasses/IOperand.hpp
+
+/Users/rmalkevy/Downloads/AbstractVM 2/OperandTypeClasses/Float_Operand.cpp
+Float_Operand.hpp
+/Users/rmalkevy/Downloads/AbstractVM 2/OperandTypeClasses/Float_Operand.hpp
+
+/Users/rmalkevy/Downloads/AbstractVM 2/OperandTypeClasses/Float_Operand.hpp
+IOperand.hpp
+/Users/rmalkevy/Downloads/AbstractVM 2/OperandTypeClasses/IOperand.hpp
+
+/Users/rmalkevy/Downloads/AbstractVM 2/OperandTypeClasses/IOperand.hpp
+iostream
+-
+../General.hpp
+/Users/rmalkevy/Downloads/AbstractVM 2/General.hpp
+
+/Users/rmalkevy/Downloads/AbstractVM 2/OperandTypeClasses/Int16_Operand.cpp
+Int16_Operand.hpp
+/Users/rmalkevy/Downloads/AbstractVM 2/OperandTypeClasses/Int16_Operand.hpp
+
+/Users/rmalkevy/Downloads/AbstractVM 2/OperandTypeClasses/Int16_Operand.hpp
+IOperand.hpp
+/Users/rmalkevy/Downloads/AbstractVM 2/OperandTypeClasses/IOperand.hpp
+
+/Users/rmalkevy/Downloads/AbstractVM 2/OperandTypeClasses/Int32_Operand.cpp
+Int32_Operand.hpp
+/Users/rmalkevy/Downloads/AbstractVM 2/OperandTypeClasses/Int32_Operand.hpp
+
+/Users/rmalkevy/Downloads/AbstractVM 2/OperandTypeClasses/Int32_Operand.hpp
+IOperand.hpp
+/Users/rmalkevy/Downloads/AbstractVM 2/OperandTypeClasses/IOperand.hpp
+
+/Users/rmalkevy/Downloads/AbstractVM 2/OperandTypeClasses/Int8_Operand.cpp
+Int8_Operand.hpp
+/Users/rmalkevy/Downloads/AbstractVM 2/OperandTypeClasses/Int8_Operand.hpp
+
+/Users/rmalkevy/Downloads/AbstractVM 2/OperandTypeClasses/Int8_Operand.hpp
+IOperand.hpp
+/Users/rmalkevy/Downloads/AbstractVM 2/OperandTypeClasses/IOperand.hpp
+../AbstractVM_SingletonClass/AbstractVM.hpp
+/Users/rmalkevy/Downloads/AbstractVM 2/AbstractVM_SingletonClass/AbstractVM.hpp
+../OperandFactoryClass/OperandFactory.hpp
+/Users/rmalkevy/Downloads/AbstractVM 2/OperandFactoryClass/OperandFactory.hpp
+
+/Users/rmalkevy/Downloads/AbstractVM 2/OperandTypeClasses/Templete_Operand.h
+IOperand.hpp
+/Users/rmalkevy/Downloads/AbstractVM 2/OperandTypeClasses/IOperand.hpp
+../AbstractVM_SingletonClass/AbstractVM.hpp
+/Users/rmalkevy/Downloads/AbstractVM 2/AbstractVM_SingletonClass/AbstractVM.hpp
+../OperandFactoryClass/OperandFactory.hpp
+/Users/rmalkevy/Downloads/AbstractVM 2/OperandFactoryClass/OperandFactory.hpp
+
+/Users/rmalkevy/Downloads/AbstractVM 2/PrecisionHandlingClass/PrecisionHandleClass.hpp
+string
+-
+array
+-
+../General.hpp
+/Users/rmalkevy/Downloads/AbstractVM 2/General.hpp
+
+/Users/rmalkevy/Downloads/AbstractVM 2/TaskAdd.cpp
+TaskAdd.hpp
+/Users/rmalkevy/Downloads/AbstractVM 2/TaskAdd.hpp
+
+/Users/rmalkevy/Downloads/AbstractVM 2/TaskAdd.hpp
+OperandTypeClasses/IOperand.hpp
+/Users/rmalkevy/Downloads/AbstractVM 2/OperandTypeClasses/IOperand.hpp
+
+/Users/rmalkevy/Downloads/AbstractVM 2/main.cpp
+iostream
+-
+OperandTypeClasses/Int8_Operand.hpp
+/Users/rmalkevy/Downloads/AbstractVM 2/OperandTypeClasses/Int8_Operand.hpp
+OperandFactoryClass/OperandFactory.hpp
+/Users/rmalkevy/Downloads/AbstractVM 2/OperandFactoryClass/OperandFactory.hpp
+OperandTypeClasses/Templete_Operand.h
+/Users/rmalkevy/Downloads/AbstractVM 2/OperandTypeClasses/Templete_Operand.h
+
