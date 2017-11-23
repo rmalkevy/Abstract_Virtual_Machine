@@ -5,7 +5,6 @@
 #ifndef ABSTRACTVM_IOPERAND_HPP
 #define ABSTRACTVM_IOPERAND_HPP
 
-#include <iostream>
 #include "../General.hpp"
 
 class IOperand {

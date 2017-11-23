@@ -5,9 +5,8 @@
 #ifndef ABSTRACTVM_TEMPLETE_OPERAND_H
 #define ABSTRACTVM_TEMPLETE_OPERAND_H
 
-#include "IOperand.hpp"
-#include "../AbstractVM_SingletonClass/AbstractVM.hpp"
-#include "../OperandFactoryClass/OperandFactory.hpp"
+#include "../General.hpp"
+#include "../OperandTypeClasses/IOperand.hpp"
 
 template <typename T>
 class Operand : public IOperand {
@@ -15,6 +14,7 @@ private:
 	static const PrecisionHandle<T>  _precision;
 
 	std::string		_valueString;
+	eOperandType	_eType;
 	T				_value;
 
 public:
@@ -22,8 +22,9 @@ public:
 	Operand(Operand const &) = delete;
 	Operand &operator=(Operand const &) = delete;
 
-	explicit Operand(std::string const & valueString, T value = 0)
+	Operand(std::string const & valueString, eOperandType type, T value = 0)
 			: _valueString(valueString),
+			  _eType(type),
 			  _value(value)
 	{}
 
@@ -34,7 +35,7 @@ public:
 	} // Precision of the type of the instance
 
 	eOperandType getType() const override {
-		return Int8;
+		return _eType;
 	} // Type of the instance
 
 	IOperand const * operator+( IOperand const & rhs ) const override {
@@ -45,7 +46,7 @@ public:
 
 		// Todo: Check if number fit in Type, if no -> throw exception!!!
 
-		return OperandFactory::getInstance()->createOperand(rhs.getType(), std::to_string(value));
+		return new Operand(std::to_string(value), rhs.getType());
 	} // Sum
 //	IOperand const * operator-( IOperand const & rhs ) const override; // Difference
 //	IOperand const * operator*( IOperand const & rhs ) const override; // Product

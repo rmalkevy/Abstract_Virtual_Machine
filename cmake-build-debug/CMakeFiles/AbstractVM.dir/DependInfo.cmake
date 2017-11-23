@@ -4,15 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/rmalkevy/Downloads/AbstractVM 2/AbstractVM_SingletonClass/AbstractVM.cpp" "/Users/rmalkevy/Downloads/AbstractVM 2/cmake-build-debug/CMakeFiles/AbstractVM.dir/AbstractVM_SingletonClass/AbstractVM.cpp.o"
-  "/Users/rmalkevy/Downloads/AbstractVM 2/OperandFactoryClass/OperandFactory.cpp" "/Users/rmalkevy/Downloads/AbstractVM 2/cmake-build-debug/CMakeFiles/AbstractVM.dir/OperandFactoryClass/OperandFactory.cpp.o"
-  "/Users/rmalkevy/Downloads/AbstractVM 2/OperandTypeClasses/Double_Operand.cpp" "/Users/rmalkevy/Downloads/AbstractVM 2/cmake-build-debug/CMakeFiles/AbstractVM.dir/OperandTypeClasses/Double_Operand.cpp.o"
-  "/Users/rmalkevy/Downloads/AbstractVM 2/OperandTypeClasses/Float_Operand.cpp" "/Users/rmalkevy/Downloads/AbstractVM 2/cmake-build-debug/CMakeFiles/AbstractVM.dir/OperandTypeClasses/Float_Operand.cpp.o"
-  "/Users/rmalkevy/Downloads/AbstractVM 2/OperandTypeClasses/Int16_Operand.cpp" "/Users/rmalkevy/Downloads/AbstractVM 2/cmake-build-debug/CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int16_Operand.cpp.o"
-  "/Users/rmalkevy/Downloads/AbstractVM 2/OperandTypeClasses/Int32_Operand.cpp" "/Users/rmalkevy/Downloads/AbstractVM 2/cmake-build-debug/CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int32_Operand.cpp.o"
-  "/Users/rmalkevy/Downloads/AbstractVM 2/OperandTypeClasses/Int8_Operand.cpp" "/Users/rmalkevy/Downloads/AbstractVM 2/cmake-build-debug/CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int8_Operand.cpp.o"
-  "/Users/rmalkevy/Downloads/AbstractVM 2/TaskAdd.cpp" "/Users/rmalkevy/Downloads/AbstractVM 2/cmake-build-debug/CMakeFiles/AbstractVM.dir/TaskAdd.cpp.o"
-  "/Users/rmalkevy/Downloads/AbstractVM 2/main.cpp" "/Users/rmalkevy/Downloads/AbstractVM 2/cmake-build-debug/CMakeFiles/AbstractVM.dir/main.cpp.o"
+  "/Users/Henprokuror/CLionProjects/AbstractVM_/AbstractVM_SingletonClass/AbstractVM.cpp" "/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/CMakeFiles/AbstractVM.dir/AbstractVM_SingletonClass/AbstractVM.cpp.o"
+  "/Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactoryClass/OperandFactory.cpp" "/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/CMakeFiles/AbstractVM.dir/OperandFactoryClass/OperandFactory.cpp.o"
+  "/Users/Henprokuror/CLionProjects/AbstractVM_/OperandTypeClasses/Int8_Operand.cpp" "/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int8_Operand.cpp.o"
+  "/Users/Henprokuror/CLionProjects/AbstractVM_/TaskAdd.cpp" "/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/CMakeFiles/AbstractVM.dir/TaskAdd.cpp.o"
+  "/Users/Henprokuror/CLionProjects/AbstractVM_/main.cpp" "/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/CMakeFiles/AbstractVM.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

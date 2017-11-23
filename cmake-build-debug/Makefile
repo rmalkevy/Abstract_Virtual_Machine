@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/rmalkevy/Downloads/AbstractVM 2"
+CMAKE_SOURCE_DIR = /Users/Henprokuror/CLionProjects/AbstractVM_
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/rmalkevy/Downloads/AbstractVM 2/cmake-build-debug"
+CMAKE_BINARY_DIR = /Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/rmalkevy/Downloads/AbstractVM 2/cmake-build-debug/CMakeFiles" "/Users/rmalkevy/Downloads/AbstractVM 2/cmake-build-debug/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/CMakeFiles /Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/rmalkevy/Downloads/AbstractVM 2/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -176,114 +176,6 @@ OperandFactoryClass/OperandFactory.s: OperandFactoryClass/OperandFactory.cpp.s
 OperandFactoryClass/OperandFactory.cpp.s:
 	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/OperandFactoryClass/OperandFactory.cpp.s
 .PHONY : OperandFactoryClass/OperandFactory.cpp.s
-
-OperandTypeClasses/Double_Operand.o: OperandTypeClasses/Double_Operand.cpp.o
-
-.PHONY : OperandTypeClasses/Double_Operand.o
-
-# target to build an object file
-OperandTypeClasses/Double_Operand.cpp.o:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/OperandTypeClasses/Double_Operand.cpp.o
-.PHONY : OperandTypeClasses/Double_Operand.cpp.o
-
-OperandTypeClasses/Double_Operand.i: OperandTypeClasses/Double_Operand.cpp.i
-
-.PHONY : OperandTypeClasses/Double_Operand.i
-
-# target to preprocess a source file
-OperandTypeClasses/Double_Operand.cpp.i:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/OperandTypeClasses/Double_Operand.cpp.i
-.PHONY : OperandTypeClasses/Double_Operand.cpp.i
-
-OperandTypeClasses/Double_Operand.s: OperandTypeClasses/Double_Operand.cpp.s
-
-.PHONY : OperandTypeClasses/Double_Operand.s
-
-# target to generate assembly for a file
-OperandTypeClasses/Double_Operand.cpp.s:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/OperandTypeClasses/Double_Operand.cpp.s
-.PHONY : OperandTypeClasses/Double_Operand.cpp.s
-
-OperandTypeClasses/Float_Operand.o: OperandTypeClasses/Float_Operand.cpp.o
-
-.PHONY : OperandTypeClasses/Float_Operand.o
-
-# target to build an object file
-OperandTypeClasses/Float_Operand.cpp.o:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/OperandTypeClasses/Float_Operand.cpp.o
-.PHONY : OperandTypeClasses/Float_Operand.cpp.o
-
-OperandTypeClasses/Float_Operand.i: OperandTypeClasses/Float_Operand.cpp.i
-
-.PHONY : OperandTypeClasses/Float_Operand.i
-
-# target to preprocess a source file
-OperandTypeClasses/Float_Operand.cpp.i:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/OperandTypeClasses/Float_Operand.cpp.i
-.PHONY : OperandTypeClasses/Float_Operand.cpp.i
-
-OperandTypeClasses/Float_Operand.s: OperandTypeClasses/Float_Operand.cpp.s
-
-.PHONY : OperandTypeClasses/Float_Operand.s
-
-# target to generate assembly for a file
-OperandTypeClasses/Float_Operand.cpp.s:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/OperandTypeClasses/Float_Operand.cpp.s
-.PHONY : OperandTypeClasses/Float_Operand.cpp.s
-
-OperandTypeClasses/Int16_Operand.o: OperandTypeClasses/Int16_Operand.cpp.o
-
-.PHONY : OperandTypeClasses/Int16_Operand.o
-
-# target to build an object file
-OperandTypeClasses/Int16_Operand.cpp.o:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int16_Operand.cpp.o
-.PHONY : OperandTypeClasses/Int16_Operand.cpp.o
-
-OperandTypeClasses/Int16_Operand.i: OperandTypeClasses/Int16_Operand.cpp.i
-
-.PHONY : OperandTypeClasses/Int16_Operand.i
-
-# target to preprocess a source file
-OperandTypeClasses/Int16_Operand.cpp.i:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int16_Operand.cpp.i
-.PHONY : OperandTypeClasses/Int16_Operand.cpp.i
-
-OperandTypeClasses/Int16_Operand.s: OperandTypeClasses/Int16_Operand.cpp.s
-
-.PHONY : OperandTypeClasses/Int16_Operand.s
-
-# target to generate assembly for a file
-OperandTypeClasses/Int16_Operand.cpp.s:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int16_Operand.cpp.s
-.PHONY : OperandTypeClasses/Int16_Operand.cpp.s
-
-OperandTypeClasses/Int32_Operand.o: OperandTypeClasses/Int32_Operand.cpp.o
-
-.PHONY : OperandTypeClasses/Int32_Operand.o
-
-# target to build an object file
-OperandTypeClasses/Int32_Operand.cpp.o:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int32_Operand.cpp.o
-.PHONY : OperandTypeClasses/Int32_Operand.cpp.o
-
-OperandTypeClasses/Int32_Operand.i: OperandTypeClasses/Int32_Operand.cpp.i
-
-.PHONY : OperandTypeClasses/Int32_Operand.i
-
-# target to preprocess a source file
-OperandTypeClasses/Int32_Operand.cpp.i:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int32_Operand.cpp.i
-.PHONY : OperandTypeClasses/Int32_Operand.cpp.i
-
-OperandTypeClasses/Int32_Operand.s: OperandTypeClasses/Int32_Operand.cpp.s
-
-.PHONY : OperandTypeClasses/Int32_Operand.s
-
-# target to generate assembly for a file
-OperandTypeClasses/Int32_Operand.cpp.s:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int32_Operand.cpp.s
-.PHONY : OperandTypeClasses/Int32_Operand.cpp.s
 
 OperandTypeClasses/Int8_Operand.o: OperandTypeClasses/Int8_Operand.cpp.o
 
@@ -381,18 +273,6 @@ help:
 	@echo "... OperandFactoryClass/OperandFactory.o"
 	@echo "... OperandFactoryClass/OperandFactory.i"
 	@echo "... OperandFactoryClass/OperandFactory.s"
-	@echo "... OperandTypeClasses/Double_Operand.o"
-	@echo "... OperandTypeClasses/Double_Operand.i"
-	@echo "... OperandTypeClasses/Double_Operand.s"
-	@echo "... OperandTypeClasses/Float_Operand.o"
-	@echo "... OperandTypeClasses/Float_Operand.i"
-	@echo "... OperandTypeClasses/Float_Operand.s"
-	@echo "... OperandTypeClasses/Int16_Operand.o"
-	@echo "... OperandTypeClasses/Int16_Operand.i"
-	@echo "... OperandTypeClasses/Int16_Operand.s"
-	@echo "... OperandTypeClasses/Int32_Operand.o"
-	@echo "... OperandTypeClasses/Int32_Operand.i"
-	@echo "... OperandTypeClasses/Int32_Operand.s"
 	@echo "... OperandTypeClasses/Int8_Operand.o"
 	@echo "... OperandTypeClasses/Int8_Operand.i"
 	@echo "... OperandTypeClasses/Int8_Operand.s"

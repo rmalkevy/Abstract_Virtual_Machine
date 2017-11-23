@@ -1,4 +1,4 @@
-# Install script for directory: /Users/rmalkevy/Downloads/AbstractVM 2
+# Install script for directory: /Users/Henprokuror/CLionProjects/AbstractVM_
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/rmalkevy/Downloads/AbstractVM 2/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -5,16 +5,12 @@
 #ifndef ABSTRACTVM_OPERANDFACTORY_HPP
 #define ABSTRACTVM_OPERANDFACTORY_HPP
 
-#include <array>
+#include "../General.hpp"
 #include "../OperandTypeClasses/IOperand.hpp"
-#include "../OperandTypeClasses/Int8_Operand.hpp"
-//#include "../OperandTypeClasses/Int16_Operand.hpp"
-//#include "../OperandTypeClasses/Int32_Operand.hpp"
-//#include "../OperandTypeClasses/Float_Operand.hpp"
-//#include "../OperandTypeClasses/Double_Operand.hpp"
+#include "../OperandTypeClasses/Templete_Operand.hpp"
 
 // *** Singleton class with factory method *** //
-class OperandFactory final {
+class OperandFactory {
 private:
 	OperandFactory();
 	IOperand const * createInt8( std::string const & value ) const;

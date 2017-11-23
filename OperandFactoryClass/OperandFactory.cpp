@@ -22,8 +22,12 @@ IOperand const* OperandFactory::createOperand(eOperandType type, std::string con
 }
 
 IOperand const* OperandFactory::createInt8(std::string const &value) const {
-	return new Int8_Operand(value);
+	return new Operand<int8_t>(value, Int8);
 }
+
+//IOperand const* OperandFactory::createInt8(std::string const &value) const {
+//	return new Int8_Operand(value);
+//}
 
 //IOperand const* OperandFactory::createInt16(std::string const &value) const {
 //	return new Int16_Operand(value);

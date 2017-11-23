@@ -4,39 +4,17 @@
 CMakeFiles/AbstractVM.dir/AbstractVM_SingletonClass/AbstractVM.cpp.o: ../AbstractVM_SingletonClass/AbstractVM.cpp
 CMakeFiles/AbstractVM.dir/AbstractVM_SingletonClass/AbstractVM.cpp.o: ../AbstractVM_SingletonClass/AbstractVM.hpp
 CMakeFiles/AbstractVM.dir/AbstractVM_SingletonClass/AbstractVM.cpp.o: ../General.hpp
+CMakeFiles/AbstractVM.dir/AbstractVM_SingletonClass/AbstractVM.cpp.o: ../OperandFactoryClass/OperandFactory.hpp
+CMakeFiles/AbstractVM.dir/AbstractVM_SingletonClass/AbstractVM.cpp.o: ../OperandTypeClasses/IOperand.hpp
+CMakeFiles/AbstractVM.dir/AbstractVM_SingletonClass/AbstractVM.cpp.o: ../OperandTypeClasses/Templete_Operand.hpp
 CMakeFiles/AbstractVM.dir/AbstractVM_SingletonClass/AbstractVM.cpp.o: ../PrecisionHandlingClass/PrecisionHandleClass.hpp
 
-CMakeFiles/AbstractVM.dir/OperandFactoryClass/OperandFactory.cpp.o: ../AbstractVM_SingletonClass/AbstractVM.hpp
 CMakeFiles/AbstractVM.dir/OperandFactoryClass/OperandFactory.cpp.o: ../General.hpp
 CMakeFiles/AbstractVM.dir/OperandFactoryClass/OperandFactory.cpp.o: ../OperandFactoryClass/OperandFactory.cpp
 CMakeFiles/AbstractVM.dir/OperandFactoryClass/OperandFactory.cpp.o: ../OperandFactoryClass/OperandFactory.hpp
 CMakeFiles/AbstractVM.dir/OperandFactoryClass/OperandFactory.cpp.o: ../OperandTypeClasses/IOperand.hpp
-CMakeFiles/AbstractVM.dir/OperandFactoryClass/OperandFactory.cpp.o: ../OperandTypeClasses/Int8_Operand.hpp
+CMakeFiles/AbstractVM.dir/OperandFactoryClass/OperandFactory.cpp.o: ../OperandTypeClasses/Templete_Operand.hpp
 CMakeFiles/AbstractVM.dir/OperandFactoryClass/OperandFactory.cpp.o: ../PrecisionHandlingClass/PrecisionHandleClass.hpp
-
-CMakeFiles/AbstractVM.dir/OperandTypeClasses/Double_Operand.cpp.o: ../General.hpp
-CMakeFiles/AbstractVM.dir/OperandTypeClasses/Double_Operand.cpp.o: ../OperandTypeClasses/Double_Operand.cpp
-CMakeFiles/AbstractVM.dir/OperandTypeClasses/Double_Operand.cpp.o: ../OperandTypeClasses/Double_Operand.hpp
-CMakeFiles/AbstractVM.dir/OperandTypeClasses/Double_Operand.cpp.o: ../OperandTypeClasses/IOperand.hpp
-CMakeFiles/AbstractVM.dir/OperandTypeClasses/Double_Operand.cpp.o: ../PrecisionHandlingClass/PrecisionHandleClass.hpp
-
-CMakeFiles/AbstractVM.dir/OperandTypeClasses/Float_Operand.cpp.o: ../General.hpp
-CMakeFiles/AbstractVM.dir/OperandTypeClasses/Float_Operand.cpp.o: ../OperandTypeClasses/Float_Operand.cpp
-CMakeFiles/AbstractVM.dir/OperandTypeClasses/Float_Operand.cpp.o: ../OperandTypeClasses/Float_Operand.hpp
-CMakeFiles/AbstractVM.dir/OperandTypeClasses/Float_Operand.cpp.o: ../OperandTypeClasses/IOperand.hpp
-CMakeFiles/AbstractVM.dir/OperandTypeClasses/Float_Operand.cpp.o: ../PrecisionHandlingClass/PrecisionHandleClass.hpp
-
-CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int16_Operand.cpp.o: ../General.hpp
-CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int16_Operand.cpp.o: ../OperandTypeClasses/IOperand.hpp
-CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int16_Operand.cpp.o: ../OperandTypeClasses/Int16_Operand.cpp
-CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int16_Operand.cpp.o: ../OperandTypeClasses/Int16_Operand.hpp
-CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int16_Operand.cpp.o: ../PrecisionHandlingClass/PrecisionHandleClass.hpp
-
-CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int32_Operand.cpp.o: ../General.hpp
-CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int32_Operand.cpp.o: ../OperandTypeClasses/IOperand.hpp
-CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int32_Operand.cpp.o: ../OperandTypeClasses/Int32_Operand.cpp
-CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int32_Operand.cpp.o: ../OperandTypeClasses/Int32_Operand.hpp
-CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int32_Operand.cpp.o: ../PrecisionHandlingClass/PrecisionHandleClass.hpp
 
 CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int8_Operand.cpp.o: ../AbstractVM_SingletonClass/AbstractVM.hpp
 CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int8_Operand.cpp.o: ../General.hpp
@@ -44,6 +22,7 @@ CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int8_Operand.cpp.o: ../OperandFacto
 CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int8_Operand.cpp.o: ../OperandTypeClasses/IOperand.hpp
 CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int8_Operand.cpp.o: ../OperandTypeClasses/Int8_Operand.cpp
 CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int8_Operand.cpp.o: ../OperandTypeClasses/Int8_Operand.hpp
+CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int8_Operand.cpp.o: ../OperandTypeClasses/Templete_Operand.hpp
 CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int8_Operand.cpp.o: ../PrecisionHandlingClass/PrecisionHandleClass.hpp
 
 CMakeFiles/AbstractVM.dir/TaskAdd.cpp.o: ../General.hpp
@@ -52,12 +31,10 @@ CMakeFiles/AbstractVM.dir/TaskAdd.cpp.o: ../PrecisionHandlingClass/PrecisionHand
 CMakeFiles/AbstractVM.dir/TaskAdd.cpp.o: ../TaskAdd.cpp
 CMakeFiles/AbstractVM.dir/TaskAdd.cpp.o: ../TaskAdd.hpp
 
-CMakeFiles/AbstractVM.dir/main.cpp.o: ../AbstractVM_SingletonClass/AbstractVM.hpp
 CMakeFiles/AbstractVM.dir/main.cpp.o: ../General.hpp
 CMakeFiles/AbstractVM.dir/main.cpp.o: ../OperandFactoryClass/OperandFactory.hpp
 CMakeFiles/AbstractVM.dir/main.cpp.o: ../OperandTypeClasses/IOperand.hpp
-CMakeFiles/AbstractVM.dir/main.cpp.o: ../OperandTypeClasses/Int8_Operand.hpp
-CMakeFiles/AbstractVM.dir/main.cpp.o: ../OperandTypeClasses/Templete_Operand.h
+CMakeFiles/AbstractVM.dir/main.cpp.o: ../OperandTypeClasses/Templete_Operand.hpp
 CMakeFiles/AbstractVM.dir/main.cpp.o: ../PrecisionHandlingClass/PrecisionHandleClass.hpp
 CMakeFiles/AbstractVM.dir/main.cpp.o: ../main.cpp
 

@@ -7,6 +7,7 @@
 
 
 #include "../General.hpp"
+#include "../OperandFactoryClass/OperandFactory.hpp"
 
 class AbstractVM {
 public:

@@ -1,7 +1,6 @@
-#include <iostream>
-#include "OperandTypeClasses/Int8_Operand.hpp"
+#include "General.hpp"
+#include "OperandTypeClasses/Templete_Operand.hpp"
 #include "OperandFactoryClass/OperandFactory.hpp"
-#include "OperandTypeClasses/Templete_Operand.h"
 
 int main() {
 
@@ -15,8 +14,8 @@ int main() {
 	}
 
 	{
-		const Operand<int8_t> aa("34");
-		const Operand<int8_t> bb("-24");
+		const Operand<int8_t> aa("34", Int8);
+		const Operand<int8_t> bb("-24", Int8);
 		IOperand const *a = &aa;
 		IOperand const *b = &bb;
 		IOperand const *c = *a + *b;

@@ -5,19 +5,7 @@
 #ifndef ABSTRACTVM_PRECISIONHANDLE_SINGLETONCLASS_HPP
 #define ABSTRACTVM_PRECISIONHANDLE_SINGLETONCLASS_HPP
 
-
-#include <string>
-#include <array>
 #include "../General.hpp"
-
-enum eOperandType {
-	Int8,
-	Int16,
-	Int32,
-	Float,
-	Double,
-	NumberOperands
-};
 
 template <typename T>
 class PrecisionHandle {
