@@ -123,113 +123,32 @@ AbstractVM/fast:
 	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/build
 .PHONY : AbstractVM/fast
 
-AbstractVM_SingletonClass/AbstractVM.o: AbstractVM_SingletonClass/AbstractVM.cpp.o
+OperandFactoryClass/FactoryOperand.o: OperandFactoryClass/FactoryOperand.cpp.o
 
-.PHONY : AbstractVM_SingletonClass/AbstractVM.o
-
-# target to build an object file
-AbstractVM_SingletonClass/AbstractVM.cpp.o:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/AbstractVM_SingletonClass/AbstractVM.cpp.o
-.PHONY : AbstractVM_SingletonClass/AbstractVM.cpp.o
-
-AbstractVM_SingletonClass/AbstractVM.i: AbstractVM_SingletonClass/AbstractVM.cpp.i
-
-.PHONY : AbstractVM_SingletonClass/AbstractVM.i
-
-# target to preprocess a source file
-AbstractVM_SingletonClass/AbstractVM.cpp.i:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/AbstractVM_SingletonClass/AbstractVM.cpp.i
-.PHONY : AbstractVM_SingletonClass/AbstractVM.cpp.i
-
-AbstractVM_SingletonClass/AbstractVM.s: AbstractVM_SingletonClass/AbstractVM.cpp.s
-
-.PHONY : AbstractVM_SingletonClass/AbstractVM.s
-
-# target to generate assembly for a file
-AbstractVM_SingletonClass/AbstractVM.cpp.s:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/AbstractVM_SingletonClass/AbstractVM.cpp.s
-.PHONY : AbstractVM_SingletonClass/AbstractVM.cpp.s
-
-OperandFactoryClass/OperandFactory.o: OperandFactoryClass/OperandFactory.cpp.o
-
-.PHONY : OperandFactoryClass/OperandFactory.o
+.PHONY : OperandFactoryClass/FactoryOperand.o
 
 # target to build an object file
-OperandFactoryClass/OperandFactory.cpp.o:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/OperandFactoryClass/OperandFactory.cpp.o
-.PHONY : OperandFactoryClass/OperandFactory.cpp.o
+OperandFactoryClass/FactoryOperand.cpp.o:
+	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/OperandFactoryClass/FactoryOperand.cpp.o
+.PHONY : OperandFactoryClass/FactoryOperand.cpp.o
 
-OperandFactoryClass/OperandFactory.i: OperandFactoryClass/OperandFactory.cpp.i
+OperandFactoryClass/FactoryOperand.i: OperandFactoryClass/FactoryOperand.cpp.i
 
-.PHONY : OperandFactoryClass/OperandFactory.i
-
-# target to preprocess a source file
-OperandFactoryClass/OperandFactory.cpp.i:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/OperandFactoryClass/OperandFactory.cpp.i
-.PHONY : OperandFactoryClass/OperandFactory.cpp.i
-
-OperandFactoryClass/OperandFactory.s: OperandFactoryClass/OperandFactory.cpp.s
-
-.PHONY : OperandFactoryClass/OperandFactory.s
-
-# target to generate assembly for a file
-OperandFactoryClass/OperandFactory.cpp.s:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/OperandFactoryClass/OperandFactory.cpp.s
-.PHONY : OperandFactoryClass/OperandFactory.cpp.s
-
-OperandTypeClasses/Int8_Operand.o: OperandTypeClasses/Int8_Operand.cpp.o
-
-.PHONY : OperandTypeClasses/Int8_Operand.o
-
-# target to build an object file
-OperandTypeClasses/Int8_Operand.cpp.o:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int8_Operand.cpp.o
-.PHONY : OperandTypeClasses/Int8_Operand.cpp.o
-
-OperandTypeClasses/Int8_Operand.i: OperandTypeClasses/Int8_Operand.cpp.i
-
-.PHONY : OperandTypeClasses/Int8_Operand.i
+.PHONY : OperandFactoryClass/FactoryOperand.i
 
 # target to preprocess a source file
-OperandTypeClasses/Int8_Operand.cpp.i:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int8_Operand.cpp.i
-.PHONY : OperandTypeClasses/Int8_Operand.cpp.i
+OperandFactoryClass/FactoryOperand.cpp.i:
+	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/OperandFactoryClass/FactoryOperand.cpp.i
+.PHONY : OperandFactoryClass/FactoryOperand.cpp.i
 
-OperandTypeClasses/Int8_Operand.s: OperandTypeClasses/Int8_Operand.cpp.s
+OperandFactoryClass/FactoryOperand.s: OperandFactoryClass/FactoryOperand.cpp.s
 
-.PHONY : OperandTypeClasses/Int8_Operand.s
-
-# target to generate assembly for a file
-OperandTypeClasses/Int8_Operand.cpp.s:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int8_Operand.cpp.s
-.PHONY : OperandTypeClasses/Int8_Operand.cpp.s
-
-TaskAdd.o: TaskAdd.cpp.o
-
-.PHONY : TaskAdd.o
-
-# target to build an object file
-TaskAdd.cpp.o:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/TaskAdd.cpp.o
-.PHONY : TaskAdd.cpp.o
-
-TaskAdd.i: TaskAdd.cpp.i
-
-.PHONY : TaskAdd.i
-
-# target to preprocess a source file
-TaskAdd.cpp.i:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/TaskAdd.cpp.i
-.PHONY : TaskAdd.cpp.i
-
-TaskAdd.s: TaskAdd.cpp.s
-
-.PHONY : TaskAdd.s
+.PHONY : OperandFactoryClass/FactoryOperand.s
 
 # target to generate assembly for a file
-TaskAdd.cpp.s:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/TaskAdd.cpp.s
-.PHONY : TaskAdd.cpp.s
+OperandFactoryClass/FactoryOperand.cpp.s:
+	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/OperandFactoryClass/FactoryOperand.cpp.s
+.PHONY : OperandFactoryClass/FactoryOperand.cpp.s
 
 main.o: main.cpp.o
 
@@ -267,18 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... AbstractVM"
-	@echo "... AbstractVM_SingletonClass/AbstractVM.o"
-	@echo "... AbstractVM_SingletonClass/AbstractVM.i"
-	@echo "... AbstractVM_SingletonClass/AbstractVM.s"
-	@echo "... OperandFactoryClass/OperandFactory.o"
-	@echo "... OperandFactoryClass/OperandFactory.i"
-	@echo "... OperandFactoryClass/OperandFactory.s"
-	@echo "... OperandTypeClasses/Int8_Operand.o"
-	@echo "... OperandTypeClasses/Int8_Operand.i"
-	@echo "... OperandTypeClasses/Int8_Operand.s"
-	@echo "... TaskAdd.o"
-	@echo "... TaskAdd.i"
-	@echo "... TaskAdd.s"
+	@echo "... OperandFactoryClass/FactoryOperand.o"
+	@echo "... OperandFactoryClass/FactoryOperand.i"
+	@echo "... OperandFactoryClass/FactoryOperand.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

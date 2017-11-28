@@ -80,40 +80,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/AbstractVM_SingletonClass/AbstractVM.cpp">
-			<Option target="AbstractVM"/>
-		</Unit>
-		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/AbstractVM_SingletonClass/AbstractVM.hpp">
-			<Option target="AbstractVM"/>
-		</Unit>
 		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/General.hpp">
 			<Option target="AbstractVM"/>
 		</Unit>
-		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactoryClass/OperandFactory.cpp">
+		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactoryClass/FactoryOperand.cpp">
 			<Option target="AbstractVM"/>
 		</Unit>
-		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactoryClass/OperandFactory.hpp">
+		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactoryClass/FactoryOperand.hpp">
 			<Option target="AbstractVM"/>
 		</Unit>
 		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/OperandTypeClasses/IOperand.hpp">
 			<Option target="AbstractVM"/>
 		</Unit>
-		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/OperandTypeClasses/Int8_Operand.cpp">
-			<Option target="AbstractVM"/>
-		</Unit>
-		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/OperandTypeClasses/Int8_Operand.hpp">
-			<Option target="AbstractVM"/>
-		</Unit>
-		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/OperandTypeClasses/Templete_Operand.hpp">
+		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/OperandTypeClasses/Operand.hpp">
 			<Option target="AbstractVM"/>
 		</Unit>
 		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/PrecisionHandlingClass/PrecisionHandleClass.hpp">
-			<Option target="AbstractVM"/>
-		</Unit>
-		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/TaskAdd.cpp">
-			<Option target="AbstractVM"/>
-		</Unit>
-		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/TaskAdd.hpp">
 			<Option target="AbstractVM"/>
 		</Unit>
 		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/main.cpp">

@@ -7,26 +7,35 @@
 
 #include "../General.hpp"
 
-template <typename T>
-class PrecisionHandle {
+class PrecisionHandle final {
 private:
-	std::int8_t		_stringToInt8(std::string const &stringInt8) const {
-		return static_cast<std::int8_t>(std::stoi(stringInt8));
+	void	_stringToInt8(std::string const &stringInt8, CortageType &value) const {
+		std::get<0>(value) = (std::stoi(stringInt8));
+		std::get<1>(value) = std::get<0>(value);
+//		value.valueString = std::to_string(value.valueInt8);
 	}
-	std::int16_t	_stringToInt16(std::string const &stringInt16) const {
-		return static_cast<std::int16_t>(std::stoi(stringInt16));
+	void	_stringToInt16(std::string const &stringInt16, CortageType &value) const {
+		std::get<0>(value) = (std::stoi(stringInt16));
+		std::get<1>(value) = std::get<0>(value);
+//		value.valueString = std::to_string(value.valueInt16);
 	}
-	int				_stringToInt32(std::string const &stringInt32) const {
-		return std::stoi(stringInt32);
+	void	_stringToInt32(std::string const &stringInt32, CortageType &value) const {
+		std::get<0>(value) = std::stoi(stringInt32);
+		std::get<1>(value) = std::get<0>(value);
+//		value.valueString = std::to_string(value.valueInt32);
 	}
-	float			_stringToFloat(std::string const &stringFloat) const {
-		return std::stof(stringFloat);
+	void	_stringToFloat(std::string const &stringFloat, CortageType &value) const {
+		std::get<1>(value) = std::stof(stringFloat);
+		std::get<0>(value) = std::get<1>(value);
+//		value.valueString = std::to_string(value.valueFloat);
 	}
-	double			_stringToDouble(std::string const &stringDouble) const {
-		return std::stod(stringDouble);
+	void	_stringToDouble(std::string const &stringDouble, CortageType &value) const {
+		std::get<1>(value) = std::stod(stringDouble);
+		std::get<0>(value) = std::get<1>(value);
+//		value.valueString = std::to_string(value.valueDouble);
 	}
 
-	using _pf_StringToValue = T (PrecisionHandle::*)(std::string const &) const;
+	using	_pf_StringToValue = void (PrecisionHandle::*)(std::string const &stringInt8, CortageType & value) const;
 	std::array<_pf_StringToValue, NumberOperands> _arrPf_StringToValue;
 
 public:
@@ -35,25 +44,19 @@ public:
 
 	// *** Default constructor *** //
 	PrecisionHandle() {
-		_arrPf_StringToValue[Int8] = 	&PrecisionHandle::_stringToInt8;
-//		_arrPf_StringToValue[Int16] = 	&PrecisionHandle::_stringToInt16;
-//		_arrPf_StringToValue[Int32] = 	&PrecisionHandle::_stringToInt32;
-//		_arrPf_StringToValue[Float]	= 	&PrecisionHandle::_stringToFloat;
-//		_arrPf_StringToValue[Double] = 	&PrecisionHandle::_stringToDouble;
+		_arrPf_StringToValue[Int8] = &PrecisionHandle::_stringToInt8;
+		_arrPf_StringToValue[Int16] = &PrecisionHandle::_stringToInt16;
+		_arrPf_StringToValue[Int32] = &PrecisionHandle::_stringToInt32;
+		_arrPf_StringToValue[Float] = &PrecisionHandle::_stringToFloat;
+		_arrPf_StringToValue[Double] = &PrecisionHandle::_stringToDouble;
 	}
 	~PrecisionHandle() = default;
 
-//	static PrecisionHandle *getInstance() {
-//		static PrecisionHandle instance;
-//		return &instance;
-//	}
-
-	//template<typename T>
-	T stringToValue(std::string const &valueString, int numberFunction) const {
-		return (this->*_arrPf_StringToValue[numberFunction])(valueString);
+	void stringToValue(std::string const &valueString, CortageType & valueOperand, eOperandType eType) const{
+		(this->*_arrPf_StringToValue[eType])(valueString, valueOperand);
 	}
 
-	//template<typename T>
+	template <typename T>
 	bool IsInRange( T value ) const {
 		return (value >= std::numeric_limits<T>::min()) &&
 			   (value <= std::numeric_limits<T>::max());

@@ -6,16 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/Henprokuror/CLionProjects/AbstractVM_/AbstractVM_SingletonClass/AbstractVM.cpp
-AbstractVM.hpp
-/Users/Henprokuror/CLionProjects/AbstractVM_/AbstractVM_SingletonClass/AbstractVM.hpp
-
-/Users/Henprokuror/CLionProjects/AbstractVM_/AbstractVM_SingletonClass/AbstractVM.hpp
-../General.hpp
-/Users/Henprokuror/CLionProjects/AbstractVM_/General.hpp
-../OperandFactoryClass/OperandFactory.hpp
-/Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactoryClass/OperandFactory.hpp
-
 /Users/Henprokuror/CLionProjects/AbstractVM_/General.hpp
 iostream
 -
@@ -23,60 +13,40 @@ array
 -
 string
 -
-PrecisionHandlingClass/PrecisionHandleClass.hpp
-/Users/Henprokuror/CLionProjects/AbstractVM_/PrecisionHandlingClass/PrecisionHandleClass.hpp
 
-/Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactoryClass/OperandFactory.cpp
-OperandFactory.hpp
-/Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactoryClass/OperandFactory.hpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactoryClass/FactoryOperand.cpp
+FactoryOperand.hpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactoryClass/FactoryOperand.hpp
+../OperandTypeClasses/Operand.hpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/OperandTypeClasses/Operand.hpp
 
-/Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactoryClass/OperandFactory.hpp
-../General.hpp
-/Users/Henprokuror/CLionProjects/AbstractVM_/General.hpp
-../OperandTypeClasses/IOperand.hpp
-/Users/Henprokuror/CLionProjects/AbstractVM_/OperandTypeClasses/IOperand.hpp
-../OperandTypeClasses/Templete_Operand.hpp
-/Users/Henprokuror/CLionProjects/AbstractVM_/OperandTypeClasses/Templete_Operand.hpp
-
-/Users/Henprokuror/CLionProjects/AbstractVM_/OperandTypeClasses/IOperand.hpp
-../General.hpp
-/Users/Henprokuror/CLionProjects/AbstractVM_/General.hpp
-
-/Users/Henprokuror/CLionProjects/AbstractVM_/OperandTypeClasses/Int8_Operand.cpp
-Int8_Operand.hpp
-/Users/Henprokuror/CLionProjects/AbstractVM_/OperandTypeClasses/Int8_Operand.hpp
-
-/Users/Henprokuror/CLionProjects/AbstractVM_/OperandTypeClasses/Int8_Operand.hpp
-IOperand.hpp
-/Users/Henprokuror/CLionProjects/AbstractVM_/OperandTypeClasses/IOperand.hpp
-../AbstractVM_SingletonClass/AbstractVM.hpp
-/Users/Henprokuror/CLionProjects/AbstractVM_/AbstractVM_SingletonClass/AbstractVM.hpp
-../OperandFactoryClass/OperandFactory.hpp
-/Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactoryClass/OperandFactory.hpp
-
-/Users/Henprokuror/CLionProjects/AbstractVM_/OperandTypeClasses/Templete_Operand.hpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactoryClass/FactoryOperand.hpp
 ../General.hpp
 /Users/Henprokuror/CLionProjects/AbstractVM_/General.hpp
 ../OperandTypeClasses/IOperand.hpp
 /Users/Henprokuror/CLionProjects/AbstractVM_/OperandTypeClasses/IOperand.hpp
 
-/Users/Henprokuror/CLionProjects/AbstractVM_/PrecisionHandlingClass/PrecisionHandleClass.hpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/OperandTypeClasses/IOperand.hpp
 ../General.hpp
 /Users/Henprokuror/CLionProjects/AbstractVM_/General.hpp
 
-/Users/Henprokuror/CLionProjects/AbstractVM_/TaskAdd.cpp
-TaskAdd.hpp
-/Users/Henprokuror/CLionProjects/AbstractVM_/TaskAdd.hpp
-
-/Users/Henprokuror/CLionProjects/AbstractVM_/TaskAdd.hpp
-OperandTypeClasses/IOperand.hpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/OperandTypeClasses/Operand.hpp
+../General.hpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/General.hpp
+../OperandTypeClasses/IOperand.hpp
 /Users/Henprokuror/CLionProjects/AbstractVM_/OperandTypeClasses/IOperand.hpp
+../PrecisionHandlingClass/PrecisionHandleClass.hpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/PrecisionHandlingClass/PrecisionHandleClass.hpp
+../OperandFactoryClass/FactoryOperand.hpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactoryClass/FactoryOperand.hpp
+
+/Users/Henprokuror/CLionProjects/AbstractVM_/PrecisionHandlingClass/PrecisionHandleClass.hpp
+../General.hpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/General.hpp
 
 /Users/Henprokuror/CLionProjects/AbstractVM_/main.cpp
 General.hpp
 /Users/Henprokuror/CLionProjects/AbstractVM_/General.hpp
-OperandTypeClasses/Templete_Operand.hpp
-/Users/Henprokuror/CLionProjects/AbstractVM_/OperandTypeClasses/Templete_Operand.hpp
-OperandFactoryClass/OperandFactory.hpp
-/Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactoryClass/OperandFactory.hpp
+OperandTypeClasses/Operand.hpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/OperandTypeClasses/Operand.hpp
 

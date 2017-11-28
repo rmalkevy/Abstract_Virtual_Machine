@@ -81,121 +81,43 @@ CMakeFiles/AbstractVM.dir/main.cpp.o.provides: CMakeFiles/AbstractVM.dir/main.cp
 CMakeFiles/AbstractVM.dir/main.cpp.o.provides.build: CMakeFiles/AbstractVM.dir/main.cpp.o
 
 
-CMakeFiles/AbstractVM.dir/OperandFactoryClass/OperandFactory.cpp.o: CMakeFiles/AbstractVM.dir/flags.make
-CMakeFiles/AbstractVM.dir/OperandFactoryClass/OperandFactory.cpp.o: ../OperandFactoryClass/OperandFactory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/AbstractVM.dir/OperandFactoryClass/OperandFactory.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AbstractVM.dir/OperandFactoryClass/OperandFactory.cpp.o -c /Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactoryClass/OperandFactory.cpp
+CMakeFiles/AbstractVM.dir/OperandFactoryClass/FactoryOperand.cpp.o: CMakeFiles/AbstractVM.dir/flags.make
+CMakeFiles/AbstractVM.dir/OperandFactoryClass/FactoryOperand.cpp.o: ../OperandFactoryClass/FactoryOperand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/AbstractVM.dir/OperandFactoryClass/FactoryOperand.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AbstractVM.dir/OperandFactoryClass/FactoryOperand.cpp.o -c /Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactoryClass/FactoryOperand.cpp
 
-CMakeFiles/AbstractVM.dir/OperandFactoryClass/OperandFactory.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AbstractVM.dir/OperandFactoryClass/OperandFactory.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactoryClass/OperandFactory.cpp > CMakeFiles/AbstractVM.dir/OperandFactoryClass/OperandFactory.cpp.i
+CMakeFiles/AbstractVM.dir/OperandFactoryClass/FactoryOperand.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AbstractVM.dir/OperandFactoryClass/FactoryOperand.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactoryClass/FactoryOperand.cpp > CMakeFiles/AbstractVM.dir/OperandFactoryClass/FactoryOperand.cpp.i
 
-CMakeFiles/AbstractVM.dir/OperandFactoryClass/OperandFactory.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AbstractVM.dir/OperandFactoryClass/OperandFactory.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactoryClass/OperandFactory.cpp -o CMakeFiles/AbstractVM.dir/OperandFactoryClass/OperandFactory.cpp.s
+CMakeFiles/AbstractVM.dir/OperandFactoryClass/FactoryOperand.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AbstractVM.dir/OperandFactoryClass/FactoryOperand.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactoryClass/FactoryOperand.cpp -o CMakeFiles/AbstractVM.dir/OperandFactoryClass/FactoryOperand.cpp.s
 
-CMakeFiles/AbstractVM.dir/OperandFactoryClass/OperandFactory.cpp.o.requires:
+CMakeFiles/AbstractVM.dir/OperandFactoryClass/FactoryOperand.cpp.o.requires:
 
-.PHONY : CMakeFiles/AbstractVM.dir/OperandFactoryClass/OperandFactory.cpp.o.requires
+.PHONY : CMakeFiles/AbstractVM.dir/OperandFactoryClass/FactoryOperand.cpp.o.requires
 
-CMakeFiles/AbstractVM.dir/OperandFactoryClass/OperandFactory.cpp.o.provides: CMakeFiles/AbstractVM.dir/OperandFactoryClass/OperandFactory.cpp.o.requires
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/OperandFactoryClass/OperandFactory.cpp.o.provides.build
-.PHONY : CMakeFiles/AbstractVM.dir/OperandFactoryClass/OperandFactory.cpp.o.provides
+CMakeFiles/AbstractVM.dir/OperandFactoryClass/FactoryOperand.cpp.o.provides: CMakeFiles/AbstractVM.dir/OperandFactoryClass/FactoryOperand.cpp.o.requires
+	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/OperandFactoryClass/FactoryOperand.cpp.o.provides.build
+.PHONY : CMakeFiles/AbstractVM.dir/OperandFactoryClass/FactoryOperand.cpp.o.provides
 
-CMakeFiles/AbstractVM.dir/OperandFactoryClass/OperandFactory.cpp.o.provides.build: CMakeFiles/AbstractVM.dir/OperandFactoryClass/OperandFactory.cpp.o
-
-
-CMakeFiles/AbstractVM.dir/TaskAdd.cpp.o: CMakeFiles/AbstractVM.dir/flags.make
-CMakeFiles/AbstractVM.dir/TaskAdd.cpp.o: ../TaskAdd.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/AbstractVM.dir/TaskAdd.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AbstractVM.dir/TaskAdd.cpp.o -c /Users/Henprokuror/CLionProjects/AbstractVM_/TaskAdd.cpp
-
-CMakeFiles/AbstractVM.dir/TaskAdd.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AbstractVM.dir/TaskAdd.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Henprokuror/CLionProjects/AbstractVM_/TaskAdd.cpp > CMakeFiles/AbstractVM.dir/TaskAdd.cpp.i
-
-CMakeFiles/AbstractVM.dir/TaskAdd.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AbstractVM.dir/TaskAdd.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Henprokuror/CLionProjects/AbstractVM_/TaskAdd.cpp -o CMakeFiles/AbstractVM.dir/TaskAdd.cpp.s
-
-CMakeFiles/AbstractVM.dir/TaskAdd.cpp.o.requires:
-
-.PHONY : CMakeFiles/AbstractVM.dir/TaskAdd.cpp.o.requires
-
-CMakeFiles/AbstractVM.dir/TaskAdd.cpp.o.provides: CMakeFiles/AbstractVM.dir/TaskAdd.cpp.o.requires
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/TaskAdd.cpp.o.provides.build
-.PHONY : CMakeFiles/AbstractVM.dir/TaskAdd.cpp.o.provides
-
-CMakeFiles/AbstractVM.dir/TaskAdd.cpp.o.provides.build: CMakeFiles/AbstractVM.dir/TaskAdd.cpp.o
-
-
-CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int8_Operand.cpp.o: CMakeFiles/AbstractVM.dir/flags.make
-CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int8_Operand.cpp.o: ../OperandTypeClasses/Int8_Operand.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int8_Operand.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int8_Operand.cpp.o -c /Users/Henprokuror/CLionProjects/AbstractVM_/OperandTypeClasses/Int8_Operand.cpp
-
-CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int8_Operand.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int8_Operand.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Henprokuror/CLionProjects/AbstractVM_/OperandTypeClasses/Int8_Operand.cpp > CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int8_Operand.cpp.i
-
-CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int8_Operand.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int8_Operand.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Henprokuror/CLionProjects/AbstractVM_/OperandTypeClasses/Int8_Operand.cpp -o CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int8_Operand.cpp.s
-
-CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int8_Operand.cpp.o.requires:
-
-.PHONY : CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int8_Operand.cpp.o.requires
-
-CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int8_Operand.cpp.o.provides: CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int8_Operand.cpp.o.requires
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int8_Operand.cpp.o.provides.build
-.PHONY : CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int8_Operand.cpp.o.provides
-
-CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int8_Operand.cpp.o.provides.build: CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int8_Operand.cpp.o
-
-
-CMakeFiles/AbstractVM.dir/AbstractVM_SingletonClass/AbstractVM.cpp.o: CMakeFiles/AbstractVM.dir/flags.make
-CMakeFiles/AbstractVM.dir/AbstractVM_SingletonClass/AbstractVM.cpp.o: ../AbstractVM_SingletonClass/AbstractVM.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/AbstractVM.dir/AbstractVM_SingletonClass/AbstractVM.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AbstractVM.dir/AbstractVM_SingletonClass/AbstractVM.cpp.o -c /Users/Henprokuror/CLionProjects/AbstractVM_/AbstractVM_SingletonClass/AbstractVM.cpp
-
-CMakeFiles/AbstractVM.dir/AbstractVM_SingletonClass/AbstractVM.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AbstractVM.dir/AbstractVM_SingletonClass/AbstractVM.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Henprokuror/CLionProjects/AbstractVM_/AbstractVM_SingletonClass/AbstractVM.cpp > CMakeFiles/AbstractVM.dir/AbstractVM_SingletonClass/AbstractVM.cpp.i
-
-CMakeFiles/AbstractVM.dir/AbstractVM_SingletonClass/AbstractVM.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AbstractVM.dir/AbstractVM_SingletonClass/AbstractVM.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Henprokuror/CLionProjects/AbstractVM_/AbstractVM_SingletonClass/AbstractVM.cpp -o CMakeFiles/AbstractVM.dir/AbstractVM_SingletonClass/AbstractVM.cpp.s
-
-CMakeFiles/AbstractVM.dir/AbstractVM_SingletonClass/AbstractVM.cpp.o.requires:
-
-.PHONY : CMakeFiles/AbstractVM.dir/AbstractVM_SingletonClass/AbstractVM.cpp.o.requires
-
-CMakeFiles/AbstractVM.dir/AbstractVM_SingletonClass/AbstractVM.cpp.o.provides: CMakeFiles/AbstractVM.dir/AbstractVM_SingletonClass/AbstractVM.cpp.o.requires
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/AbstractVM_SingletonClass/AbstractVM.cpp.o.provides.build
-.PHONY : CMakeFiles/AbstractVM.dir/AbstractVM_SingletonClass/AbstractVM.cpp.o.provides
-
-CMakeFiles/AbstractVM.dir/AbstractVM_SingletonClass/AbstractVM.cpp.o.provides.build: CMakeFiles/AbstractVM.dir/AbstractVM_SingletonClass/AbstractVM.cpp.o
+CMakeFiles/AbstractVM.dir/OperandFactoryClass/FactoryOperand.cpp.o.provides.build: CMakeFiles/AbstractVM.dir/OperandFactoryClass/FactoryOperand.cpp.o
 
 
 # Object files for target AbstractVM
 AbstractVM_OBJECTS = \
 "CMakeFiles/AbstractVM.dir/main.cpp.o" \
-"CMakeFiles/AbstractVM.dir/OperandFactoryClass/OperandFactory.cpp.o" \
-"CMakeFiles/AbstractVM.dir/TaskAdd.cpp.o" \
-"CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int8_Operand.cpp.o" \
-"CMakeFiles/AbstractVM.dir/AbstractVM_SingletonClass/AbstractVM.cpp.o"
+"CMakeFiles/AbstractVM.dir/OperandFactoryClass/FactoryOperand.cpp.o"
 
 # External object files for target AbstractVM
 AbstractVM_EXTERNAL_OBJECTS =
 
 AbstractVM: CMakeFiles/AbstractVM.dir/main.cpp.o
-AbstractVM: CMakeFiles/AbstractVM.dir/OperandFactoryClass/OperandFactory.cpp.o
-AbstractVM: CMakeFiles/AbstractVM.dir/TaskAdd.cpp.o
-AbstractVM: CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int8_Operand.cpp.o
-AbstractVM: CMakeFiles/AbstractVM.dir/AbstractVM_SingletonClass/AbstractVM.cpp.o
+AbstractVM: CMakeFiles/AbstractVM.dir/OperandFactoryClass/FactoryOperand.cpp.o
 AbstractVM: CMakeFiles/AbstractVM.dir/build.make
 AbstractVM: CMakeFiles/AbstractVM.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable AbstractVM"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable AbstractVM"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/AbstractVM.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -204,10 +126,7 @@ CMakeFiles/AbstractVM.dir/build: AbstractVM
 .PHONY : CMakeFiles/AbstractVM.dir/build
 
 CMakeFiles/AbstractVM.dir/requires: CMakeFiles/AbstractVM.dir/main.cpp.o.requires
-CMakeFiles/AbstractVM.dir/requires: CMakeFiles/AbstractVM.dir/OperandFactoryClass/OperandFactory.cpp.o.requires
-CMakeFiles/AbstractVM.dir/requires: CMakeFiles/AbstractVM.dir/TaskAdd.cpp.o.requires
-CMakeFiles/AbstractVM.dir/requires: CMakeFiles/AbstractVM.dir/OperandTypeClasses/Int8_Operand.cpp.o.requires
-CMakeFiles/AbstractVM.dir/requires: CMakeFiles/AbstractVM.dir/AbstractVM_SingletonClass/AbstractVM.cpp.o.requires
+CMakeFiles/AbstractVM.dir/requires: CMakeFiles/AbstractVM.dir/OperandFactoryClass/FactoryOperand.cpp.o.requires
 
 .PHONY : CMakeFiles/AbstractVM.dir/requires
 
