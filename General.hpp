@@ -9,8 +9,6 @@
 #include <array>
 #include <string>
 
-using CortageType = std::tuple<long int, double>;
-
 enum eOperandType {
 	Int8,
 	Int16,

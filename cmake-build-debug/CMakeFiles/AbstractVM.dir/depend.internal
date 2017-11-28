@@ -3,15 +3,15 @@
 
 CMakeFiles/AbstractVM.dir/OperandFactoryClass/FactoryOperand.cpp.o
  /Users/Henprokuror/CLionProjects/AbstractVM_/General.hpp
+ /Users/Henprokuror/CLionProjects/AbstractVM_/LoggerException/LoggerException.hpp
  /Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactoryClass/FactoryOperand.cpp
  /Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactoryClass/FactoryOperand.hpp
  /Users/Henprokuror/CLionProjects/AbstractVM_/OperandTypeClasses/IOperand.hpp
  /Users/Henprokuror/CLionProjects/AbstractVM_/OperandTypeClasses/Operand.hpp
- /Users/Henprokuror/CLionProjects/AbstractVM_/PrecisionHandlingClass/PrecisionHandleClass.hpp
 CMakeFiles/AbstractVM.dir/main.cpp.o
  /Users/Henprokuror/CLionProjects/AbstractVM_/General.hpp
+ /Users/Henprokuror/CLionProjects/AbstractVM_/LoggerException/LoggerException.hpp
  /Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactoryClass/FactoryOperand.hpp
  /Users/Henprokuror/CLionProjects/AbstractVM_/OperandTypeClasses/IOperand.hpp
  /Users/Henprokuror/CLionProjects/AbstractVM_/OperandTypeClasses/Operand.hpp
- /Users/Henprokuror/CLionProjects/AbstractVM_/PrecisionHandlingClass/PrecisionHandleClass.hpp
  /Users/Henprokuror/CLionProjects/AbstractVM_/main.cpp

@@ -83,6 +83,9 @@
 		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/General.hpp">
 			<Option target="AbstractVM"/>
 		</Unit>
+		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/LoggerException/LoggerException.hpp">
+			<Option target="AbstractVM"/>
+		</Unit>
 		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactoryClass/FactoryOperand.cpp">
 			<Option target="AbstractVM"/>
 		</Unit>
@@ -93,9 +96,6 @@
 			<Option target="AbstractVM"/>
 		</Unit>
 		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/OperandTypeClasses/Operand.hpp">
-			<Option target="AbstractVM"/>
-		</Unit>
-		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/PrecisionHandlingClass/PrecisionHandleClass.hpp">
 			<Option target="AbstractVM"/>
 		</Unit>
 		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/main.cpp">

@@ -14,6 +14,10 @@ array
 string
 -
 
+/Users/Henprokuror/CLionProjects/AbstractVM_/LoggerException/LoggerException.hpp
+../General.hpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/General.hpp
+
 /Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactoryClass/FactoryOperand.cpp
 FactoryOperand.hpp
 /Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactoryClass/FactoryOperand.hpp
@@ -35,14 +39,10 @@ FactoryOperand.hpp
 /Users/Henprokuror/CLionProjects/AbstractVM_/General.hpp
 ../OperandTypeClasses/IOperand.hpp
 /Users/Henprokuror/CLionProjects/AbstractVM_/OperandTypeClasses/IOperand.hpp
-../PrecisionHandlingClass/PrecisionHandleClass.hpp
-/Users/Henprokuror/CLionProjects/AbstractVM_/PrecisionHandlingClass/PrecisionHandleClass.hpp
+../LoggerException/LoggerException.hpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/LoggerException/LoggerException.hpp
 ../OperandFactoryClass/FactoryOperand.hpp
 /Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactoryClass/FactoryOperand.hpp
-
-/Users/Henprokuror/CLionProjects/AbstractVM_/PrecisionHandlingClass/PrecisionHandleClass.hpp
-../General.hpp
-/Users/Henprokuror/CLionProjects/AbstractVM_/General.hpp
 
 /Users/Henprokuror/CLionProjects/AbstractVM_/main.cpp
 General.hpp

@@ -23,21 +23,21 @@ FactoryOperand *FactoryOperand::Instance() {
 }
 
 IOperand const * FactoryOperand::createInt8(const std::string &value) {
-	return new Operand<Int8>(value);
+	return new Operand<int8_t>(value, Int8);
 }
 
 IOperand const * FactoryOperand::createInt16(const std::string &value) {
-	return new Operand<Int16>(value);
+	return new Operand<int16_t >(value, Int16);
 }
 
 IOperand const * FactoryOperand::createInt32(const std::string &value) {
-	return new Operand<Int32>(value);
+	return new Operand<int32_t >(value, Int32);
 }
 
 IOperand const * FactoryOperand::createFloat(const std::string &value) {
-	return new Operand<Float>(value);
+	return new Operand<float>(value, Float);
 }
 
 IOperand const * FactoryOperand::createDouble(const std::string &value) {
-	return new Operand<Double>(value);
+	return new Operand<double >(value, Double);
 }

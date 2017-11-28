@@ -9,7 +9,7 @@
 #include "../OperandTypeClasses/IOperand.hpp"
 
 // *** Forward declaration: template <eOperandType T> class Operand; *** //
-template <eOperandType T>
+template <typename T>
 class Operand;
 
 class FactoryOperand {

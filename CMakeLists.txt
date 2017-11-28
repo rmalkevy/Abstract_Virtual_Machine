@@ -7,6 +7,6 @@ set(SOURCE_FILES main.cpp
         OperandTypeClasses/IOperand.hpp
         OperandFactoryClass/FactoryOperand.cpp OperandFactoryClass/FactoryOperand.hpp
         General.hpp
-        PrecisionHandlingClass/PrecisionHandleClass.hpp
+        LoggerException/LoggerException.hpp
         OperandTypeClasses/Operand.hpp)
 add_executable(AbstractVM ${SOURCE_FILES})

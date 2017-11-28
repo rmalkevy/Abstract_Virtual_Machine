@@ -35,8 +35,8 @@ int main() {
 //	}
 
 	{
-		Operand<Int8> aa("34");
-		Operand<Double> bb("-24.50");
+		Operand<int8_t > aa("34", Int8);
+		Operand<double> bb("-24000000000000000000.50", Double);
 
 		IOperand const *a = &aa;
 		IOperand const *b = &bb;
@@ -49,8 +49,8 @@ int main() {
 	}
 
 	{
-		Operand<Double> aa("34");
-		Operand<Int32> bb("-24.50");
+		Operand<int8_t> aa("34", Int8);
+		Operand<int32_t> bb("-24.50", Int32);
 
 		IOperand const *a = &aa;
 		IOperand const *b = &bb;
