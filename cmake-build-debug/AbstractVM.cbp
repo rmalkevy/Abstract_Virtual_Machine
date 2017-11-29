@@ -80,7 +80,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/AbstractVM_SingletonClass/AbstractVM.cpp">
+			<Option target="AbstractVM"/>
+		</Unit>
+		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/AbstractVM_SingletonClass/AbstractVM.hpp">
+			<Option target="AbstractVM"/>
+		</Unit>
 		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/General.hpp">
+			<Option target="AbstractVM"/>
+		</Unit>
+		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/Lexer/Lexer.cpp">
+			<Option target="AbstractVM"/>
+		</Unit>
+		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/Lexer/Lexer.hpp">
 			<Option target="AbstractVM"/>
 		</Unit>
 		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/LoggerException/LoggerException.hpp">

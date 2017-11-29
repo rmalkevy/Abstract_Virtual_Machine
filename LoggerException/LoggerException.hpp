@@ -23,3 +23,23 @@ public:
 
 
 #endif //ABSTRACTVM_PRECISIONHANDLE_SINGLETONCLASS_HPP
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         ;sldjfsldkfj
