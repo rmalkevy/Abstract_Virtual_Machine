@@ -18,35 +18,37 @@ string
 ../General.hpp
 /Users/Henprokuror/CLionProjects/AbstractVM_/General.hpp
 
-/Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactoryClass/FactoryOperand.cpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactory/FactoryOperand.cpp
 FactoryOperand.hpp
-/Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactoryClass/FactoryOperand.hpp
-../OperandTypeClasses/Operand.hpp
-/Users/Henprokuror/CLionProjects/AbstractVM_/OperandTypeClasses/Operand.hpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactory/FactoryOperand.hpp
+../OperandType/Operand.hpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/OperandType/Operand.hpp
 
-/Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactoryClass/FactoryOperand.hpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactory/FactoryOperand.hpp
 ../General.hpp
 /Users/Henprokuror/CLionProjects/AbstractVM_/General.hpp
-../OperandTypeClasses/IOperand.hpp
-/Users/Henprokuror/CLionProjects/AbstractVM_/OperandTypeClasses/IOperand.hpp
+../OperandType/IOperand.hpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/OperandType/IOperand.hpp
 
-/Users/Henprokuror/CLionProjects/AbstractVM_/OperandTypeClasses/IOperand.hpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/OperandType/IOperand.hpp
 ../General.hpp
 /Users/Henprokuror/CLionProjects/AbstractVM_/General.hpp
 
-/Users/Henprokuror/CLionProjects/AbstractVM_/OperandTypeClasses/Operand.hpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/OperandType/Operand.hpp
 ../General.hpp
 /Users/Henprokuror/CLionProjects/AbstractVM_/General.hpp
-../OperandTypeClasses/IOperand.hpp
-/Users/Henprokuror/CLionProjects/AbstractVM_/OperandTypeClasses/IOperand.hpp
+../OperandType/IOperand.hpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/OperandType/IOperand.hpp
 ../LoggerException/LoggerException.hpp
 /Users/Henprokuror/CLionProjects/AbstractVM_/LoggerException/LoggerException.hpp
-../OperandFactoryClass/FactoryOperand.hpp
-/Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactoryClass/FactoryOperand.hpp
+../OperandFactory/FactoryOperand.hpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactory/FactoryOperand.hpp
 
 /Users/Henprokuror/CLionProjects/AbstractVM_/main.cpp
+iostream
+-
 General.hpp
 /Users/Henprokuror/CLionProjects/AbstractVM_/General.hpp
-OperandTypeClasses/Operand.hpp
-/Users/Henprokuror/CLionProjects/AbstractVM_/OperandTypeClasses/Operand.hpp
+OperandType/Operand.hpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/OperandType/Operand.hpp
 

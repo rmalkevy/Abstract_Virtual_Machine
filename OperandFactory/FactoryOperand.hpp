@@ -6,7 +6,7 @@
 #define ABSTRACTVM_OPERANDFACTORY_HPP
 
 #include "../General.hpp"
-#include "../OperandTypeClasses/IOperand.hpp"
+#include "../OperandType/IOperand.hpp"
 
 // *** Forward declaration: template <eOperandType T> class Operand; *** //
 template <typename T>

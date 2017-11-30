@@ -123,33 +123,6 @@ AbstractVM/fast:
 	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/build
 .PHONY : AbstractVM/fast
 
-AbstractVM_SingletonClass/AbstractVM.o: AbstractVM_SingletonClass/AbstractVM.cpp.o
-
-.PHONY : AbstractVM_SingletonClass/AbstractVM.o
-
-# target to build an object file
-AbstractVM_SingletonClass/AbstractVM.cpp.o:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/AbstractVM_SingletonClass/AbstractVM.cpp.o
-.PHONY : AbstractVM_SingletonClass/AbstractVM.cpp.o
-
-AbstractVM_SingletonClass/AbstractVM.i: AbstractVM_SingletonClass/AbstractVM.cpp.i
-
-.PHONY : AbstractVM_SingletonClass/AbstractVM.i
-
-# target to preprocess a source file
-AbstractVM_SingletonClass/AbstractVM.cpp.i:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/AbstractVM_SingletonClass/AbstractVM.cpp.i
-.PHONY : AbstractVM_SingletonClass/AbstractVM.cpp.i
-
-AbstractVM_SingletonClass/AbstractVM.s: AbstractVM_SingletonClass/AbstractVM.cpp.s
-
-.PHONY : AbstractVM_SingletonClass/AbstractVM.s
-
-# target to generate assembly for a file
-AbstractVM_SingletonClass/AbstractVM.cpp.s:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/AbstractVM_SingletonClass/AbstractVM.cpp.s
-.PHONY : AbstractVM_SingletonClass/AbstractVM.cpp.s
-
 Lexer/Lexer.o: Lexer/Lexer.cpp.o
 
 .PHONY : Lexer/Lexer.o
@@ -176,33 +149,6 @@ Lexer/Lexer.s: Lexer/Lexer.cpp.s
 Lexer/Lexer.cpp.s:
 	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/Lexer/Lexer.cpp.s
 .PHONY : Lexer/Lexer.cpp.s
-
-OperandFactoryClass/FactoryOperand.o: OperandFactoryClass/FactoryOperand.cpp.o
-
-.PHONY : OperandFactoryClass/FactoryOperand.o
-
-# target to build an object file
-OperandFactoryClass/FactoryOperand.cpp.o:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/OperandFactoryClass/FactoryOperand.cpp.o
-.PHONY : OperandFactoryClass/FactoryOperand.cpp.o
-
-OperandFactoryClass/FactoryOperand.i: OperandFactoryClass/FactoryOperand.cpp.i
-
-.PHONY : OperandFactoryClass/FactoryOperand.i
-
-# target to preprocess a source file
-OperandFactoryClass/FactoryOperand.cpp.i:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/OperandFactoryClass/FactoryOperand.cpp.i
-.PHONY : OperandFactoryClass/FactoryOperand.cpp.i
-
-OperandFactoryClass/FactoryOperand.s: OperandFactoryClass/FactoryOperand.cpp.s
-
-.PHONY : OperandFactoryClass/FactoryOperand.s
-
-# target to generate assembly for a file
-OperandFactoryClass/FactoryOperand.cpp.s:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/OperandFactoryClass/FactoryOperand.cpp.s
-.PHONY : OperandFactoryClass/FactoryOperand.cpp.s
 
 main.o: main.cpp.o
 
@@ -240,15 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... AbstractVM"
-	@echo "... AbstractVM_SingletonClass/AbstractVM.o"
-	@echo "... AbstractVM_SingletonClass/AbstractVM.i"
-	@echo "... AbstractVM_SingletonClass/AbstractVM.s"
 	@echo "... Lexer/Lexer.o"
 	@echo "... Lexer/Lexer.i"
 	@echo "... Lexer/Lexer.s"
-	@echo "... OperandFactoryClass/FactoryOperand.o"
-	@echo "... OperandFactoryClass/FactoryOperand.i"
-	@echo "... OperandFactoryClass/FactoryOperand.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

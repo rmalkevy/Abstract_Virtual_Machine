@@ -3,7 +3,7 @@
 //
 
 #include "FactoryOperand.hpp"
-#include "../OperandTypeClasses/Operand.hpp"
+#include "../OperandType/Operand.hpp"
 
 FactoryOperand::FactoryOperand() {
 	_arrPf[Int8] = &FactoryOperand::createInt8;

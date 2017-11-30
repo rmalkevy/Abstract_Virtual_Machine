@@ -6,7 +6,7 @@
 #define ABSTRACTVM_OPERAND_HPP
 
 #include "../General.hpp"
-#include "../OperandTypeClasses/IOperand.hpp"
+#include "../OperandType/IOperand.hpp"
 #include "../LoggerException/LoggerException.hpp"
 
 // *** Forward declaration: class FactoryOperand *** //
@@ -64,7 +64,7 @@ const LoggerException Operand<T>::_loggerException;
 //*** Implementation member functions - operators ***//
 //
 
-#include "../OperandFactoryClass/FactoryOperand.hpp"
+#include "../OperandFactory/FactoryOperand.hpp"
 
 //*** Sum operator ***//
 
