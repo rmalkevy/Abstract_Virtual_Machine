@@ -80,10 +80,40 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/AbstractVM/AbstractVM.cpp">
+			<Option target="AbstractVM"/>
+		</Unit>
+		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/AbstractVM/AbstractVM.hpp">
+			<Option target="AbstractVM"/>
+		</Unit>
+		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/General.cpp">
+			<Option target="AbstractVM"/>
+		</Unit>
+		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/General.hpp">
+			<Option target="AbstractVM"/>
+		</Unit>
 		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/Lexer/Lexer.cpp">
 			<Option target="AbstractVM"/>
 		</Unit>
 		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/Lexer/Lexer.hpp">
+			<Option target="AbstractVM"/>
+		</Unit>
+		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactory/FactoryOperand.cpp">
+			<Option target="AbstractVM"/>
+		</Unit>
+		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactory/FactoryOperand.hpp">
+			<Option target="AbstractVM"/>
+		</Unit>
+		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/OperandType/IOperand.hpp">
+			<Option target="AbstractVM"/>
+		</Unit>
+		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/OperandType/Operand.hpp">
+			<Option target="AbstractVM"/>
+		</Unit>
+		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/Tasker/Tasker.cpp">
+			<Option target="AbstractVM"/>
+		</Unit>
+		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/Tasker/Tasker.hpp">
 			<Option target="AbstractVM"/>
 		</Unit>
 		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/main.cpp">

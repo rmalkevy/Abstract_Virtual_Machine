@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+/Users/Henprokuror/CLionProjects/AbstractVM_/AbstractVM/AbstractVM.cpp
+AbstractVM.hpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/AbstractVM/AbstractVM.hpp
+
+/Users/Henprokuror/CLionProjects/AbstractVM_/AbstractVM/AbstractVM.hpp
+../OperandFactory/FactoryOperand.hpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactory/FactoryOperand.hpp
+../Lexer/Lexer.hpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/Lexer/Lexer.hpp
+
 /Users/Henprokuror/CLionProjects/AbstractVM_/General.hpp
 iostream
 -
@@ -13,6 +23,16 @@ array
 -
 string
 -
+
+/Users/Henprokuror/CLionProjects/AbstractVM_/Lexer/Lexer.cpp
+Lexer.hpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/Lexer/Lexer.hpp
+
+/Users/Henprokuror/CLionProjects/AbstractVM_/Lexer/Lexer.hpp
+regex
+-
+../General.hpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/General.hpp
 
 /Users/Henprokuror/CLionProjects/AbstractVM_/LoggerException/LoggerException.hpp
 ../General.hpp
@@ -49,6 +69,10 @@ iostream
 -
 General.hpp
 /Users/Henprokuror/CLionProjects/AbstractVM_/General.hpp
-OperandType/Operand.hpp
-/Users/Henprokuror/CLionProjects/AbstractVM_/OperandType/Operand.hpp
+Lexer/Lexer.hpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/Lexer/Lexer.hpp
+regex
+-
+AbstractVM/AbstractVM.hpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/AbstractVM/AbstractVM.hpp
 

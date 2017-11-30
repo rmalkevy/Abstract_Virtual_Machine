@@ -1,6 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/AbstractVM.dir/main.cpp.o"
+  "CMakeFiles/AbstractVM.dir/AbstractVM/AbstractVM.cpp.o"
+  "CMakeFiles/AbstractVM.dir/OperandFactory/FactoryOperand.cpp.o"
   "CMakeFiles/AbstractVM.dir/Lexer/Lexer.cpp.o"
+  "CMakeFiles/AbstractVM.dir/Tasker/Tasker.cpp.o"
+  "CMakeFiles/AbstractVM.dir/General.cpp.o"
   "AbstractVM.pdb"
   "AbstractVM"
 )

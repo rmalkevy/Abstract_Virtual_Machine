@@ -5,17 +5,25 @@
 #ifndef ABSTRACTVM_ABSTRACTVM_HPP
 #define ABSTRACTVM_ABSTRACTVM_HPP
 
-#include "../OperandFactoryClass/FactoryOperand.hpp"
+#include "../OperandFactory/FactoryOperand.hpp"
 #include "../Lexer/Lexer.hpp"
+#include "../TaskManager/TaskManager.hpp"
 
 class AbstractVM {
 private:
-	FactoryOperand	*_factoryOperand;
-	Lexer 			*lexer;
+
+	Lexer		*_lexer;
+	TaskManager *_taskManager;
+	int			_ac;
+	char		**_av;
 
 public:
 	AbstractVM(int ac, char **av);
 	~AbstractVM();
+
+	void	distributor();
+	void	logicForCycling();
+	//void	logicForReadingFiles();
 
 	//TODO: write all exceptions in list and write they all to console near program end
 	// static that write all exceptions in static list

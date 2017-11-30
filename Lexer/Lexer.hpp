@@ -30,20 +30,19 @@ private:
 	const std::regex _regexFloat;
 	const std::regex _regexDouble;
 	const std::regex _regexNumber;
-
 	std::array<std::regex, 12> _regexArr;
-	bool			_pushCheck;
-	bool			_assertCheck;
-	eOperandType	_typeCheck;
-	std::string		_numberString;
+
+	InfoForTask _infoForCreateOperand;
 
 public:
 	Lexer();
 	~Lexer() = default;
 
-	void	processLine_forDistributor(const std::string &input);
+	size_t	processLine_forTaskManager(const std::string &input);
 	void	analyzeTokens_fromRegexPushAssert(const std::string &input);
 	void	initializeCheckers();
+
+	const InfoForTask&	getInfo_forTask() const;
 };
 
 

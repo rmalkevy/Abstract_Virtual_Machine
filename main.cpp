@@ -1,14 +1,11 @@
-#include <iostream>
-#include "General.hpp"
-#include "Lexer/Lexer.hpp"
-#include <regex>
-//#include "OperandType/Operand.hpp"
-//#include "AbstractVM_SingletonClass/AbstractVM.hpp"
+
+#include "AbstractVM/AbstractVM.hpp"
 
 int main(int ac, char **av) {
 
-	//AbstractVM abstractVM(ac, av);
+	AbstractVM abstractVM(ac, av);
 
+	abstractVM.distributor();
 //	{
 //		Operand<int8_t > aa("34", Int8);
 //		Operand<double> bb("-24000000000000000000.50", Double);
@@ -37,16 +34,6 @@ int main(int ac, char **av) {
 //		std::cout << c->toString() << std::endl;
 //		std::cout << std::endl << std::endl;
 //	}
-
-	Lexer lexer;
-	std::string input;
-	while (true) {
-		std::getline(std::cin, input);
-		if (input == "q") { break; }
-
-		lexer.processLine_forDistributor(input);
-
-	}
 	return 0;
 
 }

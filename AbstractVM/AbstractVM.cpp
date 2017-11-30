@@ -4,19 +4,34 @@
 
 #include "AbstractVM.hpp"
 
-AbstractVM::AbstractVM(int ac, char** av) {
+AbstractVM::AbstractVM(int ac, char** av)
+		: _lexer(new Lexer),
+		  _taskManager(new TaskManager),
+		  _ac(ac),
+		  _av(av)
+{}
 
-	if (ac == 1) {
-		// TODO: cycling
-	}
-	else if (ac == 2) {
-		// TODO: try to read file
-	}
-	else {
-		// Todo: handle error
-	}
+AbstractVM::~AbstractVM() {
+	delete _lexer;
 }
 
-// 1) Todo: function that processing one line with regex
-// 2) Todo: function for cycling and function for read file
-// 3) Todo: lexer
+void AbstractVM::distributor() {
+	if (_ac == 1) {
+		logicForCycling();
+	}
+//	else {
+//		logicForReadingFiles();
+//	}
+}
+
+void AbstractVM::logicForCycling() {
+	std::string	input;
+	eTask		task;
+
+	while (true) {
+		std::getline(std::cin, input);
+		_lexer->processLine_forTaskManager(input);
+		task = _taskManager->taskDistributor(_lexer->getInfo_forTask());
+		if (task == TaskExit) { break; }
+	}
+}

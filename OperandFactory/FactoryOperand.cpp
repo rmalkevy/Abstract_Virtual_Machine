@@ -5,21 +5,24 @@
 #include "FactoryOperand.hpp"
 #include "../OperandType/Operand.hpp"
 
-FactoryOperand::FactoryOperand() {
-	_arrPf[Int8] = &FactoryOperand::createInt8;
-	_arrPf[Int16] = &FactoryOperand::createInt16;
-	_arrPf[Int32] = &FactoryOperand::createInt32;
-	_arrPf[Float] = &FactoryOperand::createFloat;
-	_arrPf[Double] = &FactoryOperand::createDouble;
+FactoryOperand::FactoryOperand()
+		: _arrPf({
+						 &FactoryOperand::createInt8,
+						 &FactoryOperand::createInt16,
+						 &FactoryOperand::createInt32,
+						 &FactoryOperand::createFloat,
+						 &FactoryOperand::createDouble
+				 })
+{
+//	_arrPf[Int8] = &FactoryOperand::createInt8;
+//	_arrPf[Int16] = &FactoryOperand::createInt16;
+//	_arrPf[Int32] = &FactoryOperand::createInt32;
+//	_arrPf[Float] = &FactoryOperand::createFloat;
+//	_arrPf[Double] = &FactoryOperand::createDouble;
 }
 
 IOperand const * FactoryOperand::createOperand(const std::string &value, eOperandType eType) {
 	return (this->*_arrPf[eType])(value);
-}
-
-FactoryOperand *FactoryOperand::Instance() {
-	static FactoryOperand instance;
-	return &instance;
 }
 
 IOperand const * FactoryOperand::createInt8(const std::string &value) {

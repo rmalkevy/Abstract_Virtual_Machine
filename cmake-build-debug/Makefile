@@ -123,6 +123,60 @@ AbstractVM/fast:
 	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/build
 .PHONY : AbstractVM/fast
 
+AbstractVM/AbstractVM.o: AbstractVM/AbstractVM.cpp.o
+
+.PHONY : AbstractVM/AbstractVM.o
+
+# target to build an object file
+AbstractVM/AbstractVM.cpp.o:
+	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/AbstractVM/AbstractVM.cpp.o
+.PHONY : AbstractVM/AbstractVM.cpp.o
+
+AbstractVM/AbstractVM.i: AbstractVM/AbstractVM.cpp.i
+
+.PHONY : AbstractVM/AbstractVM.i
+
+# target to preprocess a source file
+AbstractVM/AbstractVM.cpp.i:
+	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/AbstractVM/AbstractVM.cpp.i
+.PHONY : AbstractVM/AbstractVM.cpp.i
+
+AbstractVM/AbstractVM.s: AbstractVM/AbstractVM.cpp.s
+
+.PHONY : AbstractVM/AbstractVM.s
+
+# target to generate assembly for a file
+AbstractVM/AbstractVM.cpp.s:
+	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/AbstractVM/AbstractVM.cpp.s
+.PHONY : AbstractVM/AbstractVM.cpp.s
+
+General.o: General.cpp.o
+
+.PHONY : General.o
+
+# target to build an object file
+General.cpp.o:
+	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/General.cpp.o
+.PHONY : General.cpp.o
+
+General.i: General.cpp.i
+
+.PHONY : General.i
+
+# target to preprocess a source file
+General.cpp.i:
+	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/General.cpp.i
+.PHONY : General.cpp.i
+
+General.s: General.cpp.s
+
+.PHONY : General.s
+
+# target to generate assembly for a file
+General.cpp.s:
+	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/General.cpp.s
+.PHONY : General.cpp.s
+
 Lexer/Lexer.o: Lexer/Lexer.cpp.o
 
 .PHONY : Lexer/Lexer.o
@@ -149,6 +203,60 @@ Lexer/Lexer.s: Lexer/Lexer.cpp.s
 Lexer/Lexer.cpp.s:
 	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/Lexer/Lexer.cpp.s
 .PHONY : Lexer/Lexer.cpp.s
+
+OperandFactory/FactoryOperand.o: OperandFactory/FactoryOperand.cpp.o
+
+.PHONY : OperandFactory/FactoryOperand.o
+
+# target to build an object file
+OperandFactory/FactoryOperand.cpp.o:
+	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/OperandFactory/FactoryOperand.cpp.o
+.PHONY : OperandFactory/FactoryOperand.cpp.o
+
+OperandFactory/FactoryOperand.i: OperandFactory/FactoryOperand.cpp.i
+
+.PHONY : OperandFactory/FactoryOperand.i
+
+# target to preprocess a source file
+OperandFactory/FactoryOperand.cpp.i:
+	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/OperandFactory/FactoryOperand.cpp.i
+.PHONY : OperandFactory/FactoryOperand.cpp.i
+
+OperandFactory/FactoryOperand.s: OperandFactory/FactoryOperand.cpp.s
+
+.PHONY : OperandFactory/FactoryOperand.s
+
+# target to generate assembly for a file
+OperandFactory/FactoryOperand.cpp.s:
+	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/OperandFactory/FactoryOperand.cpp.s
+.PHONY : OperandFactory/FactoryOperand.cpp.s
+
+Tasker/Tasker.o: Tasker/Tasker.cpp.o
+
+.PHONY : Tasker/Tasker.o
+
+# target to build an object file
+Tasker/Tasker.cpp.o:
+	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/Tasker/Tasker.cpp.o
+.PHONY : Tasker/Tasker.cpp.o
+
+Tasker/Tasker.i: Tasker/Tasker.cpp.i
+
+.PHONY : Tasker/Tasker.i
+
+# target to preprocess a source file
+Tasker/Tasker.cpp.i:
+	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/Tasker/Tasker.cpp.i
+.PHONY : Tasker/Tasker.cpp.i
+
+Tasker/Tasker.s: Tasker/Tasker.cpp.s
+
+.PHONY : Tasker/Tasker.s
+
+# target to generate assembly for a file
+Tasker/Tasker.cpp.s:
+	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/Tasker/Tasker.cpp.s
+.PHONY : Tasker/Tasker.cpp.s
 
 main.o: main.cpp.o
 
@@ -186,9 +294,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... AbstractVM"
+	@echo "... AbstractVM/AbstractVM.o"
+	@echo "... AbstractVM/AbstractVM.i"
+	@echo "... AbstractVM/AbstractVM.s"
+	@echo "... General.o"
+	@echo "... General.i"
+	@echo "... General.s"
 	@echo "... Lexer/Lexer.o"
 	@echo "... Lexer/Lexer.i"
 	@echo "... Lexer/Lexer.s"
+	@echo "... OperandFactory/FactoryOperand.o"
+	@echo "... OperandFactory/FactoryOperand.i"
+	@echo "... OperandFactory/FactoryOperand.s"
+	@echo "... Tasker/Tasker.o"
+	@echo "... Tasker/Tasker.i"
+	@echo "... Tasker/Tasker.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
