@@ -4,10 +4,17 @@
 
 #include "General.hpp"
 
-InfoForTask::InfoForTask(bool push, bool assert, eOperandType type, const std::string &value)
-		: task(11),
-		  pushCheck(push),
-		  assertCheck(assert),
-		  typeCheck(type),
-		  numberString(value)
+InfoForTask::InfoForTask(eOperandType type, const std::string &value)
+		: task(0),
+		  type(type),
+		  value(value)
 {}
+
+InfoForTask& InfoForTask::operator=(const InfoForTask &info) {
+	if (this != &info) {
+		task = info.task;
+		type = info.type;
+		value = info.value;
+	}
+	return *this;
+}

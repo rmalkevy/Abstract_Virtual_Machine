@@ -9,8 +9,8 @@ set(SOURCE_FILES
         OperandType/IOperand.hpp
         OperandFactory/FactoryOperand.cpp OperandFactory/FactoryOperand.hpp
         General.hpp
-#        LoggerException/LoggerException.hpp
+#        LogException/LogException.hpp
         OperandType/Operand.hpp
         Lexer/Lexer.cpp Lexer/Lexer.hpp
-        TaskManager/TaskManager.cpp TaskManager/TaskManager.hpp General.cpp)
+        TaskManager/TaskManager.cpp TaskManager/TaskManager.hpp General.cpp LogException/LogException.cpp)
 add_executable(AbstractVM ${SOURCE_FILES})

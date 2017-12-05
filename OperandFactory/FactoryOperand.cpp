@@ -6,19 +6,18 @@
 #include "../OperandType/Operand.hpp"
 
 FactoryOperand::FactoryOperand()
-		: _arrPf({
+		: _arrPf{
 						 &FactoryOperand::createInt8,
 						 &FactoryOperand::createInt16,
 						 &FactoryOperand::createInt32,
 						 &FactoryOperand::createFloat,
 						 &FactoryOperand::createDouble
-				 })
-{
-//	_arrPf[Int8] = &FactoryOperand::createInt8;
-//	_arrPf[Int16] = &FactoryOperand::createInt16;
-//	_arrPf[Int32] = &FactoryOperand::createInt32;
-//	_arrPf[Float] = &FactoryOperand::createFloat;
-//	_arrPf[Double] = &FactoryOperand::createDouble;
+				 }
+{}
+
+FactoryOperand* FactoryOperand::Instance() {
+	static FactoryOperand instance;
+	return &instance;
 }
 
 IOperand const * FactoryOperand::createOperand(const std::string &value, eOperandType eType) {
@@ -26,21 +25,21 @@ IOperand const * FactoryOperand::createOperand(const std::string &value, eOperan
 }
 
 IOperand const * FactoryOperand::createInt8(const std::string &value) {
-	return new Operand<int8_t>(value, Int8);
+	return new Operand<Int8>(value);
 }
 
 IOperand const * FactoryOperand::createInt16(const std::string &value) {
-	return new Operand<int16_t >(value, Int16);
+	return new Operand<Int16>(value);
 }
 
 IOperand const * FactoryOperand::createInt32(const std::string &value) {
-	return new Operand<int32_t >(value, Int32);
+	return new Operand<Int32>(value);
 }
 
 IOperand const * FactoryOperand::createFloat(const std::string &value) {
-	return new Operand<float>(value, Float);
+	return new Operand<Float>(value);
 }
 
 IOperand const * FactoryOperand::createDouble(const std::string &value) {
-	return new Operand<double >(value, Double);
+	return new Operand<Double>(value);
 }

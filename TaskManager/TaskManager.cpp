@@ -3,11 +3,14 @@
 //
 
 #include "TaskManager.hpp"
+#include "../LogException/LogException.hpp"
 
-TaskManager::TaskManager(std::stack<IOperand*> & stack)
-		: _stack(stack),
-		  _factoryOperand(std::make_unique<FactoryOperand>()),
-		  _arrPfTask({
+eTaskSignal TaskManager::_taskSignal = TaskDefault;
+
+TaskManager::TaskManager()
+		: _stack(),
+		  _info(NumberOperands, ""),
+		  _arrPfTask{
 							 &TaskManager::_pushTask,
 							 &TaskManager::_assertTask,
 							 &TaskManager::_addTask,
@@ -21,78 +24,160 @@ TaskManager::TaskManager(std::stack<IOperand*> & stack)
 							 &TaskManager::_exitTask,
 							 &TaskManager::_endCircleTask,
 							 &TaskManager::_commentTask
-					 })
+					 }
+{}
 
-{
-//
-//	_arrPfTask[0] = &TaskManager::_pushTask;
-//	_arrPfTask[1] = &TaskManager::_assertTask;
-//	_arrPfTask[2] = &TaskManager::_addTask;
-//	_arrPfTask[3] = &TaskManager::_subTask;
-//	_arrPfTask[4] = &TaskManager::_mulTask;
-//	_arrPfTask[5] = &TaskManager::_divTask;
-//	_arrPfTask[6] = &TaskManager::_modTask;
-//	_arrPfTask[7] = &TaskManager::_popTask;
-//	_arrPfTask[8] = &TaskManager::_dumpTask;
-//	_arrPfTask[9] = &TaskManager::_printTask;
-//	_arrPfTask[10] = &TaskManager::_exitTask;
-//	_arrPfTask[11] = &TaskManager::_endCircleTask;
-//	_arrPfTask[12] = &TaskManager::_commentTask;
-}
-
-eTask TaskManager::taskDistributor(const InfoForTask &info) {
+eTaskSignal TaskManager::taskDistributor(const InfoForTask &info) {
+	_info = info;
+	if (info.task == TaskEmpty)
+		return TaskEmpty;
 	return (this->*_arrPfTask[info.task])();
 	// TODO: return eTask;
 }
 
-eTask TaskManager::_pushTask() {
+eTaskSignal TaskManager::_pushTask() {
+	std::cout << "pushTask" << std::endl;
+
+	if (_info.type <= Int32) {
+		auto value = std::stol(_info.value);
+		LogException::Instance()->IsInRange<long>(value, _info.type);
+	}
+	else {
+		auto value = std::stod(_info.value);
+		LogException::Instance()->IsInRange<double>(value, _info.type);
+	}
+	auto iOperand = std::make_shared<const IOperand*>(FactoryOperand::Instance()->createOperand(_info.value, _info.type));
+	_stack.push_front(iOperand);
 	return TaskDefault;
 }
 
-eTask TaskManager::_assertTask() {
+eTaskSignal TaskManager::_assertTask() {
+	std::cout << "assertTask" << std::endl;
+
+	if (_info.type <= Int32) {
+		auto value = std::stol(_info.value);
+		LogException::Instance()->IsInRange<long>(value, _info.type);
+	}
+	else {
+		auto value = std::stod(_info.value);
+		LogException::Instance()->IsInRange<double>(value, _info.type);
+	}
+	auto top = *_stack.begin();
+	if (! ((*top)->toString() == _info.value) && ((*top)->getType() == _info.type)) {
+		throw LogException::BadAssertInstructionError();
+	}
+	std::cout << "Instruction assert : values equal !" << std::endl;
 	return TaskDefault;
 }
 
-eTask TaskManager::_addTask() {
+eTaskSignal TaskManager::_addTask() {
+	std::cout << "addTask" << std::endl;
+
+	if (_stack.size() < 2)
+		throw LogException::LessThanTwoValuesInStackError();
+	auto a = *(*_stack.begin()); _stack.erase(_stack.begin());
+	auto b = *(*_stack.begin()); _stack.erase(_stack.begin());
+	auto c = std::make_shared<const IOperand*>(*a + *b);
+	_stack.push_front(c);
 	return TaskDefault;
 }
 
-eTask TaskManager::_subTask() {
+eTaskSignal TaskManager::_subTask() {
+	std::cout << "subTask" << std::endl;
+
+	if (_stack.size() < 2)
+		throw LogException::LessThanTwoValuesInStackError();
+	auto a = *(*_stack.begin()); _stack.erase(_stack.begin());
+	auto b = *(*_stack.begin()); _stack.erase(_stack.begin());
+	auto c = std::make_shared<const IOperand*>(*a - *b);
+	_stack.push_front(c);
 	return TaskDefault;
 }
 
-eTask TaskManager::_mulTask() {
+eTaskSignal TaskManager::_mulTask() {
+	std::cout << "mulTask" << std::endl;
+
+	if (_stack.size() < 2)
+		throw LogException::LessThanTwoValuesInStackError();
+	auto a = *(*_stack.begin()); _stack.erase(_stack.begin());
+	auto b = *(*_stack.begin()); _stack.erase(_stack.begin());
+	auto c = std::make_shared<const IOperand*>(*a * *b);
+	_stack.push_front(c);
 	return TaskDefault;
 }
 
-eTask TaskManager::_divTask() {
+eTaskSignal TaskManager::_divTask() {
+	std::cout << "divTask" << std::endl;
+
+	if (_stack.size() < 2)
+		throw LogException::LessThanTwoValuesInStackError();
+	auto a = *(*_stack.begin()); _stack.erase(_stack.begin());
+	auto b = *(*_stack.begin()); _stack.erase(_stack.begin());
+	auto c = std::make_shared<const IOperand*>(*a / *b);
+	_stack.push_front(c);
 	return TaskDefault;
 }
 
-eTask TaskManager::_modTask() {
+eTaskSignal TaskManager::_modTask() {
+	std::cout << "modTask" << std::endl;
+
+	if (_stack.size() < 2)
+		throw LogException::LessThanTwoValuesInStackError();
+	auto a = *(*_stack.begin()); _stack.erase(_stack.begin());
+	auto b = *(*_stack.begin()); _stack.erase(_stack.begin());
+	auto c = std::make_shared<const IOperand*>(*a % *b);
+	_stack.push_front(c);
 	return TaskDefault;
 }
 
-eTask TaskManager::_popTask() {
+eTaskSignal TaskManager::_popTask() {
+	std::cout << "popTask" << std::endl;
+
+	if (_stack.empty()) {
+		LogException::PopEmptyStackError();
+	}
+	_stack.erase(_stack.begin());
 	return TaskDefault;
 }
 
-eTask TaskManager::_dumpTask() {
+eTaskSignal TaskManager::_dumpTask() {
+	std::cout << "dumpTask" << std::endl;
+
+	for (auto const & item : _stack) {
+		std::cout << (*item)->toString() << std::endl;
+	}
 	return TaskDefault;
 }
 
-eTask TaskManager::_printTask() {
+eTaskSignal TaskManager::_printTask() {
+	std::cout << "printTask" << std::endl;
+
+	auto top = *_stack.begin();
+	if ((*top)->getType() != Int8) {
+		throw LogException::TopValueNotChar();
+	}
+	auto a = static_cast<char>(std::stoi((*top)->toString()));
+	std::cout << a << std::endl;
 	return TaskDefault;
 }
 
-eTask TaskManager::_exitTask() {
+eTaskSignal TaskManager::_exitTask() {
+	std::cout << "exitTask" << std::endl;
+	TaskManager::taskSignal() = TaskExit;
 	return TaskExit;
 }
 
-eTask TaskManager::_endCircleTask() {
+eTaskSignal TaskManager::_endCircleTask() {
+	std::cout << "endCircleTask" << std::endl;
+	TaskManager::taskSignal() = TaskExit;
 	return TaskExit;
 }
 
-eTask TaskManager::_commentTask() {
+eTaskSignal TaskManager::_commentTask() {
+	std::cout << "commentTask" << std::endl;
 	return TaskDefault;
+}
+
+eTaskSignal& TaskManager::taskSignal() {
+	return _taskSignal;
 }

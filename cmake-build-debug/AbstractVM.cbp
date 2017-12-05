@@ -98,6 +98,12 @@
 		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/Lexer/Lexer.hpp">
 			<Option target="AbstractVM"/>
 		</Unit>
+		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/LogException/LogException.cpp">
+			<Option target="AbstractVM"/>
+		</Unit>
+		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/LogException/LogException.hpp">
+			<Option target="AbstractVM"/>
+		</Unit>
 		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactory/FactoryOperand.cpp">
 			<Option target="AbstractVM"/>
 		</Unit>
@@ -110,10 +116,10 @@
 		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/OperandType/Operand.hpp">
 			<Option target="AbstractVM"/>
 		</Unit>
-		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/Tasker/Tasker.cpp">
+		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/TaskManager/TaskManager.cpp">
 			<Option target="AbstractVM"/>
 		</Unit>
-		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/Tasker/Tasker.hpp">
+		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/TaskManager/TaskManager.hpp">
 			<Option target="AbstractVM"/>
 		</Unit>
 		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/main.cpp">

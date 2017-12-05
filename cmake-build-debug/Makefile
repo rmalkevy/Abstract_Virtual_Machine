@@ -204,6 +204,33 @@ Lexer/Lexer.cpp.s:
 	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/Lexer/Lexer.cpp.s
 .PHONY : Lexer/Lexer.cpp.s
 
+LogException/LogException.o: LogException/LogException.cpp.o
+
+.PHONY : LogException/LogException.o
+
+# target to build an object file
+LogException/LogException.cpp.o:
+	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/LogException/LogException.cpp.o
+.PHONY : LogException/LogException.cpp.o
+
+LogException/LogException.i: LogException/LogException.cpp.i
+
+.PHONY : LogException/LogException.i
+
+# target to preprocess a source file
+LogException/LogException.cpp.i:
+	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/LogException/LogException.cpp.i
+.PHONY : LogException/LogException.cpp.i
+
+LogException/LogException.s: LogException/LogException.cpp.s
+
+.PHONY : LogException/LogException.s
+
+# target to generate assembly for a file
+LogException/LogException.cpp.s:
+	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/LogException/LogException.cpp.s
+.PHONY : LogException/LogException.cpp.s
+
 OperandFactory/FactoryOperand.o: OperandFactory/FactoryOperand.cpp.o
 
 .PHONY : OperandFactory/FactoryOperand.o
@@ -231,32 +258,32 @@ OperandFactory/FactoryOperand.cpp.s:
 	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/OperandFactory/FactoryOperand.cpp.s
 .PHONY : OperandFactory/FactoryOperand.cpp.s
 
-Tasker/Tasker.o: Tasker/Tasker.cpp.o
+TaskManager/TaskManager.o: TaskManager/TaskManager.cpp.o
 
-.PHONY : Tasker/Tasker.o
+.PHONY : TaskManager/TaskManager.o
 
 # target to build an object file
-Tasker/Tasker.cpp.o:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/Tasker/Tasker.cpp.o
-.PHONY : Tasker/Tasker.cpp.o
+TaskManager/TaskManager.cpp.o:
+	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/TaskManager/TaskManager.cpp.o
+.PHONY : TaskManager/TaskManager.cpp.o
 
-Tasker/Tasker.i: Tasker/Tasker.cpp.i
+TaskManager/TaskManager.i: TaskManager/TaskManager.cpp.i
 
-.PHONY : Tasker/Tasker.i
+.PHONY : TaskManager/TaskManager.i
 
 # target to preprocess a source file
-Tasker/Tasker.cpp.i:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/Tasker/Tasker.cpp.i
-.PHONY : Tasker/Tasker.cpp.i
+TaskManager/TaskManager.cpp.i:
+	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/TaskManager/TaskManager.cpp.i
+.PHONY : TaskManager/TaskManager.cpp.i
 
-Tasker/Tasker.s: Tasker/Tasker.cpp.s
+TaskManager/TaskManager.s: TaskManager/TaskManager.cpp.s
 
-.PHONY : Tasker/Tasker.s
+.PHONY : TaskManager/TaskManager.s
 
 # target to generate assembly for a file
-Tasker/Tasker.cpp.s:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/Tasker/Tasker.cpp.s
-.PHONY : Tasker/Tasker.cpp.s
+TaskManager/TaskManager.cpp.s:
+	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/TaskManager/TaskManager.cpp.s
+.PHONY : TaskManager/TaskManager.cpp.s
 
 main.o: main.cpp.o
 
@@ -303,12 +330,15 @@ help:
 	@echo "... Lexer/Lexer.o"
 	@echo "... Lexer/Lexer.i"
 	@echo "... Lexer/Lexer.s"
+	@echo "... LogException/LogException.o"
+	@echo "... LogException/LogException.i"
+	@echo "... LogException/LogException.s"
 	@echo "... OperandFactory/FactoryOperand.o"
 	@echo "... OperandFactory/FactoryOperand.i"
 	@echo "... OperandFactory/FactoryOperand.s"
-	@echo "... Tasker/Tasker.o"
-	@echo "... Tasker/Tasker.i"
-	@echo "... Tasker/Tasker.s"
+	@echo "... TaskManager/TaskManager.o"
+	@echo "... TaskManager/TaskManager.i"
+	@echo "... TaskManager/TaskManager.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

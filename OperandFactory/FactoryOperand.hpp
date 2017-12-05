@@ -9,7 +9,7 @@
 #include "../OperandType/IOperand.hpp"
 
 // *** Forward declaration: template <eOperandType T> class Operand; *** //
-template <typename T>
+template <eOperandType T>
 class Operand;
 
 class FactoryOperand {
@@ -23,7 +23,6 @@ private:
 
 	using _pfCreateOperand = IOperand const * (FactoryOperand::*)(const std::string &);
 	_pfCreateOperand _arrPf[NumberOperands];
-	//std::array<_pfCreateOperand, NumberOperands> _arrPf;
 
 public:
 	FactoryOperand();
@@ -32,6 +31,8 @@ public:
 	FactoryOperand &operator=(const FactoryOperand&) = delete;
 
 	IOperand const * createOperand(const std::string &value, eOperandType eType);
+
+	static FactoryOperand *Instance();
 };
 
 #endif //ABSTRACTVM_OPERANDFACTORY_HPP

@@ -5,31 +5,29 @@
 #ifndef ABSTRACTVM_OPERAND_HPP
 #define ABSTRACTVM_OPERAND_HPP
 
+#include <cmath>
 #include "../General.hpp"
 #include "../OperandType/IOperand.hpp"
-#include "../LoggerException/LoggerException.hpp"
+#include "../LogException/LogException.hpp"
 
 // *** Forward declaration: class FactoryOperand *** //
 class FactoryOperand;
 
-template <typename T>
+template <eOperandType T> // return to eOperandType template,
 class Operand : public IOperand {
 private:
-	eOperandType					_eType;
-	std::string						_valueString;
-	static const LoggerException 	_loggerException;
+	eOperandType	_eType;
+	std::string		_value;
 
 public:
 	Operand<T>() = delete;
 	Operand<T>(Operand<T> const &) = delete;
 	Operand<T> &operator=(Operand<T> const &) = delete;
 
-	explicit Operand<T>(std::string const & valueString, eOperandType eType)
-			: _eType(eType),
-			  _valueString(valueString)
-	{
-		//_precision.stringToValue(_valueString, _valueOperand, _eType);
-	}
+	explicit Operand<T>(std::string const & valueString)
+			: _eType(T),
+			  _value(valueString)
+	{}
 
 	~Operand<T>() = default;
 
@@ -48,16 +46,9 @@ public:
 	IOperand const * operator%( IOperand const & rhs ) const override; // Modulo
 
 	std::string const & toString() const override {
-		return _valueString; // String representation of the instance
+		return _value; // String representation of the instance
 	}
 };
-
-//
-//*** Initialization static instance ***//
-//
-
-template <typename T>
-const LoggerException Operand<T>::_loggerException;
 
 
 //
@@ -68,7 +59,7 @@ const LoggerException Operand<T>::_loggerException;
 
 //*** Sum operator ***//
 
-template <typename T>
+template <eOperandType T>
 IOperand const * Operand<T>::operator+( IOperand const & rhs ) const {
 
 	// Find out precision of new Operand
@@ -76,96 +67,103 @@ IOperand const * Operand<T>::operator+( IOperand const & rhs ) const {
 
 	// Processing integer type variables
 	if (eType <= Int32) {
-		auto value = std::stol(_valueString) + std::stol(rhs.toString());
-		_loggerException.IsInRange<T, long>(value);
+		auto value = std::stol(_value) + std::stol(rhs.toString());
+		LogException::Instance()->IsInRange<long>(value, eType);
 		return FactoryOperand::Instance()->createOperand(std::to_string(value), _eType);
 	}
 
 	// Processing floating point type variables
-	auto value = std::stod(_valueString) + std::stod(rhs.toString());
-	_loggerException.IsInRange<T, double>(value);
+	auto value = std::stod(_value) + std::stod(rhs.toString());
+	LogException::Instance()->IsInRange<double>(value, eType);
 	return FactoryOperand::Instance()->createOperand(std::to_string(value), _eType);
 }
 
 //*** Difference operator ***//
 
-template <typename T>
+template <eOperandType T>
 IOperand const * Operand<T>::operator-( IOperand const & rhs ) const {
 	// Find out precision of new Operand
 	eOperandType eType = std::max(_eType, rhs.getType());
 
 	// Processing integer type variables
 	if (eType <= Int32) {
-		auto value = std::stol(_valueString) - std::stol(rhs.toString());
-		_loggerException.IsInRange<T, long>(value);
+		auto value = std::stol(_value) - std::stol(rhs.toString());
+		LogException::Instance()->IsInRange<long>(value, eType);
 		return FactoryOperand::Instance()->createOperand(std::to_string(value), _eType);
 	}
 
 	// Processing floating point type variables
-	auto value = std::stod(_valueString) - std::stod(rhs.toString());
-	_loggerException.IsInRange<T, double>(value);
+	auto value = std::stod(_value) - std::stod(rhs.toString());
+	LogException::Instance()->IsInRange<double>(value, eType);
 	return FactoryOperand::Instance()->createOperand(std::to_string(value), _eType);
 }
 
 //*** Product operator ***//
 
-template <typename T>
+template <eOperandType T>
 IOperand const * Operand<T>::operator*( IOperand const & rhs ) const {
 	// Find out precision of new Operand
 	eOperandType eType = std::max(_eType, rhs.getType());
 
 	// Processing integer type variables
 	if (eType <= Int32) {
-		auto value = std::stol(_valueString) * std::stol(rhs.toString());
-		_loggerException.IsInRange<T, long>(value);
+		auto value = std::stol(_value) * std::stol(rhs.toString());
+		LogException::Instance()->IsInRange<long>(value, eType);
 		return FactoryOperand::Instance()->createOperand(std::to_string(value), _eType);
 	}
 
 	// Processing floating point type variables
-	auto value = std::stod(_valueString) * std::stod(rhs.toString());
-	_loggerException.IsInRange<T, double>(value);
+	auto value = std::stod(_value) * std::stod(rhs.toString());
+	LogException::Instance()->IsInRange<double>(value, eType);
 	return FactoryOperand::Instance()->createOperand(std::to_string(value), _eType);
 }
 
 //*** Quotient operator ***//
 
-template <typename T>
+template <eOperandType T>
 IOperand const * Operand<T>::operator/( IOperand const & rhs ) const {
 	// Find out precision of new Operand
 	eOperandType eType = std::max(_eType, rhs.getType());
 
 	// Processing integer type variables
 	if (eType <= Int32) {
-		auto value = std::stol(_valueString) / std::stol(rhs.toString());
-		_loggerException.IsInRange<T, long>(value);
+		auto denominator = std::stol(rhs.toString());
+		if (denominator == 0) throw LogException::DivisionByZeroError();
+		auto value = std::stol(_value) / denominator;
+		LogException::Instance()->IsInRange<long>(value, eType);
 		return FactoryOperand::Instance()->createOperand(std::to_string(value), _eType);
 	}
 
 	// Processing floating point type variables
-	auto value = std::stod(_valueString) / std::stod(rhs.toString());
-	_loggerException.IsInRange<T, double>(value);
+	auto denominator = std::stod(rhs.toString());
+	if (denominator == 0) throw LogException::DivisionByZeroError();
+	auto value = std::stod(_value) / denominator;
+	LogException::Instance()->IsInRange<double>(value, eType);
 	return FactoryOperand::Instance()->createOperand(std::to_string(value), _eType);
 }
 
 //*** Modulo operator ***//
 
-template <typename T>
+template <eOperandType T>
 IOperand const * Operand<T>::operator%( IOperand const & rhs ) const {
 	// Find out precision of new Operand
 	eOperandType eType = std::max(_eType, rhs.getType());
 
 	// Processing integer type variables
-
-	// Maybe exception for modulo on double numbers???
-	auto value = std::stol(_valueString) % std::stol(rhs.toString());
-	_loggerException.IsInRange<T, long>(value);
-	return FactoryOperand::Instance()->createOperand(std::to_string(value), _eType);
-
+	if (eType <= Int32) {
+		auto denominator = std::stol(rhs.toString());
+		if (denominator == 0) throw LogException::ModuloByZeroError();
+		auto value = std::stol(_value) % denominator;
+		LogException::Instance()->IsInRange<long>(value, eType);
+		return FactoryOperand::Instance()->createOperand(std::to_string(value), _eType);
+	}
 
 	// Processing floating point type variables
-//	auto value = std::stod(_valueString) % std::stod(rhs.toString());
-//	_precision.IsInRange<T, double>(value);
-//	return FactoryOperand::Instance()->createOperand(std::to_string(value), _eType);
+	auto denominator = std::stod(rhs.toString());
+	if (denominator == 0) throw LogException::ModuloByZeroError();
+	auto value = fmod(std::stod(_value), denominator);
+	LogException::Instance()->IsInRange<double>(value, eType);
+	return FactoryOperand::Instance()->createOperand(std::to_string(value), _eType);
 }
 
 #endif //ABSTRACTVM_OPERAND_HPP

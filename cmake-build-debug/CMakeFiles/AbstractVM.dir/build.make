@@ -153,28 +153,28 @@ CMakeFiles/AbstractVM.dir/Lexer/Lexer.cpp.o.provides: CMakeFiles/AbstractVM.dir/
 CMakeFiles/AbstractVM.dir/Lexer/Lexer.cpp.o.provides.build: CMakeFiles/AbstractVM.dir/Lexer/Lexer.cpp.o
 
 
-CMakeFiles/AbstractVM.dir/Tasker/Tasker.cpp.o: CMakeFiles/AbstractVM.dir/flags.make
-CMakeFiles/AbstractVM.dir/Tasker/Tasker.cpp.o: ../Tasker/Tasker.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/AbstractVM.dir/Tasker/Tasker.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AbstractVM.dir/Tasker/Tasker.cpp.o -c /Users/Henprokuror/CLionProjects/AbstractVM_/Tasker/Tasker.cpp
+CMakeFiles/AbstractVM.dir/TaskManager/TaskManager.cpp.o: CMakeFiles/AbstractVM.dir/flags.make
+CMakeFiles/AbstractVM.dir/TaskManager/TaskManager.cpp.o: ../TaskManager/TaskManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/AbstractVM.dir/TaskManager/TaskManager.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AbstractVM.dir/TaskManager/TaskManager.cpp.o -c /Users/Henprokuror/CLionProjects/AbstractVM_/TaskManager/TaskManager.cpp
 
-CMakeFiles/AbstractVM.dir/Tasker/Tasker.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AbstractVM.dir/Tasker/Tasker.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Henprokuror/CLionProjects/AbstractVM_/Tasker/Tasker.cpp > CMakeFiles/AbstractVM.dir/Tasker/Tasker.cpp.i
+CMakeFiles/AbstractVM.dir/TaskManager/TaskManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AbstractVM.dir/TaskManager/TaskManager.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Henprokuror/CLionProjects/AbstractVM_/TaskManager/TaskManager.cpp > CMakeFiles/AbstractVM.dir/TaskManager/TaskManager.cpp.i
 
-CMakeFiles/AbstractVM.dir/Tasker/Tasker.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AbstractVM.dir/Tasker/Tasker.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Henprokuror/CLionProjects/AbstractVM_/Tasker/Tasker.cpp -o CMakeFiles/AbstractVM.dir/Tasker/Tasker.cpp.s
+CMakeFiles/AbstractVM.dir/TaskManager/TaskManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AbstractVM.dir/TaskManager/TaskManager.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Henprokuror/CLionProjects/AbstractVM_/TaskManager/TaskManager.cpp -o CMakeFiles/AbstractVM.dir/TaskManager/TaskManager.cpp.s
 
-CMakeFiles/AbstractVM.dir/Tasker/Tasker.cpp.o.requires:
+CMakeFiles/AbstractVM.dir/TaskManager/TaskManager.cpp.o.requires:
 
-.PHONY : CMakeFiles/AbstractVM.dir/Tasker/Tasker.cpp.o.requires
+.PHONY : CMakeFiles/AbstractVM.dir/TaskManager/TaskManager.cpp.o.requires
 
-CMakeFiles/AbstractVM.dir/Tasker/Tasker.cpp.o.provides: CMakeFiles/AbstractVM.dir/Tasker/Tasker.cpp.o.requires
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/Tasker/Tasker.cpp.o.provides.build
-.PHONY : CMakeFiles/AbstractVM.dir/Tasker/Tasker.cpp.o.provides
+CMakeFiles/AbstractVM.dir/TaskManager/TaskManager.cpp.o.provides: CMakeFiles/AbstractVM.dir/TaskManager/TaskManager.cpp.o.requires
+	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/TaskManager/TaskManager.cpp.o.provides.build
+.PHONY : CMakeFiles/AbstractVM.dir/TaskManager/TaskManager.cpp.o.provides
 
-CMakeFiles/AbstractVM.dir/Tasker/Tasker.cpp.o.provides.build: CMakeFiles/AbstractVM.dir/Tasker/Tasker.cpp.o
+CMakeFiles/AbstractVM.dir/TaskManager/TaskManager.cpp.o.provides.build: CMakeFiles/AbstractVM.dir/TaskManager/TaskManager.cpp.o
 
 
 CMakeFiles/AbstractVM.dir/General.cpp.o: CMakeFiles/AbstractVM.dir/flags.make
@@ -201,14 +201,39 @@ CMakeFiles/AbstractVM.dir/General.cpp.o.provides: CMakeFiles/AbstractVM.dir/Gene
 CMakeFiles/AbstractVM.dir/General.cpp.o.provides.build: CMakeFiles/AbstractVM.dir/General.cpp.o
 
 
+CMakeFiles/AbstractVM.dir/LogException/LogException.cpp.o: CMakeFiles/AbstractVM.dir/flags.make
+CMakeFiles/AbstractVM.dir/LogException/LogException.cpp.o: ../LogException/LogException.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/AbstractVM.dir/LogException/LogException.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AbstractVM.dir/LogException/LogException.cpp.o -c /Users/Henprokuror/CLionProjects/AbstractVM_/LogException/LogException.cpp
+
+CMakeFiles/AbstractVM.dir/LogException/LogException.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AbstractVM.dir/LogException/LogException.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Henprokuror/CLionProjects/AbstractVM_/LogException/LogException.cpp > CMakeFiles/AbstractVM.dir/LogException/LogException.cpp.i
+
+CMakeFiles/AbstractVM.dir/LogException/LogException.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AbstractVM.dir/LogException/LogException.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Henprokuror/CLionProjects/AbstractVM_/LogException/LogException.cpp -o CMakeFiles/AbstractVM.dir/LogException/LogException.cpp.s
+
+CMakeFiles/AbstractVM.dir/LogException/LogException.cpp.o.requires:
+
+.PHONY : CMakeFiles/AbstractVM.dir/LogException/LogException.cpp.o.requires
+
+CMakeFiles/AbstractVM.dir/LogException/LogException.cpp.o.provides: CMakeFiles/AbstractVM.dir/LogException/LogException.cpp.o.requires
+	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/LogException/LogException.cpp.o.provides.build
+.PHONY : CMakeFiles/AbstractVM.dir/LogException/LogException.cpp.o.provides
+
+CMakeFiles/AbstractVM.dir/LogException/LogException.cpp.o.provides.build: CMakeFiles/AbstractVM.dir/LogException/LogException.cpp.o
+
+
 # Object files for target AbstractVM
 AbstractVM_OBJECTS = \
 "CMakeFiles/AbstractVM.dir/main.cpp.o" \
 "CMakeFiles/AbstractVM.dir/AbstractVM/AbstractVM.cpp.o" \
 "CMakeFiles/AbstractVM.dir/OperandFactory/FactoryOperand.cpp.o" \
 "CMakeFiles/AbstractVM.dir/Lexer/Lexer.cpp.o" \
-"CMakeFiles/AbstractVM.dir/Tasker/Tasker.cpp.o" \
-"CMakeFiles/AbstractVM.dir/General.cpp.o"
+"CMakeFiles/AbstractVM.dir/TaskManager/TaskManager.cpp.o" \
+"CMakeFiles/AbstractVM.dir/General.cpp.o" \
+"CMakeFiles/AbstractVM.dir/LogException/LogException.cpp.o"
 
 # External object files for target AbstractVM
 AbstractVM_EXTERNAL_OBJECTS =
@@ -217,11 +242,12 @@ AbstractVM: CMakeFiles/AbstractVM.dir/main.cpp.o
 AbstractVM: CMakeFiles/AbstractVM.dir/AbstractVM/AbstractVM.cpp.o
 AbstractVM: CMakeFiles/AbstractVM.dir/OperandFactory/FactoryOperand.cpp.o
 AbstractVM: CMakeFiles/AbstractVM.dir/Lexer/Lexer.cpp.o
-AbstractVM: CMakeFiles/AbstractVM.dir/Tasker/Tasker.cpp.o
+AbstractVM: CMakeFiles/AbstractVM.dir/TaskManager/TaskManager.cpp.o
 AbstractVM: CMakeFiles/AbstractVM.dir/General.cpp.o
+AbstractVM: CMakeFiles/AbstractVM.dir/LogException/LogException.cpp.o
 AbstractVM: CMakeFiles/AbstractVM.dir/build.make
 AbstractVM: CMakeFiles/AbstractVM.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable AbstractVM"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable AbstractVM"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/AbstractVM.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -233,8 +259,9 @@ CMakeFiles/AbstractVM.dir/requires: CMakeFiles/AbstractVM.dir/main.cpp.o.require
 CMakeFiles/AbstractVM.dir/requires: CMakeFiles/AbstractVM.dir/AbstractVM/AbstractVM.cpp.o.requires
 CMakeFiles/AbstractVM.dir/requires: CMakeFiles/AbstractVM.dir/OperandFactory/FactoryOperand.cpp.o.requires
 CMakeFiles/AbstractVM.dir/requires: CMakeFiles/AbstractVM.dir/Lexer/Lexer.cpp.o.requires
-CMakeFiles/AbstractVM.dir/requires: CMakeFiles/AbstractVM.dir/Tasker/Tasker.cpp.o.requires
+CMakeFiles/AbstractVM.dir/requires: CMakeFiles/AbstractVM.dir/TaskManager/TaskManager.cpp.o.requires
 CMakeFiles/AbstractVM.dir/requires: CMakeFiles/AbstractVM.dir/General.cpp.o.requires
+CMakeFiles/AbstractVM.dir/requires: CMakeFiles/AbstractVM.dir/LogException/LogException.cpp.o.requires
 
 .PHONY : CMakeFiles/AbstractVM.dir/requires
 

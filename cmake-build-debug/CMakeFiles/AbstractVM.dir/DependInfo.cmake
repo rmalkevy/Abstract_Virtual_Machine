@@ -7,8 +7,9 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/Henprokuror/CLionProjects/AbstractVM_/AbstractVM/AbstractVM.cpp" "/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/CMakeFiles/AbstractVM.dir/AbstractVM/AbstractVM.cpp.o"
   "/Users/Henprokuror/CLionProjects/AbstractVM_/General.cpp" "/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/CMakeFiles/AbstractVM.dir/General.cpp.o"
   "/Users/Henprokuror/CLionProjects/AbstractVM_/Lexer/Lexer.cpp" "/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/CMakeFiles/AbstractVM.dir/Lexer/Lexer.cpp.o"
+  "/Users/Henprokuror/CLionProjects/AbstractVM_/LogException/LogException.cpp" "/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/CMakeFiles/AbstractVM.dir/LogException/LogException.cpp.o"
   "/Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactory/FactoryOperand.cpp" "/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/CMakeFiles/AbstractVM.dir/OperandFactory/FactoryOperand.cpp.o"
-  "/Users/Henprokuror/CLionProjects/AbstractVM_/Tasker/Tasker.cpp" "/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/CMakeFiles/AbstractVM.dir/Tasker/Tasker.cpp.o"
+  "/Users/Henprokuror/CLionProjects/AbstractVM_/TaskManager/TaskManager.cpp" "/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/CMakeFiles/AbstractVM.dir/TaskManager/TaskManager.cpp.o"
   "/Users/Henprokuror/CLionProjects/AbstractVM_/main.cpp" "/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/CMakeFiles/AbstractVM.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

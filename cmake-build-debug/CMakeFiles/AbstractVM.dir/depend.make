@@ -5,24 +5,50 @@ CMakeFiles/AbstractVM.dir/AbstractVM/AbstractVM.cpp.o: ../AbstractVM/AbstractVM.
 CMakeFiles/AbstractVM.dir/AbstractVM/AbstractVM.cpp.o: ../AbstractVM/AbstractVM.hpp
 CMakeFiles/AbstractVM.dir/AbstractVM/AbstractVM.cpp.o: ../General.hpp
 CMakeFiles/AbstractVM.dir/AbstractVM/AbstractVM.cpp.o: ../Lexer/Lexer.hpp
+CMakeFiles/AbstractVM.dir/AbstractVM/AbstractVM.cpp.o: ../LogException/LogException.hpp
 CMakeFiles/AbstractVM.dir/AbstractVM/AbstractVM.cpp.o: ../OperandFactory/FactoryOperand.hpp
 CMakeFiles/AbstractVM.dir/AbstractVM/AbstractVM.cpp.o: ../OperandType/IOperand.hpp
+CMakeFiles/AbstractVM.dir/AbstractVM/AbstractVM.cpp.o: ../TaskManager/TaskManager.hpp
+
+CMakeFiles/AbstractVM.dir/General.cpp.o: ../General.cpp
+CMakeFiles/AbstractVM.dir/General.cpp.o: ../General.hpp
 
 CMakeFiles/AbstractVM.dir/Lexer/Lexer.cpp.o: ../General.hpp
 CMakeFiles/AbstractVM.dir/Lexer/Lexer.cpp.o: ../Lexer/Lexer.cpp
 CMakeFiles/AbstractVM.dir/Lexer/Lexer.cpp.o: ../Lexer/Lexer.hpp
+CMakeFiles/AbstractVM.dir/Lexer/Lexer.cpp.o: ../LogException/LogException.hpp
+CMakeFiles/AbstractVM.dir/Lexer/Lexer.cpp.o: ../OperandFactory/FactoryOperand.hpp
+CMakeFiles/AbstractVM.dir/Lexer/Lexer.cpp.o: ../OperandType/IOperand.hpp
+CMakeFiles/AbstractVM.dir/Lexer/Lexer.cpp.o: ../TaskManager/TaskManager.hpp
+
+CMakeFiles/AbstractVM.dir/LogException/LogException.cpp.o: ../AbstractVM/AbstractVM.hpp
+CMakeFiles/AbstractVM.dir/LogException/LogException.cpp.o: ../General.hpp
+CMakeFiles/AbstractVM.dir/LogException/LogException.cpp.o: ../Lexer/Lexer.hpp
+CMakeFiles/AbstractVM.dir/LogException/LogException.cpp.o: ../LogException/LogException.cpp
+CMakeFiles/AbstractVM.dir/LogException/LogException.cpp.o: ../LogException/LogException.hpp
+CMakeFiles/AbstractVM.dir/LogException/LogException.cpp.o: ../OperandFactory/FactoryOperand.hpp
+CMakeFiles/AbstractVM.dir/LogException/LogException.cpp.o: ../OperandType/IOperand.hpp
+CMakeFiles/AbstractVM.dir/LogException/LogException.cpp.o: ../TaskManager/TaskManager.hpp
 
 CMakeFiles/AbstractVM.dir/OperandFactory/FactoryOperand.cpp.o: ../General.hpp
-CMakeFiles/AbstractVM.dir/OperandFactory/FactoryOperand.cpp.o: ../LoggerException/LoggerException.hpp
+CMakeFiles/AbstractVM.dir/OperandFactory/FactoryOperand.cpp.o: ../LogException/LogException.hpp
 CMakeFiles/AbstractVM.dir/OperandFactory/FactoryOperand.cpp.o: ../OperandFactory/FactoryOperand.cpp
 CMakeFiles/AbstractVM.dir/OperandFactory/FactoryOperand.cpp.o: ../OperandFactory/FactoryOperand.hpp
 CMakeFiles/AbstractVM.dir/OperandFactory/FactoryOperand.cpp.o: ../OperandType/IOperand.hpp
 CMakeFiles/AbstractVM.dir/OperandFactory/FactoryOperand.cpp.o: ../OperandType/Operand.hpp
+
+CMakeFiles/AbstractVM.dir/TaskManager/TaskManager.cpp.o: ../General.hpp
+CMakeFiles/AbstractVM.dir/TaskManager/TaskManager.cpp.o: ../LogException/LogException.hpp
+CMakeFiles/AbstractVM.dir/TaskManager/TaskManager.cpp.o: ../OperandFactory/FactoryOperand.hpp
+CMakeFiles/AbstractVM.dir/TaskManager/TaskManager.cpp.o: ../OperandType/IOperand.hpp
+CMakeFiles/AbstractVM.dir/TaskManager/TaskManager.cpp.o: ../TaskManager/TaskManager.cpp
+CMakeFiles/AbstractVM.dir/TaskManager/TaskManager.cpp.o: ../TaskManager/TaskManager.hpp
 
 CMakeFiles/AbstractVM.dir/main.cpp.o: ../AbstractVM/AbstractVM.hpp
 CMakeFiles/AbstractVM.dir/main.cpp.o: ../General.hpp
 CMakeFiles/AbstractVM.dir/main.cpp.o: ../Lexer/Lexer.hpp
 CMakeFiles/AbstractVM.dir/main.cpp.o: ../OperandFactory/FactoryOperand.hpp
 CMakeFiles/AbstractVM.dir/main.cpp.o: ../OperandType/IOperand.hpp
+CMakeFiles/AbstractVM.dir/main.cpp.o: ../TaskManager/TaskManager.hpp
 CMakeFiles/AbstractVM.dir/main.cpp.o: ../main.cpp
 

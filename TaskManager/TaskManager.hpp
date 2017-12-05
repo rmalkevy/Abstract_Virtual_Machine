@@ -5,41 +5,42 @@
 #ifndef ABSTRACTVM_TASK_MANAGER_HPP
 #define ABSTRACTVM_TASK_MANAGER_HPP
 
-#include <stack>
+#include <list>
 #include "../General.hpp"
 #include "../OperandFactory/FactoryOperand.hpp"
 
 class TaskManager {
 private:
-	std::stack<IOperand*> & _stack;
-	std::unique_ptr<FactoryOperand> _factoryOperand;
+	std::list< std::shared_ptr<const IOperand*> > _stack;
+	InfoForTask _info;
 
-	using _pfTask = eTask (TaskManager::*)();
+	using _pfTask = eTaskSignal (TaskManager::*)();
 	_pfTask _arrPfTask[13];
-//	std::array<_pfTask, 13> _arrPfTask;
 
-	eTask _pushTask();
-	eTask _assertTask();
-	eTask _addTask();
-	eTask _subTask();
-	eTask _mulTask();
-	eTask _divTask();
-	eTask _modTask();
-	eTask _popTask();
-	eTask _dumpTask();
-	eTask _printTask();
-	eTask _exitTask();
-	eTask _endCircleTask();
-	eTask _commentTask();
+	static eTaskSignal _taskSignal;
+
+	eTaskSignal _pushTask();
+	eTaskSignal _assertTask();
+	eTaskSignal _addTask();
+	eTaskSignal _subTask();
+	eTaskSignal _mulTask();
+	eTaskSignal _divTask();
+	eTaskSignal _modTask();
+	eTaskSignal _popTask();
+	eTaskSignal _dumpTask();
+	eTaskSignal _printTask();
+	eTaskSignal _exitTask();
+	eTaskSignal _endCircleTask();
+	eTaskSignal _commentTask();
 
 public:
-	TaskManager(std::stack<IOperand*> & stack);
+	TaskManager();
 	~TaskManager() = default;
-	TaskManager() = delete;
 	TaskManager(const TaskManager &) = delete;
 	TaskManager &operator=(const TaskManager&) = delete;
 
-	eTask	taskDistributor(const InfoForTask &info);
+	eTaskSignal	taskDistributor(const InfoForTask &info);
+	static eTaskSignal &taskSignal();
 };
 
 #endif //ABSTRACTVM_TASKER_HPP

@@ -9,24 +9,36 @@
 /Users/Henprokuror/CLionProjects/AbstractVM_/AbstractVM/AbstractVM.cpp
 AbstractVM.hpp
 /Users/Henprokuror/CLionProjects/AbstractVM_/AbstractVM/AbstractVM.hpp
+../LogException/LogException.hpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/LogException/LogException.hpp
 
 /Users/Henprokuror/CLionProjects/AbstractVM_/AbstractVM/AbstractVM.hpp
+stack
+-
 ../OperandFactory/FactoryOperand.hpp
 /Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactory/FactoryOperand.hpp
 ../Lexer/Lexer.hpp
 /Users/Henprokuror/CLionProjects/AbstractVM_/Lexer/Lexer.hpp
+../TaskManager/TaskManager.hpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/TaskManager/TaskManager.hpp
+
+/Users/Henprokuror/CLionProjects/AbstractVM_/General.cpp
+General.hpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/General.hpp
 
 /Users/Henprokuror/CLionProjects/AbstractVM_/General.hpp
 iostream
 -
 array
 -
-string
--
 
 /Users/Henprokuror/CLionProjects/AbstractVM_/Lexer/Lexer.cpp
 Lexer.hpp
 /Users/Henprokuror/CLionProjects/AbstractVM_/Lexer/Lexer.hpp
+../LogException/LogException.hpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/LogException/LogException.hpp
+../TaskManager/TaskManager.hpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/TaskManager/TaskManager.hpp
 
 /Users/Henprokuror/CLionProjects/AbstractVM_/Lexer/Lexer.hpp
 regex
@@ -34,9 +46,17 @@ regex
 ../General.hpp
 /Users/Henprokuror/CLionProjects/AbstractVM_/General.hpp
 
-/Users/Henprokuror/CLionProjects/AbstractVM_/LoggerException/LoggerException.hpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/LogException/LogException.cpp
+LogException.hpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/LogException/LogException.hpp
+../AbstractVM/AbstractVM.hpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/AbstractVM/AbstractVM.hpp
+
+/Users/Henprokuror/CLionProjects/AbstractVM_/LogException/LogException.hpp
 ../General.hpp
 /Users/Henprokuror/CLionProjects/AbstractVM_/General.hpp
+exception
+-
 
 /Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactory/FactoryOperand.cpp
 FactoryOperand.hpp
@@ -55,24 +75,32 @@ FactoryOperand.hpp
 /Users/Henprokuror/CLionProjects/AbstractVM_/General.hpp
 
 /Users/Henprokuror/CLionProjects/AbstractVM_/OperandType/Operand.hpp
+cmath
+-
 ../General.hpp
 /Users/Henprokuror/CLionProjects/AbstractVM_/General.hpp
 ../OperandType/IOperand.hpp
 /Users/Henprokuror/CLionProjects/AbstractVM_/OperandType/IOperand.hpp
-../LoggerException/LoggerException.hpp
-/Users/Henprokuror/CLionProjects/AbstractVM_/LoggerException/LoggerException.hpp
+../LogException/LogException.hpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/LogException/LogException.hpp
+../OperandFactory/FactoryOperand.hpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactory/FactoryOperand.hpp
+
+/Users/Henprokuror/CLionProjects/AbstractVM_/TaskManager/TaskManager.cpp
+TaskManager.hpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/TaskManager/TaskManager.hpp
+../LogException/LogException.hpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/LogException/LogException.hpp
+
+/Users/Henprokuror/CLionProjects/AbstractVM_/TaskManager/TaskManager.hpp
+list
+-
+../General.hpp
+/Users/Henprokuror/CLionProjects/AbstractVM_/General.hpp
 ../OperandFactory/FactoryOperand.hpp
 /Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactory/FactoryOperand.hpp
 
 /Users/Henprokuror/CLionProjects/AbstractVM_/main.cpp
-iostream
--
-General.hpp
-/Users/Henprokuror/CLionProjects/AbstractVM_/General.hpp
-Lexer/Lexer.hpp
-/Users/Henprokuror/CLionProjects/AbstractVM_/Lexer/Lexer.hpp
-regex
--
 AbstractVM/AbstractVM.hpp
 /Users/Henprokuror/CLionProjects/AbstractVM_/AbstractVM/AbstractVM.hpp
 

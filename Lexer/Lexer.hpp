@@ -10,7 +10,8 @@
 
 class Lexer {
 private:
-	const std::string _regexPushAssert;
+	const std::string _regexPush;
+	const std::string _regexAssert;
 	const std::string _regexAdd;
 	const std::string _regexSub;
 	const std::string _regexMul;
@@ -22,15 +23,13 @@ private:
 	const std::string _regexExit;
 	const std::string _regexEndCircle;
 	const std::string _regexComment;
-	const std::regex _regexPush;
-	const std::regex _regexAssert;
 	const std::regex _regexInt8;
 	const std::regex _regexInt32;
 	const std::regex _regexInt16;
 	const std::regex _regexFloat;
 	const std::regex _regexDouble;
 	const std::regex _regexNumber;
-	std::array<std::regex, 12> _regexArr;
+	std::array<std::regex, 13> _regexArr;
 
 	InfoForTask _infoForCreateOperand;
 
@@ -38,7 +37,7 @@ public:
 	Lexer();
 	~Lexer() = default;
 
-	size_t	processLine_forTaskManager(const std::string &input);
+	void	processLine_forTaskManager(const std::string &input);
 	void	analyzeTokens_fromRegexPushAssert(const std::string &input);
 	void	initializeCheckers();
 

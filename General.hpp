@@ -17,23 +17,22 @@ enum eOperandType {
 	NumberOperands
 };
 
-enum eTask {
+enum eTaskSignal {
 	TaskExit,
-	TaskDefault
+	TaskDefault,
+	TaskEmpty = 100
 };
 
 struct InfoForTask {
-	InfoForTask(bool push, bool assert, eOperandType type, const std::string &value);
+	InfoForTask(eOperandType type, const std::string &value);
 	~InfoForTask() = default;
 	InfoForTask() = delete;
 	InfoForTask(const InfoForTask &) = delete;
-	InfoForTask &operator=(const InfoForTask&) = delete;
+	InfoForTask &operator=(const InfoForTask& info);
 
 	size_t			task;
-	bool			pushCheck;
-	bool			assertCheck;
-	eOperandType	typeCheck;
-	std::string		numberString;
+	eOperandType	type;
+	std::string		value;
 };
 
 #endif //ABSTRACTVM_GENERAL_HPP
