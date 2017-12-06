@@ -1,0 +1,5 @@
+push int8 (99)
+push int16    (30000)
+dump
+exit
+;;

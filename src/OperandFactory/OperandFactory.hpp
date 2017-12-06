@@ -5,7 +5,7 @@
 #ifndef ABSTRACTVM_OPERANDFACTORY_HPP
 #define ABSTRACTVM_OPERANDFACTORY_HPP
 
-#include "../General.hpp"
+#include "../General/General.hpp"
 #include "../OperandType/IOperand.hpp"
 
 // *** Forward declaration: template <eOperandType T> class Operand; *** //

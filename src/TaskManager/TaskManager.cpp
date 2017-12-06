@@ -6,6 +6,7 @@
 #include "../LogException/LogException.hpp"
 
 eTaskSignal TaskManager::_taskSignal = TaskDefault;
+eTaskSignal TaskManager::_breakCircle = TaskDefault;
 
 TaskManager::TaskManager()
 		: _stack(),
@@ -32,12 +33,13 @@ eTaskSignal TaskManager::taskDistributor(const InfoForTask &info) {
 	if (info.task == TaskEmpty)
 		return TaskEmpty;
 	return (this->*_arrPfTask[info.task])();
-	// TODO: return eTask;
 }
 
 eTaskSignal TaskManager::_pushTask() {
-	std::cout << "pushTask" << std::endl;
-
+//	std::cout << "pushTask" << std::endl;
+	if (TaskManager::taskSignal() == TaskExit) {
+		throw LogException::AfterExitNotReceiveInstructionsError();
+	}
 	if (_info.type <= Int32) {
 		auto value = std::stol(_info.value);
 		LogException::Instance()->IsInRange<long>(value, _info.type);
@@ -52,8 +54,10 @@ eTaskSignal TaskManager::_pushTask() {
 }
 
 eTaskSignal TaskManager::_assertTask() {
-	std::cout << "assertTask" << std::endl;
-
+//	std::cout << "assertTask" << std::endl;
+	if (TaskManager::taskSignal() == TaskExit) {
+		throw LogException::AfterExitNotReceiveInstructionsError();
+	}
 	if (_info.type <= Int32) {
 		auto value = std::stol(_info.value);
 		LogException::Instance()->IsInRange<long>(value, _info.type);
@@ -71,8 +75,10 @@ eTaskSignal TaskManager::_assertTask() {
 }
 
 eTaskSignal TaskManager::_addTask() {
-	std::cout << "addTask" << std::endl;
-
+//	std::cout << "addTask" << std::endl;
+	if (TaskManager::taskSignal() == TaskExit) {
+		throw LogException::AfterExitNotReceiveInstructionsError();
+	}
 	if (_stack.size() < 2)
 		throw LogException::LessThanTwoValuesInStackError();
 	auto a = *(*_stack.begin()); _stack.erase(_stack.begin());
@@ -83,8 +89,10 @@ eTaskSignal TaskManager::_addTask() {
 }
 
 eTaskSignal TaskManager::_subTask() {
-	std::cout << "subTask" << std::endl;
-
+//	std::cout << "subTask" << std::endl;
+	if (TaskManager::taskSignal() == TaskExit) {
+		throw LogException::AfterExitNotReceiveInstructionsError();
+	}
 	if (_stack.size() < 2)
 		throw LogException::LessThanTwoValuesInStackError();
 	auto a = *(*_stack.begin()); _stack.erase(_stack.begin());
@@ -95,8 +103,10 @@ eTaskSignal TaskManager::_subTask() {
 }
 
 eTaskSignal TaskManager::_mulTask() {
-	std::cout << "mulTask" << std::endl;
-
+//	std::cout << "mulTask" << std::endl;
+	if (TaskManager::taskSignal() == TaskExit) {
+		throw LogException::AfterExitNotReceiveInstructionsError();
+	}
 	if (_stack.size() < 2)
 		throw LogException::LessThanTwoValuesInStackError();
 	auto a = *(*_stack.begin()); _stack.erase(_stack.begin());
@@ -107,8 +117,10 @@ eTaskSignal TaskManager::_mulTask() {
 }
 
 eTaskSignal TaskManager::_divTask() {
-	std::cout << "divTask" << std::endl;
-
+//	std::cout << "divTask" << std::endl;
+	if (TaskManager::taskSignal() == TaskExit) {
+		throw LogException::AfterExitNotReceiveInstructionsError();
+	}
 	if (_stack.size() < 2)
 		throw LogException::LessThanTwoValuesInStackError();
 	auto a = *(*_stack.begin()); _stack.erase(_stack.begin());
@@ -119,8 +131,10 @@ eTaskSignal TaskManager::_divTask() {
 }
 
 eTaskSignal TaskManager::_modTask() {
-	std::cout << "modTask" << std::endl;
-
+//	std::cout << "modTask" << std::endl;
+	if (TaskManager::taskSignal() == TaskExit) {
+		throw LogException::AfterExitNotReceiveInstructionsError();
+	}
 	if (_stack.size() < 2)
 		throw LogException::LessThanTwoValuesInStackError();
 	auto a = *(*_stack.begin()); _stack.erase(_stack.begin());
@@ -131,8 +145,10 @@ eTaskSignal TaskManager::_modTask() {
 }
 
 eTaskSignal TaskManager::_popTask() {
-	std::cout << "popTask" << std::endl;
-
+//	std::cout << "popTask" << std::endl;
+	if (TaskManager::taskSignal() == TaskExit) {
+		throw LogException::AfterExitNotReceiveInstructionsError();
+	}
 	if (_stack.empty()) {
 		LogException::PopEmptyStackError();
 	}
@@ -141,8 +157,10 @@ eTaskSignal TaskManager::_popTask() {
 }
 
 eTaskSignal TaskManager::_dumpTask() {
-	std::cout << "dumpTask" << std::endl;
-
+//	std::cout << "dumpTask" << std::endl;
+	if (TaskManager::taskSignal() == TaskExit) {
+		throw LogException::AfterExitNotReceiveInstructionsError();
+	}
 	for (auto const & item : _stack) {
 		std::cout << (*item)->toString() << std::endl;
 	}
@@ -150,11 +168,13 @@ eTaskSignal TaskManager::_dumpTask() {
 }
 
 eTaskSignal TaskManager::_printTask() {
-	std::cout << "printTask" << std::endl;
-
+//	std::cout << "printTask" << std::endl;
+	if (TaskManager::taskSignal() == TaskExit) {
+		throw LogException::AfterExitNotReceiveInstructionsError();
+	}
 	auto top = *_stack.begin();
 	if ((*top)->getType() != Int8) {
-		throw LogException::TopValueNotChar();
+		throw LogException::TopValueNotCharError();
 	}
 	auto a = static_cast<char>(std::stoi((*top)->toString()));
 	std::cout << a << std::endl;
@@ -162,22 +182,32 @@ eTaskSignal TaskManager::_printTask() {
 }
 
 eTaskSignal TaskManager::_exitTask() {
-	std::cout << "exitTask" << std::endl;
+//	std::cout << "exitTask" << std::endl;
+	if (TaskManager::taskSignal() == TaskExit) {
+		throw LogException::AfterExitNotReceiveInstructionsError();
+	}
 	TaskManager::taskSignal() = TaskExit;
 	return TaskExit;
 }
 
 eTaskSignal TaskManager::_endCircleTask() {
-	std::cout << "endCircleTask" << std::endl;
-	TaskManager::taskSignal() = TaskExit;
+//	std::cout << "endCircleTask" << std::endl;
+	if (TaskManager::taskSignal() != TaskExit) {
+		throw LogException::NoExitInstructionError();
+	}
+	TaskManager::breakCircle() = TaskBreakCircle;
 	return TaskExit;
 }
 
 eTaskSignal TaskManager::_commentTask() {
-	std::cout << "commentTask" << std::endl;
+//	std::cout << "commentTask" << std::endl;
 	return TaskDefault;
 }
 
 eTaskSignal& TaskManager::taskSignal() {
 	return _taskSignal;
+}
+
+eTaskSignal& TaskManager::breakCircle() {
+	return _breakCircle;
 }

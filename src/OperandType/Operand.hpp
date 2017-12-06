@@ -6,8 +6,8 @@
 #define ABSTRACTVM_OPERAND_HPP
 
 #include <cmath>
-#include "../General.hpp"
-#include "../OperandType/IOperand.hpp"
+#include "../General/General.hpp"
+#include "IOperand.hpp"
 #include "../LogException/LogException.hpp"
 
 // *** Forward declaration: class FactoryOperand *** //
@@ -55,7 +55,7 @@ public:
 //*** Implementation member functions - operators ***//
 //
 
-#include "../OperandFactory/FactoryOperand.hpp"
+#include "../OperandFactory/OperandFactory.hpp"
 
 //*** Sum operator ***//
 

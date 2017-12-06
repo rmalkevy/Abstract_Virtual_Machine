@@ -1,0 +1,3 @@
+Line 3 : Error: unknown instruction !
+Line 5 : Error: Value on the top of stack isn't a ASCII symbol !
+Line 9 : Error: program doesn't have exit instruction !

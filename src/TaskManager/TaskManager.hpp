@@ -6,8 +6,8 @@
 #define ABSTRACTVM_TASK_MANAGER_HPP
 
 #include <list>
-#include "../General.hpp"
-#include "../OperandFactory/FactoryOperand.hpp"
+#include "../General/General.hpp"
+#include "../OperandFactory/OperandFactory.hpp"
 
 class TaskManager {
 private:
@@ -18,6 +18,7 @@ private:
 	_pfTask _arrPfTask[13];
 
 	static eTaskSignal _taskSignal;
+	static eTaskSignal _breakCircle;
 
 	eTaskSignal _pushTask();
 	eTaskSignal _assertTask();
@@ -41,6 +42,7 @@ public:
 
 	eTaskSignal	taskDistributor(const InfoForTask &info);
 	static eTaskSignal &taskSignal();
+	static eTaskSignal &breakCircle();
 };
 
 #endif //ABSTRACTVM_TASKER_HPP

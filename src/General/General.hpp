@@ -20,6 +20,7 @@ enum eOperandType {
 enum eTaskSignal {
 	TaskExit,
 	TaskDefault,
+	TaskBreakCircle,
 	TaskEmpty = 100
 };
 

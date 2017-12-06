@@ -2,7 +2,7 @@
 // Created by Roman Malkevych on 11/19/17.
 //
 
-#include "FactoryOperand.hpp"
+#include "OperandFactory.hpp"
 #include "../OperandType/Operand.hpp"
 
 FactoryOperand::FactoryOperand()

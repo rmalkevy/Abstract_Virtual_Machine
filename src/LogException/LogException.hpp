@@ -5,7 +5,7 @@
 #ifndef ABSTRACTVM_PRECISIONHANDLE_SINGLETONCLASS_HPP
 #define ABSTRACTVM_PRECISIONHANDLE_SINGLETONCLASS_HPP
 
-#include "../General.hpp"
+#include "../General/General.hpp"
 #include <exception>
 
 class AbstractVM;
@@ -61,7 +61,15 @@ public:
 		const char* what() const throw() override;
 	};
 
-	struct TopValueNotChar : public std::exception {
+	struct TopValueNotCharError : public std::exception {
+		const char* what() const throw() override;
+	};
+
+	struct AfterExitNotReceiveInstructionsError : public std::exception {
+		const char* what() const throw() override;
+	};
+
+	class OpeningFileError : public std::exception {
 		const char* what() const throw() override;
 	};
 

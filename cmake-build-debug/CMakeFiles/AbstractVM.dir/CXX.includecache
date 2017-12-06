@@ -13,7 +13,9 @@ AbstractVM.hpp
 /Users/Henprokuror/CLionProjects/AbstractVM_/LogException/LogException.hpp
 
 /Users/Henprokuror/CLionProjects/AbstractVM_/AbstractVM/AbstractVM.hpp
-stack
+fstream
+-
+sstream
 -
 ../OperandFactory/FactoryOperand.hpp
 /Users/Henprokuror/CLionProjects/AbstractVM_/OperandFactory/FactoryOperand.hpp

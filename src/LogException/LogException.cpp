@@ -80,9 +80,22 @@ const char* LogException::LessThanTwoValuesInStackError::what() const throw() {
 	return errorMassage.c_str();
 }
 
-const char* LogException::TopValueNotChar::what() const throw() {
+const char* LogException::TopValueNotCharError::what() const throw() {
 //	TaskManager::taskSignal() = TaskExit;
 	std::string errorMassage("Line " + std::to_string(AbstractVM::getNumberLine()) +
 							 " : Error: Value on the top of stack isn't a ASCII symbol !");
+	return errorMassage.c_str();
+}
+
+const char* LogException::AfterExitNotReceiveInstructionsError::what() const throw() {
+//	TaskManager::taskSignal() = TaskExit;
+	std::string errorMassage("Line " + std::to_string(AbstractVM::getNumberLine()) +
+							 " : Error: After exit, you must put instruction of end circle [;;] !");
+	return errorMassage.c_str();
+}
+
+const char* LogException::OpeningFileError::what() const throw() {
+//	TaskManager::taskSignal() = TaskExit;
+	std::string errorMassage("Opening file failed, it either doesn't exist or is not accessible.");
 	return errorMassage.c_str();
 }

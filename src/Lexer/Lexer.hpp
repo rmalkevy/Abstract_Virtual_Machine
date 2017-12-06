@@ -6,7 +6,7 @@
 #define ABSTRACTVM_LEXER_HPP
 
 #include <regex>
-#include "../General.hpp"
+#include "../General/General.hpp"
 
 class Lexer {
 private:

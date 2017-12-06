@@ -1,0 +1,11 @@
+push double (  89 ) ;lsdjfljs
+dump
+assert int(89)
+assertint8(89)
+print
+pushint8(89);look at the blue sky - everything is good
+print
+dump
+;;
+exit
+;;
