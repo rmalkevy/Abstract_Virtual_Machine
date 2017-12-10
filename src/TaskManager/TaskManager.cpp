@@ -4,6 +4,7 @@
 
 #include "TaskManager.hpp"
 #include "../LogException/LogException.hpp"
+#include <sstream>
 
 eTaskSignal TaskManager::_taskSignal = TaskDefault;
 eTaskSignal TaskManager::_breakCircle = TaskDefault;
@@ -25,7 +26,8 @@ TaskManager::TaskManager()
 							 &TaskManager::_exitTask,
 							 &TaskManager::_endCircleTask,
 							 &TaskManager::_commentTask
-					 }
+					 },
+		  _logPrints()
 {}
 
 eTaskSignal TaskManager::taskDistributor(const InfoForTask &info) {
@@ -58,19 +60,23 @@ eTaskSignal TaskManager::_assertTask() {
 	if (TaskManager::taskSignal() == TaskExit) {
 		throw LogException::AfterExitNotReceiveInstructionsError();
 	}
-	if (_info.type <= Int32) {
-		auto value = std::stol(_info.value);
-		LogException::Instance()->IsInRange<long>(value, _info.type);
+	if (! _stack.empty()) {
+		if (_info.type <= Int32) {
+			auto value = std::stol(_info.value);
+			LogException::Instance()->IsInRange<long>(value, _info.type);
+		}
+		else {
+			auto value = std::stod(_info.value);
+			LogException::Instance()->IsInRange<double>(value, _info.type);
+		}
+		auto top = *_stack.begin();
+		if (((*top)->toString() != _info.value) || ((*top)->getType() != _info.type)) {
+			throw LogException::BadAssertInstructionError();
+		}
+		_logPrints.push_back("Instruction assert : values equal !");
+	} else {
+		throw LogException::EmptyStackError();
 	}
-	else {
-		auto value = std::stod(_info.value);
-		LogException::Instance()->IsInRange<double>(value, _info.type);
-	}
-	auto top = *_stack.begin();
-	if (! ((*top)->toString() == _info.value) && ((*top)->getType() == _info.type)) {
-		throw LogException::BadAssertInstructionError();
-	}
-	std::cout << "Instruction assert : values equal !" << std::endl;
 	return TaskDefault;
 }
 
@@ -84,6 +90,8 @@ eTaskSignal TaskManager::_addTask() {
 	auto a = *(*_stack.begin()); _stack.erase(_stack.begin());
 	auto b = *(*_stack.begin()); _stack.erase(_stack.begin());
 	auto c = std::make_shared<const IOperand*>(*a + *b);
+	delete a;
+	delete b;
 	_stack.push_front(c);
 	return TaskDefault;
 }
@@ -98,6 +106,8 @@ eTaskSignal TaskManager::_subTask() {
 	auto a = *(*_stack.begin()); _stack.erase(_stack.begin());
 	auto b = *(*_stack.begin()); _stack.erase(_stack.begin());
 	auto c = std::make_shared<const IOperand*>(*a - *b);
+	delete a;
+	delete b;
 	_stack.push_front(c);
 	return TaskDefault;
 }
@@ -112,6 +122,8 @@ eTaskSignal TaskManager::_mulTask() {
 	auto a = *(*_stack.begin()); _stack.erase(_stack.begin());
 	auto b = *(*_stack.begin()); _stack.erase(_stack.begin());
 	auto c = std::make_shared<const IOperand*>(*a * *b);
+	delete a;
+	delete b;
 	_stack.push_front(c);
 	return TaskDefault;
 }
@@ -126,6 +138,8 @@ eTaskSignal TaskManager::_divTask() {
 	auto a = *(*_stack.begin()); _stack.erase(_stack.begin());
 	auto b = *(*_stack.begin()); _stack.erase(_stack.begin());
 	auto c = std::make_shared<const IOperand*>(*a / *b);
+	delete a;
+	delete b;
 	_stack.push_front(c);
 	return TaskDefault;
 }
@@ -140,6 +154,8 @@ eTaskSignal TaskManager::_modTask() {
 	auto a = *(*_stack.begin()); _stack.erase(_stack.begin());
 	auto b = *(*_stack.begin()); _stack.erase(_stack.begin());
 	auto c = std::make_shared<const IOperand*>(*a % *b);
+	delete a;
+	delete b;
 	_stack.push_front(c);
 	return TaskDefault;
 }
@@ -150,9 +166,11 @@ eTaskSignal TaskManager::_popTask() {
 		throw LogException::AfterExitNotReceiveInstructionsError();
 	}
 	if (_stack.empty()) {
-		LogException::PopEmptyStackError();
+		throw LogException::PopEmptyStackError();
 	}
+	auto a = *_stack.begin();
 	_stack.erase(_stack.begin());
+	delete *a;
 	return TaskDefault;
 }
 
@@ -161,8 +179,12 @@ eTaskSignal TaskManager::_dumpTask() {
 	if (TaskManager::taskSignal() == TaskExit) {
 		throw LogException::AfterExitNotReceiveInstructionsError();
 	}
-	for (auto const & item : _stack) {
-		std::cout << (*item)->toString() << std::endl;
+	if (! _stack.empty()) {
+		for (auto const & item : _stack) {
+			_logPrints.push_back((*item)->toString());
+		}
+	} else {
+		throw LogException::EmptyStackError();
 	}
 	return TaskDefault;
 }
@@ -172,12 +194,16 @@ eTaskSignal TaskManager::_printTask() {
 	if (TaskManager::taskSignal() == TaskExit) {
 		throw LogException::AfterExitNotReceiveInstructionsError();
 	}
-	auto top = *_stack.begin();
-	if ((*top)->getType() != Int8) {
-		throw LogException::TopValueNotCharError();
+	if (! _stack.empty()) {
+		auto top = *_stack.begin();
+		if ((*top)->getType() != Int8) {
+			throw LogException::TopValueNotCharError();
+		}
+		auto a = static_cast<char>(std::stoi((*top)->toString()));
+		_logPrints.push_back(std::string({a, '\0'}));
+	} else {
+		throw LogException::EmptyStackError();
 	}
-	auto a = static_cast<char>(std::stoi((*top)->toString()));
-	std::cout << a << std::endl;
 	return TaskDefault;
 }
 
@@ -191,7 +217,7 @@ eTaskSignal TaskManager::_exitTask() {
 }
 
 eTaskSignal TaskManager::_endCircleTask() {
-//	std::cout << "endCircleTask" << std::endl;
+	std::cout << "endCircleTask" << std::endl;
 	if (TaskManager::taskSignal() != TaskExit) {
 		throw LogException::NoExitInstructionError();
 	}
@@ -200,7 +226,7 @@ eTaskSignal TaskManager::_endCircleTask() {
 }
 
 eTaskSignal TaskManager::_commentTask() {
-//	std::cout << "commentTask" << std::endl;
+	std::cout << "commentTask" << std::endl;
 	return TaskDefault;
 }
 
@@ -210,4 +236,10 @@ eTaskSignal& TaskManager::taskSignal() {
 
 eTaskSignal& TaskManager::breakCircle() {
 	return _breakCircle;
+}
+
+void TaskManager::LogPrint() const {
+	for (const auto & item: _logPrints) {
+		std::cout << item << std::endl;
+	}
 }

@@ -111,179 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named AbstractVM
+# Target rules for targets named AbstractVM_
 
 # Build rule for target.
-AbstractVM: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 AbstractVM
-.PHONY : AbstractVM
+AbstractVM_: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 AbstractVM_
+.PHONY : AbstractVM_
 
 # fast build rule for target.
-AbstractVM/fast:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/build
-.PHONY : AbstractVM/fast
-
-AbstractVM/AbstractVM.o: AbstractVM/AbstractVM.cpp.o
-
-.PHONY : AbstractVM/AbstractVM.o
-
-# target to build an object file
-AbstractVM/AbstractVM.cpp.o:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/AbstractVM/AbstractVM.cpp.o
-.PHONY : AbstractVM/AbstractVM.cpp.o
-
-AbstractVM/AbstractVM.i: AbstractVM/AbstractVM.cpp.i
-
-.PHONY : AbstractVM/AbstractVM.i
-
-# target to preprocess a source file
-AbstractVM/AbstractVM.cpp.i:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/AbstractVM/AbstractVM.cpp.i
-.PHONY : AbstractVM/AbstractVM.cpp.i
-
-AbstractVM/AbstractVM.s: AbstractVM/AbstractVM.cpp.s
-
-.PHONY : AbstractVM/AbstractVM.s
-
-# target to generate assembly for a file
-AbstractVM/AbstractVM.cpp.s:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/AbstractVM/AbstractVM.cpp.s
-.PHONY : AbstractVM/AbstractVM.cpp.s
-
-General.o: General.cpp.o
-
-.PHONY : General.o
-
-# target to build an object file
-General.cpp.o:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/General.cpp.o
-.PHONY : General.cpp.o
-
-General.i: General.cpp.i
-
-.PHONY : General.i
-
-# target to preprocess a source file
-General.cpp.i:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/General.cpp.i
-.PHONY : General.cpp.i
-
-General.s: General.cpp.s
-
-.PHONY : General.s
-
-# target to generate assembly for a file
-General.cpp.s:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/General.cpp.s
-.PHONY : General.cpp.s
-
-Lexer/Lexer.o: Lexer/Lexer.cpp.o
-
-.PHONY : Lexer/Lexer.o
-
-# target to build an object file
-Lexer/Lexer.cpp.o:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/Lexer/Lexer.cpp.o
-.PHONY : Lexer/Lexer.cpp.o
-
-Lexer/Lexer.i: Lexer/Lexer.cpp.i
-
-.PHONY : Lexer/Lexer.i
-
-# target to preprocess a source file
-Lexer/Lexer.cpp.i:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/Lexer/Lexer.cpp.i
-.PHONY : Lexer/Lexer.cpp.i
-
-Lexer/Lexer.s: Lexer/Lexer.cpp.s
-
-.PHONY : Lexer/Lexer.s
-
-# target to generate assembly for a file
-Lexer/Lexer.cpp.s:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/Lexer/Lexer.cpp.s
-.PHONY : Lexer/Lexer.cpp.s
-
-LogException/LogException.o: LogException/LogException.cpp.o
-
-.PHONY : LogException/LogException.o
-
-# target to build an object file
-LogException/LogException.cpp.o:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/LogException/LogException.cpp.o
-.PHONY : LogException/LogException.cpp.o
-
-LogException/LogException.i: LogException/LogException.cpp.i
-
-.PHONY : LogException/LogException.i
-
-# target to preprocess a source file
-LogException/LogException.cpp.i:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/LogException/LogException.cpp.i
-.PHONY : LogException/LogException.cpp.i
-
-LogException/LogException.s: LogException/LogException.cpp.s
-
-.PHONY : LogException/LogException.s
-
-# target to generate assembly for a file
-LogException/LogException.cpp.s:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/LogException/LogException.cpp.s
-.PHONY : LogException/LogException.cpp.s
-
-OperandFactory/FactoryOperand.o: OperandFactory/FactoryOperand.cpp.o
-
-.PHONY : OperandFactory/FactoryOperand.o
-
-# target to build an object file
-OperandFactory/FactoryOperand.cpp.o:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/OperandFactory/FactoryOperand.cpp.o
-.PHONY : OperandFactory/FactoryOperand.cpp.o
-
-OperandFactory/FactoryOperand.i: OperandFactory/FactoryOperand.cpp.i
-
-.PHONY : OperandFactory/FactoryOperand.i
-
-# target to preprocess a source file
-OperandFactory/FactoryOperand.cpp.i:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/OperandFactory/FactoryOperand.cpp.i
-.PHONY : OperandFactory/FactoryOperand.cpp.i
-
-OperandFactory/FactoryOperand.s: OperandFactory/FactoryOperand.cpp.s
-
-.PHONY : OperandFactory/FactoryOperand.s
-
-# target to generate assembly for a file
-OperandFactory/FactoryOperand.cpp.s:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/OperandFactory/FactoryOperand.cpp.s
-.PHONY : OperandFactory/FactoryOperand.cpp.s
-
-TaskManager/TaskManager.o: TaskManager/TaskManager.cpp.o
-
-.PHONY : TaskManager/TaskManager.o
-
-# target to build an object file
-TaskManager/TaskManager.cpp.o:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/TaskManager/TaskManager.cpp.o
-.PHONY : TaskManager/TaskManager.cpp.o
-
-TaskManager/TaskManager.i: TaskManager/TaskManager.cpp.i
-
-.PHONY : TaskManager/TaskManager.i
-
-# target to preprocess a source file
-TaskManager/TaskManager.cpp.i:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/TaskManager/TaskManager.cpp.i
-.PHONY : TaskManager/TaskManager.cpp.i
-
-TaskManager/TaskManager.s: TaskManager/TaskManager.cpp.s
-
-.PHONY : TaskManager/TaskManager.s
-
-# target to generate assembly for a file
-TaskManager/TaskManager.cpp.s:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/TaskManager/TaskManager.cpp.s
-.PHONY : TaskManager/TaskManager.cpp.s
+AbstractVM_/fast:
+	$(MAKE) -f CMakeFiles/AbstractVM_.dir/build.make CMakeFiles/AbstractVM_.dir/build
+.PHONY : AbstractVM_/fast
 
 main.o: main.cpp.o
 
@@ -291,7 +129,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/AbstractVM_.dir/build.make CMakeFiles/AbstractVM_.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -300,7 +138,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/AbstractVM_.dir/build.make CMakeFiles/AbstractVM_.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -309,8 +147,224 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/AbstractVM.dir/build.make CMakeFiles/AbstractVM.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/AbstractVM_.dir/build.make CMakeFiles/AbstractVM_.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+src/AbstractVM/AbstractVM.o: src/AbstractVM/AbstractVM.cpp.o
+
+.PHONY : src/AbstractVM/AbstractVM.o
+
+# target to build an object file
+src/AbstractVM/AbstractVM.cpp.o:
+	$(MAKE) -f CMakeFiles/AbstractVM_.dir/build.make CMakeFiles/AbstractVM_.dir/src/AbstractVM/AbstractVM.cpp.o
+.PHONY : src/AbstractVM/AbstractVM.cpp.o
+
+src/AbstractVM/AbstractVM.i: src/AbstractVM/AbstractVM.cpp.i
+
+.PHONY : src/AbstractVM/AbstractVM.i
+
+# target to preprocess a source file
+src/AbstractVM/AbstractVM.cpp.i:
+	$(MAKE) -f CMakeFiles/AbstractVM_.dir/build.make CMakeFiles/AbstractVM_.dir/src/AbstractVM/AbstractVM.cpp.i
+.PHONY : src/AbstractVM/AbstractVM.cpp.i
+
+src/AbstractVM/AbstractVM.s: src/AbstractVM/AbstractVM.cpp.s
+
+.PHONY : src/AbstractVM/AbstractVM.s
+
+# target to generate assembly for a file
+src/AbstractVM/AbstractVM.cpp.s:
+	$(MAKE) -f CMakeFiles/AbstractVM_.dir/build.make CMakeFiles/AbstractVM_.dir/src/AbstractVM/AbstractVM.cpp.s
+.PHONY : src/AbstractVM/AbstractVM.cpp.s
+
+src/General/General.o: src/General/General.cpp.o
+
+.PHONY : src/General/General.o
+
+# target to build an object file
+src/General/General.cpp.o:
+	$(MAKE) -f CMakeFiles/AbstractVM_.dir/build.make CMakeFiles/AbstractVM_.dir/src/General/General.cpp.o
+.PHONY : src/General/General.cpp.o
+
+src/General/General.i: src/General/General.cpp.i
+
+.PHONY : src/General/General.i
+
+# target to preprocess a source file
+src/General/General.cpp.i:
+	$(MAKE) -f CMakeFiles/AbstractVM_.dir/build.make CMakeFiles/AbstractVM_.dir/src/General/General.cpp.i
+.PHONY : src/General/General.cpp.i
+
+src/General/General.s: src/General/General.cpp.s
+
+.PHONY : src/General/General.s
+
+# target to generate assembly for a file
+src/General/General.cpp.s:
+	$(MAKE) -f CMakeFiles/AbstractVM_.dir/build.make CMakeFiles/AbstractVM_.dir/src/General/General.cpp.s
+.PHONY : src/General/General.cpp.s
+
+src/Lexer/Lexer.o: src/Lexer/Lexer.cpp.o
+
+.PHONY : src/Lexer/Lexer.o
+
+# target to build an object file
+src/Lexer/Lexer.cpp.o:
+	$(MAKE) -f CMakeFiles/AbstractVM_.dir/build.make CMakeFiles/AbstractVM_.dir/src/Lexer/Lexer.cpp.o
+.PHONY : src/Lexer/Lexer.cpp.o
+
+src/Lexer/Lexer.i: src/Lexer/Lexer.cpp.i
+
+.PHONY : src/Lexer/Lexer.i
+
+# target to preprocess a source file
+src/Lexer/Lexer.cpp.i:
+	$(MAKE) -f CMakeFiles/AbstractVM_.dir/build.make CMakeFiles/AbstractVM_.dir/src/Lexer/Lexer.cpp.i
+.PHONY : src/Lexer/Lexer.cpp.i
+
+src/Lexer/Lexer.s: src/Lexer/Lexer.cpp.s
+
+.PHONY : src/Lexer/Lexer.s
+
+# target to generate assembly for a file
+src/Lexer/Lexer.cpp.s:
+	$(MAKE) -f CMakeFiles/AbstractVM_.dir/build.make CMakeFiles/AbstractVM_.dir/src/Lexer/Lexer.cpp.s
+.PHONY : src/Lexer/Lexer.cpp.s
+
+src/LogException/LogException.o: src/LogException/LogException.cpp.o
+
+.PHONY : src/LogException/LogException.o
+
+# target to build an object file
+src/LogException/LogException.cpp.o:
+	$(MAKE) -f CMakeFiles/AbstractVM_.dir/build.make CMakeFiles/AbstractVM_.dir/src/LogException/LogException.cpp.o
+.PHONY : src/LogException/LogException.cpp.o
+
+src/LogException/LogException.i: src/LogException/LogException.cpp.i
+
+.PHONY : src/LogException/LogException.i
+
+# target to preprocess a source file
+src/LogException/LogException.cpp.i:
+	$(MAKE) -f CMakeFiles/AbstractVM_.dir/build.make CMakeFiles/AbstractVM_.dir/src/LogException/LogException.cpp.i
+.PHONY : src/LogException/LogException.cpp.i
+
+src/LogException/LogException.s: src/LogException/LogException.cpp.s
+
+.PHONY : src/LogException/LogException.s
+
+# target to generate assembly for a file
+src/LogException/LogException.cpp.s:
+	$(MAKE) -f CMakeFiles/AbstractVM_.dir/build.make CMakeFiles/AbstractVM_.dir/src/LogException/LogException.cpp.s
+.PHONY : src/LogException/LogException.cpp.s
+
+src/OperandFactory/OperandFactory.o: src/OperandFactory/OperandFactory.cpp.o
+
+.PHONY : src/OperandFactory/OperandFactory.o
+
+# target to build an object file
+src/OperandFactory/OperandFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/AbstractVM_.dir/build.make CMakeFiles/AbstractVM_.dir/src/OperandFactory/OperandFactory.cpp.o
+.PHONY : src/OperandFactory/OperandFactory.cpp.o
+
+src/OperandFactory/OperandFactory.i: src/OperandFactory/OperandFactory.cpp.i
+
+.PHONY : src/OperandFactory/OperandFactory.i
+
+# target to preprocess a source file
+src/OperandFactory/OperandFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/AbstractVM_.dir/build.make CMakeFiles/AbstractVM_.dir/src/OperandFactory/OperandFactory.cpp.i
+.PHONY : src/OperandFactory/OperandFactory.cpp.i
+
+src/OperandFactory/OperandFactory.s: src/OperandFactory/OperandFactory.cpp.s
+
+.PHONY : src/OperandFactory/OperandFactory.s
+
+# target to generate assembly for a file
+src/OperandFactory/OperandFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/AbstractVM_.dir/build.make CMakeFiles/AbstractVM_.dir/src/OperandFactory/OperandFactory.cpp.s
+.PHONY : src/OperandFactory/OperandFactory.cpp.s
+
+src/Parser/Parser.o: src/Parser/Parser.cpp.o
+
+.PHONY : src/Parser/Parser.o
+
+# target to build an object file
+src/Parser/Parser.cpp.o:
+	$(MAKE) -f CMakeFiles/AbstractVM_.dir/build.make CMakeFiles/AbstractVM_.dir/src/Parser/Parser.cpp.o
+.PHONY : src/Parser/Parser.cpp.o
+
+src/Parser/Parser.i: src/Parser/Parser.cpp.i
+
+.PHONY : src/Parser/Parser.i
+
+# target to preprocess a source file
+src/Parser/Parser.cpp.i:
+	$(MAKE) -f CMakeFiles/AbstractVM_.dir/build.make CMakeFiles/AbstractVM_.dir/src/Parser/Parser.cpp.i
+.PHONY : src/Parser/Parser.cpp.i
+
+src/Parser/Parser.s: src/Parser/Parser.cpp.s
+
+.PHONY : src/Parser/Parser.s
+
+# target to generate assembly for a file
+src/Parser/Parser.cpp.s:
+	$(MAKE) -f CMakeFiles/AbstractVM_.dir/build.make CMakeFiles/AbstractVM_.dir/src/Parser/Parser.cpp.s
+.PHONY : src/Parser/Parser.cpp.s
+
+src/TaskManager/TaskManager.o: src/TaskManager/TaskManager.cpp.o
+
+.PHONY : src/TaskManager/TaskManager.o
+
+# target to build an object file
+src/TaskManager/TaskManager.cpp.o:
+	$(MAKE) -f CMakeFiles/AbstractVM_.dir/build.make CMakeFiles/AbstractVM_.dir/src/TaskManager/TaskManager.cpp.o
+.PHONY : src/TaskManager/TaskManager.cpp.o
+
+src/TaskManager/TaskManager.i: src/TaskManager/TaskManager.cpp.i
+
+.PHONY : src/TaskManager/TaskManager.i
+
+# target to preprocess a source file
+src/TaskManager/TaskManager.cpp.i:
+	$(MAKE) -f CMakeFiles/AbstractVM_.dir/build.make CMakeFiles/AbstractVM_.dir/src/TaskManager/TaskManager.cpp.i
+.PHONY : src/TaskManager/TaskManager.cpp.i
+
+src/TaskManager/TaskManager.s: src/TaskManager/TaskManager.cpp.s
+
+.PHONY : src/TaskManager/TaskManager.s
+
+# target to generate assembly for a file
+src/TaskManager/TaskManager.cpp.s:
+	$(MAKE) -f CMakeFiles/AbstractVM_.dir/build.make CMakeFiles/AbstractVM_.dir/src/TaskManager/TaskManager.cpp.s
+.PHONY : src/TaskManager/TaskManager.cpp.s
+
+src/main.o: src/main.cpp.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/AbstractVM_.dir/build.make CMakeFiles/AbstractVM_.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/AbstractVM_.dir/build.make CMakeFiles/AbstractVM_.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/AbstractVM_.dir/build.make CMakeFiles/AbstractVM_.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -320,28 +374,34 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... AbstractVM"
-	@echo "... AbstractVM/AbstractVM.o"
-	@echo "... AbstractVM/AbstractVM.i"
-	@echo "... AbstractVM/AbstractVM.s"
-	@echo "... General.o"
-	@echo "... General.i"
-	@echo "... General.s"
-	@echo "... Lexer/Lexer.o"
-	@echo "... Lexer/Lexer.i"
-	@echo "... Lexer/Lexer.s"
-	@echo "... LogException/LogException.o"
-	@echo "... LogException/LogException.i"
-	@echo "... LogException/LogException.s"
-	@echo "... OperandFactory/FactoryOperand.o"
-	@echo "... OperandFactory/FactoryOperand.i"
-	@echo "... OperandFactory/FactoryOperand.s"
-	@echo "... TaskManager/TaskManager.o"
-	@echo "... TaskManager/TaskManager.i"
-	@echo "... TaskManager/TaskManager.s"
+	@echo "... AbstractVM_"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/AbstractVM/AbstractVM.o"
+	@echo "... src/AbstractVM/AbstractVM.i"
+	@echo "... src/AbstractVM/AbstractVM.s"
+	@echo "... src/General/General.o"
+	@echo "... src/General/General.i"
+	@echo "... src/General/General.s"
+	@echo "... src/Lexer/Lexer.o"
+	@echo "... src/Lexer/Lexer.i"
+	@echo "... src/Lexer/Lexer.s"
+	@echo "... src/LogException/LogException.o"
+	@echo "... src/LogException/LogException.i"
+	@echo "... src/LogException/LogException.s"
+	@echo "... src/OperandFactory/OperandFactory.o"
+	@echo "... src/OperandFactory/OperandFactory.i"
+	@echo "... src/OperandFactory/OperandFactory.s"
+	@echo "... src/Parser/Parser.o"
+	@echo "... src/Parser/Parser.i"
+	@echo "... src/Parser/Parser.s"
+	@echo "... src/TaskManager/TaskManager.o"
+	@echo "... src/TaskManager/TaskManager.i"
+	@echo "... src/TaskManager/TaskManager.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

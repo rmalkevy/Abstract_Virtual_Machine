@@ -2,7 +2,7 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="AbstractVM" targetName="AbstractVM" />
+      <config projectName="AbstractVM_" targetName="AbstractVM_" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -12,34 +12,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a82b241-676c-4ba4-adcd-ab9278897dbc" name="Default" comment="Solved problem with cycling headers">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AbstractVM/AbstractVM.cpp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AbstractVM/AbstractVM.cpp" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/AbstractVM/AbstractVM.hpp" afterPath="$PROJECT_DIR$/src/AbstractVM/AbstractVM.hpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/General.cpp" afterPath="$PROJECT_DIR$/src/General/General.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/General.hpp" afterPath="$PROJECT_DIR$/src/General/General.hpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lexer/Lexer.cpp" afterPath="$PROJECT_DIR$/src/Lexer/Lexer.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Lexer/Lexer.hpp" afterPath="$PROJECT_DIR$/src/Lexer/Lexer.hpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/LogException/LogException.cpp" afterPath="$PROJECT_DIR$/src/LogException/LogException.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/LogException/LogException.hpp" afterPath="$PROJECT_DIR$/src/LogException/LogException.hpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OperandFactory/FactoryOperand.cpp" afterPath="$PROJECT_DIR$/src/OperandFactory/OperandFactory.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OperandFactory/FactoryOperand.hpp" afterPath="$PROJECT_DIR$/src/OperandFactory/OperandFactory.hpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OperandType/IOperand.hpp" afterPath="$PROJECT_DIR$/src/OperandType/IOperand.hpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OperandType/Operand.hpp" afterPath="$PROJECT_DIR$/src/OperandType/Operand.hpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/OperandType/Operand.hpp.gch" afterPath="$PROJECT_DIR$/src/OperandType/Operand.hpp.gch" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/TaskManager/TaskManager.cpp" afterPath="$PROJECT_DIR$/src/TaskManager/TaskManager.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/TaskManager/TaskManager.hpp" afterPath="$PROJECT_DIR$/src/TaskManager/TaskManager.hpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/src/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/AbstractVM" afterPath="$PROJECT_DIR$/cmake-build-debug/AbstractVM" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AbstractVM.dir/AbstractVM/AbstractVM.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AbstractVM.dir/AbstractVM/AbstractVM.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AbstractVM.dir/General.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AbstractVM.dir/General.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AbstractVM.dir/Lexer/Lexer.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AbstractVM.dir/Lexer/Lexer.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AbstractVM.dir/LogException/LogException.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AbstractVM.dir/LogException/LogException.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AbstractVM.dir/OperandFactory/FactoryOperand.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AbstractVM.dir/OperandFactory/FactoryOperand.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AbstractVM.dir/TaskManager/TaskManager.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AbstractVM.dir/TaskManager/TaskManager.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AbstractVM.dir/main.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AbstractVM.dir/main.cpp.o" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Obj/main.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logExceptions.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logInstructions.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/OperandType/Operand.hpp.gch" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Lexer/Lexer.cpp" afterPath="$PROJECT_DIR$/src/Parser/Parser.cpp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Lexer/Lexer.hpp" afterPath="$PROJECT_DIR$/src/Parser/Parser.hpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AbstractVM.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/AbstractVM.dir/CXX.includecache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Makefile" afterPath="$PROJECT_DIR$/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AbstractVM/AbstractVM.cpp" afterPath="$PROJECT_DIR$/src/AbstractVM/AbstractVM.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AbstractVM/AbstractVM.hpp" afterPath="$PROJECT_DIR$/src/AbstractVM/AbstractVM.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/General/General.hpp" afterPath="$PROJECT_DIR$/src/General/General.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LogException/LogException.cpp" afterPath="$PROJECT_DIR$/src/LogException/LogException.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LogException/LogException.hpp" afterPath="$PROJECT_DIR$/src/LogException/LogException.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OperandFactory/OperandFactory.cpp" afterPath="$PROJECT_DIR$/src/OperandFactory/OperandFactory.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OperandFactory/OperandFactory.hpp" afterPath="$PROJECT_DIR$/src/OperandFactory/OperandFactory.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OperandType/IOperand.hpp" afterPath="$PROJECT_DIR$/src/OperandType/IOperand.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OperandType/Operand.hpp" afterPath="$PROJECT_DIR$/src/OperandType/Operand.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TaskManager/TaskManager.cpp" afterPath="$PROJECT_DIR$/src/TaskManager/TaskManager.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TaskManager/TaskManager.hpp" afterPath="$PROJECT_DIR$/src/TaskManager/TaskManager.hpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,69 +50,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Operand.hpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/OperandType/Operand.hpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-              <folding>
-                <element signature="e#113#129#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="logInstructions.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logInstructions.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Lexer.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Lexer/Lexer.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1181">
-              <caret line="112" column="43" lean-forward="false" selection-start-line="112" selection-start-column="43" selection-end-line="112" selection-end-column="43" />
-              <folding>
-                <element signature="e#50#70#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Makefile" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Makefile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="24" column="19" lean-forward="false" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractVM.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AbstractVM.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AbstractVM/AbstractVM.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="65" column="22" lean-forward="false" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
+            <state relative-caret-position="984">
+              <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
               <folding>
                 <element signature="e#50#75#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TaskManager.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TaskManager/TaskManager.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="559">
-              <caret line="194" column="48" lean-forward="false" selection-start-line="194" selection-start-column="48" selection-end-line="194" selection-end-column="48" />
-              <folding>
-                <element signature="e#50#76#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -132,38 +75,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/TaskAdd.hpp" />
-        <option value="$PROJECT_DIR$/IOperand.hpp" />
-        <option value="$PROJECT_DIR$/Int8_Operand.hpp" />
-        <option value="$PROJECT_DIR$/Int16_Operand.hpp" />
-        <option value="$PROJECT_DIR$/Int32_Operand.hpp" />
-        <option value="$PROJECT_DIR$/Float_Operand.hpp" />
-        <option value="$PROJECT_DIR$/Double_Operand.hpp" />
-        <option value="$PROJECT_DIR$/OperandFactory.cpp" />
-        <option value="$PROJECT_DIR$/OperandFactory.hpp" />
-        <option value="$PROJECT_DIR$/PrecisionHandlingClass/PrecisionHandle_FactoryClass.hpp" />
-        <option value="$PROJECT_DIR$/OperandTypeClasses/Int16_Operand.hpp" />
-        <option value="$PROJECT_DIR$/PrecisionHandlingClass/PrecisionHandle_SingletonClass.hpp" />
-        <option value="$PROJECT_DIR$/OperandTypeClasses/Templete_Operand.h" />
-        <option value="$PROJECT_DIR$/OperandTypeClasses/Int8_Operand.cpp" />
-        <option value="$PROJECT_DIR$/OperandTypeClasses/Double_Operand.hpp" />
-        <option value="$PROJECT_DIR$/OperandTypeClasses/Int8_Operand.hpp" />
-        <option value="$PROJECT_DIR$/OperandTypeClasses/Templete_Operand.hpp" />
-        <option value="$PROJECT_DIR$/OperandTypeClasses/ValueOperand.hpp" />
-        <option value="$PROJECT_DIR$/OperandTypeClasses/ValueOperand.cpp" />
-        <option value="$PROJECT_DIR$/OperandFactoryClass/OperandFactory.cpp" />
-        <option value="$PROJECT_DIR$/OperandFactoryClass/OperandFactory.hpp" />
-        <option value="$PROJECT_DIR$/OperandFactoryClass/FactoryOperand.hpp" />
-        <option value="$PROJECT_DIR$/OperandFactoryClass/FactoryOperand.cpp" />
-        <option value="$PROJECT_DIR$/PrecisionHandlingClass/PrecisionHandleClass.hpp" />
-        <option value="$PROJECT_DIR$/LoggerException/PrecisionHandleClass.hpp" />
         <option value="$PROJECT_DIR$/OperandTypeClasses/IOperand.hpp" />
         <option value="$PROJECT_DIR$/OperandTypeClasses/Operand.hpp" />
         <option value="$PROJECT_DIR$/AbstractVM_SingletonClass/AbstractVM.cpp" />
         <option value="$PROJECT_DIR$/AbstractVM_SingletonClass/AbstractVM.hpp" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/Tasker/Tasker.hpp" />
         <option value="$PROJECT_DIR$/TaskManager/Tasker.hpp" />
         <option value="$PROJECT_DIR$/General.cpp" />
@@ -182,7 +98,34 @@
         <option value="$PROJECT_DIR$/TaskManager/TaskManager.cpp" />
         <option value="$PROJECT_DIR$/cmake-build-debug/logInstructions.txt" />
         <option value="$PROJECT_DIR$/AbstractVM/AbstractVM.cpp" />
+        <option value="$PROJECT_DIR$/src/TaskManager.cpp" />
+        <option value="$PROJECT_DIR$/Bin/log1" />
+        <option value="$PROJECT_DIR$/Bin/log2" />
+        <option value="$PROJECT_DIR$/Bin/log3" />
+        <option value="$PROJECT_DIR$/src/AbstractVM.cpp" />
+        <option value="$PROJECT_DIR$/Bin/logInstructions.txt" />
+        <option value="$PROJECT_DIR$/src/Lexer.hpp" />
+        <option value="$PROJECT_DIR$/src/Lexer.cpp" />
+        <option value="$PROJECT_DIR$/src/LogException.hpp" />
+        <option value="$PROJECT_DIR$/Makefile0" />
+        <option value="$PROJECT_DIR$/src/NLexer/NLexer.hpp" />
+        <option value="$PROJECT_DIR$/src/NLexer/NLexer.cpp" />
+        <option value="$PROJECT_DIR$/src/General/General.cpp" />
+        <option value="$PROJECT_DIR$/src/General/General.hpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/src/Lexer/Parser.cpp" />
+        <option value="$PROJECT_DIR$/src/Lexer/Lexer.hpp" />
         <option value="$PROJECT_DIR$/Makefile" />
+        <option value="$PROJECT_DIR$/src/Lexer/Lexer.cpp" />
+        <option value="$PROJECT_DIR$/src/AbstractVM/AbstractVM.hpp" />
+        <option value="$PROJECT_DIR$/src/Parser/Parser.hpp" />
+        <option value="$PROJECT_DIR$/src/TaskManager/TaskManager.hpp" />
+        <option value="$PROJECT_DIR$/src/AbstractVM/AbstractVM.cpp" />
+        <option value="$PROJECT_DIR$/src/LogException/LogException.hpp" />
+        <option value="$PROJECT_DIR$/src/LogException/LogException.cpp" />
+        <option value="$PROJECT_DIR$/src/Parser/Parser.cpp" />
+        <option value="$PROJECT_DIR$/src/TaskManager/TaskManager.cpp" />
       </list>
     </option>
   </component>
@@ -218,8 +161,61 @@
         <subPane>
           <expand>
             <path>
-              <item name="AbstractVM" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="AbstractVM_" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="AbstractVM_" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AbstractVM_" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="AbstractVM_" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AbstractVM_" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="AbstractVM_" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="AbstractVM" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AbstractVM_" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="AbstractVM_" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="General" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AbstractVM_" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="AbstractVM_" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Lexer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AbstractVM_" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="AbstractVM_" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="LogException" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AbstractVM_" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="AbstractVM_" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="OperandFactory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AbstractVM_" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="AbstractVM_" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="OperandType" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AbstractVM_" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="AbstractVM_" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Parser" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AbstractVM_" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="AbstractVM_" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="TaskManager" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -233,14 +229,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/General" />
-      <recent name="$PROJECT_DIR$/AbstractVM_SingletonClass" />
-      <recent name="$PROJECT_DIR$/OperandFactoryClass" />
-      <recent name="$PROJECT_DIR$/OperandTypeClasses" />
+      <recent name="$PROJECT_DIR$/src/TaskManager" />
+      <recent name="$PROJECT_DIR$/src/OperandFactory" />
+      <recent name="$PROJECT_DIR$/src/LogException" />
+      <recent name="$PROJECT_DIR$/src/Lexer" />
+      <recent name="$PROJECT_DIR$/src/OperandType" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -256,15 +253,19 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.AbstractVM">
-    <configuration name="AbstractVM" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AbstractVM" TARGET_NAME="AbstractVM" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AbstractVM" RUN_TARGET_NAME="AbstractVM">
+    <configuration name="AbstractVM" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AbstractVM_" TARGET_NAME="AbstractVM" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AbstractVM_" RUN_TARGET_NAME="AbstractVM">
+      <envs />
+    </configuration>
+    <configuration name="AbstractVM_" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="AbstractVM_" TARGET_NAME="AbstractVM_" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="AbstractVM_" RUN_TARGET_NAME="AbstractVM_">
       <envs />
     </configuration>
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
       <envs />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
       <item index="1" class="java.lang.String" itemvalue="Application.AbstractVM" />
+      <item index="2" class="java.lang.String" itemvalue="Application.AbstractVM_" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -287,31 +288,33 @@
       <workItem from="1511982914745" duration="47137000" />
       <workItem from="1512320388670" duration="70000" />
       <workItem from="1512320600955" duration="78000" />
-      <workItem from="1512320694527" duration="55167000" />
+      <workItem from="1512320694527" duration="87474000" />
+      <workItem from="1512740116441" duration="25159000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="237338000" />
+    <option name="totallyTimeSpent" value="294804000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16962843" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28198075" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22420909" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21458046" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2874828" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16720517" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21458046" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20632738" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="SFDX" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28198075" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -357,80 +360,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/OperandTypeClasses/Int8_Operand.hpp" />
-    <entry file="file://$PROJECT_DIR$/src/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="24" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OperandTypeClasses/Int8_Operand.cpp" />
-    <entry file="file://$PROJECT_DIR$/src/AbstractVM/AbstractVM.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AbstractVM/AbstractVM.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/OperandFactory/OperandFactory.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="63" lean-forward="false" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OperandTypeClasses/Templete_Operand.hpp" />
-    <entry file="file://$PROJECT_DIR$/src/LogException/LogException.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="2" lean-forward="false" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#2#0" expanded="false" />
-            <element signature="e#159#192#0" expanded="false" />
-            <element signature="e#1869#1881#0" expanded="false" />
-            <element signature="e#1963#1975#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OperandTypeClasses/Int8_Operand.cpp" />
-    <entry file="file://$PROJECT_DIR$/src/General/General.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="58" lean-forward="false" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/OperandFactory/OperandFactory.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="63" lean-forward="true" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OperandTypeClasses/Int8_Operand.hpp" />
-    <entry file="file://$PROJECT_DIR$/src/AbstractVM/AbstractVM.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Operand.hpp" />
-    <entry file="file://$PROJECT_DIR$/TaskAdd.hpp" />
-    <entry file="file://$PROJECT_DIR$/TaskAdd.cpp" />
-    <entry file="file://$PROJECT_DIR$/OperandTypeClasses/Int32_Operand.cpp" />
-    <entry file="file://$PROJECT_DIR$/OperandTypeClasses/Int32_Operand.hpp" />
-    <entry file="file://$PROJECT_DIR$/OperandTypeClasses/Float_Operand.hpp" />
-    <entry file="file://$PROJECT_DIR$/OperandTypeClasses/Float_Operand.cpp" />
     <entry file="file://$PROJECT_DIR$/OperandTypeClasses/Double_Operand.cpp" />
     <entry file="file://$PROJECT_DIR$/PrecisionHandlingClass/PrecisionHandle_SingletonClass.cpp" />
     <entry file="file://$PROJECT_DIR$/OperandTypeClasses/Int16_Operand.cpp" />
@@ -448,13 +377,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -466,14 +388,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="17" lean-forward="false" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lexer/Lexer.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="39" column="21" lean-forward="true" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -511,24 +425,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/General/General.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LogException/LogException.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="71" column="52" lean-forward="false" selection-start-line="71" selection-start-column="52" selection-end-line="71" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#2#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LogException/LogException.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="805">
@@ -537,29 +433,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TaskManager/TaskManager.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="194" column="48" lean-forward="false" selection-start-line="194" selection-start-column="48" selection-end-line="194" selection-end-column="48" />
-          <folding>
-            <element signature="e#50#76#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/logExceptions.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logInstructions.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -567,36 +444,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AbstractVM/AbstractVM.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="30" column="40" lean-forward="true" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
-          <folding>
-            <element signature="e#119#137#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lexer/Lexer.cpp">
+    <entry file="file://$PROJECT_DIR$/src/Parser/Parser.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1181">
           <caret line="112" column="43" lean-forward="false" selection-start-line="112" selection-start-column="43" selection-end-line="112" selection-end-column="43" />
           <folding>
-            <element signature="e#50#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/OperandType/Operand.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-          <folding>
-            <element signature="e#113#129#0" expanded="true" />
+            <element signature="e#50#71#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -611,11 +467,201 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/OperandFactory/OperandFactory.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bin/log2" />
+    <entry file="file://$PROJECT_DIR$/Bin/log3" />
+    <entry file="file://$PROJECT_DIR$/Bin/log1" />
+    <entry file="file://$PROJECT_DIR$/Bin/logExceptions.txt" />
+    <entry file="file://$PROJECT_DIR$/Bin/logInstructions.txt" />
+    <entry file="file://$PROJECT_DIR$/Makefile0" />
+    <entry file="file://$PROJECT_DIR$/src/NLexer/NLexer.hpp" />
+    <entry file="file://$PROJECT_DIR$/src/NLexer/NLexer.cpp" />
+    <entry file="file://$PROJECT_DIR$/src/General/General.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="51" lean-forward="false" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/General/General.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="562">
+          <caret line="60" column="2" lean-forward="false" selection-start-line="60" selection-start-column="2" selection-end-line="60" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="e#48#67#0" expanded="false" />
+            <element signature="e#112#129#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Makefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="24" column="19" lean-forward="false" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+        <state relative-caret-position="41">
+          <caret line="60" column="43" lean-forward="true" selection-start-line="60" selection-start-column="43" selection-end-line="60" selection-end-column="43" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/exception">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="96" column="28" lean-forward="false" selection-start-line="96" selection-start-column="28" selection-end-line="96" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logInstructions.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logExceptions.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lexer/Lexer.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-250">
+          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="e#110#127#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Parser/Parser.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="35" column="38" lean-forward="false" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+          <folding>
+            <element signature="e#109#125#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OperandType/Operand.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding>
+            <element signature="e#321#337#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OperandType/IOperand.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TaskManager/TaskManager.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-245">
+          <caret line="14" column="57" lean-forward="false" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
+          <folding>
+            <element signature="e#123#138#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AbstractVM/AbstractVM.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="42" column="32" lean-forward="false" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+          <folding>
+            <element signature="e#119#137#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LogException/LogException.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="75" column="14" lean-forward="false" selection-start-line="75" selection-start-column="14" selection-end-line="75" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#2#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LogException/LogException.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1560">
+          <caret line="105" column="29" lean-forward="false" selection-start-line="105" selection-start-column="29" selection-end-line="105" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lexer/Lexer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="71" lean-forward="true" selection-start-line="23" selection-start-column="71" selection-end-line="23" selection-end-column="71" />
+          <folding>
+            <element signature="e#49#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Parser/Parser.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding>
+            <element signature="e#50#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TaskManager/TaskManager.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="202" column="48" lean-forward="false" selection-start-line="202" selection-start-column="48" selection-end-line="202" selection-end-column="48" />
+          <folding>
+            <element signature="e#50#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AbstractVM/AbstractVM.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="984">
+          <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+          <folding>
+            <element signature="e#50#75#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

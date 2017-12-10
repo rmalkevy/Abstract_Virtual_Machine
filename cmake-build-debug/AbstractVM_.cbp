@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="AbstractVM_"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="AbstractVM_">
+				<Option output="/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/AbstractVM_" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/Makefile&quot;  VERBOSE=1 AbstractVM_"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="AbstractVM_/fast">
+				<Option output="/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/AbstractVM_" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/Makefile&quot;  VERBOSE=1 AbstractVM_/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Henprokuror/CLionProjects/AbstractVM_/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/main.cpp">
+			<Option target="AbstractVM_"/>
+		</Unit>
+		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/src/AbstractVM/AbstractVM.cpp">
+			<Option target="AbstractVM_"/>
+		</Unit>
+		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/src/AbstractVM/AbstractVM.hpp">
+			<Option target="AbstractVM_"/>
+		</Unit>
+		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/src/General/General.cpp">
+			<Option target="AbstractVM_"/>
+		</Unit>
+		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/src/General/General.hpp">
+			<Option target="AbstractVM_"/>
+		</Unit>
+		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/src/Lexer/Lexer.cpp">
+			<Option target="AbstractVM_"/>
+		</Unit>
+		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/src/Lexer/Lexer.hpp">
+			<Option target="AbstractVM_"/>
+		</Unit>
+		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/src/LogException/LogException.cpp">
+			<Option target="AbstractVM_"/>
+		</Unit>
+		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/src/LogException/LogException.hpp">
+			<Option target="AbstractVM_"/>
+		</Unit>
+		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/src/OperandFactory/OperandFactory.cpp">
+			<Option target="AbstractVM_"/>
+		</Unit>
+		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/src/OperandFactory/OperandFactory.hpp">
+			<Option target="AbstractVM_"/>
+		</Unit>
+		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/src/OperandType/IOperand.hpp">
+			<Option target="AbstractVM_"/>
+		</Unit>
+		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/src/OperandType/Operand.hpp">
+			<Option target="AbstractVM_"/>
+		</Unit>
+		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/src/Parser/Parser.cpp">
+			<Option target="AbstractVM_"/>
+		</Unit>
+		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/src/Parser/Parser.hpp">
+			<Option target="AbstractVM_"/>
+		</Unit>
+		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/src/TaskManager/TaskManager.cpp">
+			<Option target="AbstractVM_"/>
+		</Unit>
+		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/src/TaskManager/TaskManager.hpp">
+			<Option target="AbstractVM_"/>
+		</Unit>
+		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/src/main.cpp">
+			<Option target="AbstractVM_"/>
+		</Unit>
+		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

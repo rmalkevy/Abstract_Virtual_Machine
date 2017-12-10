@@ -6,6 +6,7 @@
 #define ABSTRACTVM_TASK_MANAGER_HPP
 
 #include <list>
+#include <vector>
 #include "../General/General.hpp"
 #include "../OperandFactory/OperandFactory.hpp"
 
@@ -34,6 +35,8 @@ private:
 	eTaskSignal _endCircleTask();
 	eTaskSignal _commentTask();
 
+	std::vector<std::string>	_logPrints;
+
 public:
 	TaskManager();
 	~TaskManager() = default;
@@ -43,6 +46,7 @@ public:
 	eTaskSignal	taskDistributor(const InfoForTask &info);
 	static eTaskSignal &taskSignal();
 	static eTaskSignal &breakCircle();
+	void	LogPrint() const;
 };
 
 #endif //ABSTRACTVM_TASKER_HPP

@@ -8,8 +8,8 @@
 #include <fstream>
 #include <sstream>
 #include "../OperandFactory/OperandFactory.hpp"
-#include "../Lexer/Lexer.hpp"
 #include "../TaskManager/TaskManager.hpp"
+#include "../Parser/Parser.hpp"
 
 class LogException;
 
@@ -18,7 +18,7 @@ private:
 	int							_ac;
 	char						**_av;
 	static int					_numberLine;
-	Lexer						*_lexer;
+	Parser						*_parser;
 	TaskManager					*_taskManager;
 	std::vector<std::string>	_logInstructions;
 	std::vector<std::string>	_logExceptions;
@@ -32,7 +32,7 @@ public:
 	void		logic_forReadingFiles();
 	static int	getNumberLine();
 
-	// Delegate function from Lexer to AbstractVM
+	// Delegate function from Parser to AbstractVM
 	void		processLine_forTaskManager(const std::string & input);
 
 	// Delegate function from TaskManager to AbstractVM
@@ -40,6 +40,7 @@ public:
 
 	void		log_toFileInstructions();
 	void		log_toFileExceptions();
+	void		log_toConsole();
 };
 
 

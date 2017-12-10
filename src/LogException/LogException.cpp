@@ -99,3 +99,10 @@ const char* LogException::OpeningFileError::what() const throw() {
 	std::string errorMassage("Opening file failed, it either doesn't exist or is not accessible.");
 	return errorMassage.c_str();
 }
+
+const char* LogException::EmptyStackError::what() const throw() {
+//	TaskManager::taskSignal() = TaskExit;
+	std::string errorMassage("Line " + std::to_string(AbstractVM::getNumberLine()) +
+							 " : Error: Stack is empty !");
+	return errorMassage.c_str();
+}

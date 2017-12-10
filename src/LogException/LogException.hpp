@@ -69,7 +69,11 @@ public:
 		const char* what() const throw() override;
 	};
 
-	class OpeningFileError : public std::exception {
+	struct OpeningFileError : public std::exception {
+		const char* what() const throw() override;
+	};
+
+	struct EmptyStackError : public std::exception {
 		const char* what() const throw() override;
 	};
 
@@ -106,7 +110,7 @@ void LogException::IsInRange(const T &value, const eOperandType & eType) const {
 			}
 			break;
 		case Float:
-			if (value < std::numeric_limits<float>::min()) {
+			if (value < std::numeric_limits<float>::lowest()) {
 				throw LogException::UnderflowError();
 			}
 			else if (value > std::numeric_limits<float>::max()) {
@@ -114,7 +118,7 @@ void LogException::IsInRange(const T &value, const eOperandType & eType) const {
 			}
 			break;
 		case Double:
-			if (value < std::numeric_limits<double>::min()) {
+			if (value < std::numeric_limits<double>::lowest()) {
 				throw LogException::UnderflowError();
 			}
 			else if (value > std::numeric_limits<double>::max()) {

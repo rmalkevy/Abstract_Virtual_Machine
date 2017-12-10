@@ -10,14 +10,14 @@ int AbstractVM::_numberLine = 0;
 AbstractVM::AbstractVM(int ac, char** av)
 		: _ac(ac),
 		  _av(av),
-		  _lexer(new Lexer),
+		  _parser(new Parser),
 		  _taskManager(new TaskManager),
 		  _logInstructions(),
 		  _logExceptions()
 {}
 
 AbstractVM::~AbstractVM() {
-	delete _lexer;
+	delete _parser;
 	delete _taskManager;
 }
 
@@ -25,14 +25,15 @@ void AbstractVM::distributor() {
 	if (_ac == 1) {
 		logic_forConsoleInput();
 	}
-	else {
+	else if (_ac == 2) {
 		logic_forReadingFiles();
 	}
+	else
+		std::cout << "Too many arguments" << std::endl;
 }
 
 void AbstractVM::logic_forConsoleInput() {
 
-	// TODO: how handle problem with command exit and other commands after exit
 	std::string	input;
 
 	while (true) {
@@ -52,12 +53,12 @@ void AbstractVM::logic_forConsoleInput() {
 			std::cout << e.what() << std::endl;
 		}
 
-		// TODO: if you give exit task - you must turn on flat TaskExit and will not receive else nothing instructions
 		if (TaskManager::taskSignal() == TaskExit
 			&& TaskManager::breakCircle() == TaskBreakCircle) {
 			break;
 		}
 	}
+	log_toConsole();
 	log_toFileInstructions();
 	log_toFileExceptions();
 }
@@ -65,44 +66,41 @@ void AbstractVM::logic_forConsoleInput() {
 void AbstractVM::logic_forReadingFiles() {
 	std::string     line;
 
-	for (int i = 1; i < _ac; i++) {
-		std::ifstream   inStream(_av[i]);
+	std::ifstream   inStream(_av[1]);
 
-		// *** Check for valid file *** //
+	// *** Check for valid file *** //
+	try {
+		if (! inStream.is_open()) {
+			throw LogException::OpeningFileError();
+		}
+	}
+	catch (const std::exception & e) {
+		_logExceptions.push_back(std::string(e.what()));
+		std::cout << e.what() << std::endl;
+	}
+
+	// *** Read file and processing all lines *** //
+	while ( std::getline (inStream, line) )
+	{
 		try {
-			if (! inStream.is_open()) {
-				throw LogException::OpeningFileError();
-			}
+			AbstractVM::_numberLine++;
+
+			// Forming package for taskManager
+			processLine_forTaskManager(line);
+
+			// Transfer package and receive signal
+			taskDistributor();
 		}
 		catch (const std::exception & e) {
-			_logExceptions.push_back(std::string(e.what()));
+			_logExceptions.push_back(e.what());
 			std::cout << e.what() << std::endl;
 		}
 
-		// *** Read file and processing all lines *** //
-		while ( std::getline (inStream, line) )
-		{
-			try {
-				AbstractVM::_numberLine++;
-
-				// Forming package for taskManager
-				processLine_forTaskManager(line);
-
-				// Transfer package and receive signal
-				taskDistributor();
-			}
-			catch (const std::exception & e) {
-				std::cout << e.what() << std::endl;
-				// TODO: logger that write all mistakes in string and in end write it all in cout
-			}
-
-			// TODO: if you give exit task - you must turn on flat TaskExit and will not receive else nothing instructions
-			if (TaskManager::taskSignal() == TaskExit) {
-				break;
-			}
+		if (TaskManager::taskSignal() == TaskExit) {
+			break;
 		}
-		inStream.close();
 	}
+	inStream.close();
 	log_toFileExceptions();
 }
 
@@ -111,11 +109,11 @@ int AbstractVM::getNumberLine() {
 }
 
 void AbstractVM::processLine_forTaskManager(const std::string &input) {
-	_lexer->processLine_forTaskManager(input);
+	_parser->processLine_forTaskManager(input);
 }
 
 void AbstractVM::taskDistributor() {
-	_taskManager->taskDistributor(_lexer->getInfo_forTask());
+	_taskManager->taskDistributor(_parser->getInfo_forTask());
 }
 
 void AbstractVM::log_toFileInstructions() {
@@ -130,4 +128,8 @@ void AbstractVM::log_toFileExceptions() {
 	for (const auto & item : _logExceptions) {
 		ofstream << item << "\n";
 	}
+}
+
+void AbstractVM::log_toConsole() {
+	_taskManager->LogPrint();
 }
