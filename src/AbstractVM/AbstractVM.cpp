@@ -10,16 +10,11 @@ int AbstractVM::_numberLine = 0;
 AbstractVM::AbstractVM(int ac, char** av)
 		: _ac(ac),
 		  _av(av),
-		  _parser(new Parser),
-		  _taskManager(new TaskManager),
+		  _parser(std::make_unique<Parser>()),
+		  _taskManager(std::make_unique<TaskManager>()),
 		  _logInstructions(),
 		  _logExceptions()
 {}
-
-AbstractVM::~AbstractVM() {
-	delete _parser;
-	delete _taskManager;
-}
 
 void AbstractVM::distributor() {
 	if (_ac == 1) {
@@ -58,7 +53,8 @@ void AbstractVM::logic_forConsoleInput() {
 			break;
 		}
 	}
-	log_toConsole();
+	if (_logExceptions.empty())
+		log_toConsole();
 	log_toFileInstructions();
 	log_toFileExceptions();
 }
@@ -101,6 +97,8 @@ void AbstractVM::logic_forReadingFiles() {
 		}
 	}
 	inStream.close();
+	if (_logExceptions.empty())
+		log_toConsole();
 	log_toFileExceptions();
 }
 

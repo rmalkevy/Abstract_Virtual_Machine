@@ -15,17 +15,17 @@ class LogException;
 
 class AbstractVM {
 private:
-	int							_ac;
-	char						**_av;
-	static int					_numberLine;
-	Parser						*_parser;
-	TaskManager					*_taskManager;
-	std::vector<std::string>	_logInstructions;
-	std::vector<std::string>	_logExceptions;
+	int								_ac;
+	char							**_av;
+	static int						_numberLine;
+	std::unique_ptr<Parser>			_parser;
+	std::unique_ptr<TaskManager>	_taskManager;
+	std::vector<std::string>		_logInstructions;
+	std::vector<std::string>		_logExceptions;
 
 public:
 	AbstractVM(int ac, char **av);
-	~AbstractVM();
+	~AbstractVM() = default;
 
 	void		distributor();
 	void		logic_forConsoleInput();

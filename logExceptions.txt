@@ -1,0 +1,5 @@
+Line 1 : Error: lexical mistake !
+Line 5 : Error: lexical mistake !
+Line 7 : Error: instruction pop on an empty stack !
+Line 8 : Error: overflow on a value or the result of an operation !
+Line 10 : Error: overflow on a value or the result of an operation !

@@ -87,11 +87,11 @@ eTaskSignal TaskManager::_addTask() {
 	}
 	if (_stack.size() < 2)
 		throw LogException::LessThanTwoValuesInStackError();
-	auto a = *(*_stack.begin()); _stack.erase(_stack.begin());
-	auto b = *(*_stack.begin()); _stack.erase(_stack.begin());
-	auto c = std::make_shared<const IOperand*>(*a + *b);
-	delete a;
-	delete b;
+	auto begin = _stack.begin();
+	auto a = *begin;
+	auto b = *(++begin);
+	auto c = std::make_shared<const IOperand*>((**a) + (**b));
+	_stack.erase(_stack.begin()); _stack.erase(_stack.begin());
 	_stack.push_front(c);
 	return TaskDefault;
 }
@@ -103,11 +103,11 @@ eTaskSignal TaskManager::_subTask() {
 	}
 	if (_stack.size() < 2)
 		throw LogException::LessThanTwoValuesInStackError();
-	auto a = *(*_stack.begin()); _stack.erase(_stack.begin());
-	auto b = *(*_stack.begin()); _stack.erase(_stack.begin());
-	auto c = std::make_shared<const IOperand*>(*a - *b);
-	delete a;
-	delete b;
+	auto begin = _stack.begin();
+	auto a = *begin;
+	auto b = *(++begin);
+	auto c = std::make_shared<const IOperand*>((**a) - (**b));
+	_stack.erase(_stack.begin()); _stack.erase(_stack.begin());
 	_stack.push_front(c);
 	return TaskDefault;
 }
@@ -119,11 +119,11 @@ eTaskSignal TaskManager::_mulTask() {
 	}
 	if (_stack.size() < 2)
 		throw LogException::LessThanTwoValuesInStackError();
-	auto a = *(*_stack.begin()); _stack.erase(_stack.begin());
-	auto b = *(*_stack.begin()); _stack.erase(_stack.begin());
-	auto c = std::make_shared<const IOperand*>(*a * *b);
-	delete a;
-	delete b;
+	auto begin = _stack.begin();
+	auto a = *begin;
+	auto b = *(++begin);
+	auto c = std::make_shared<const IOperand*>((**a) * (**b));
+	_stack.erase(_stack.begin()); _stack.erase(_stack.begin());
 	_stack.push_front(c);
 	return TaskDefault;
 }
@@ -135,11 +135,11 @@ eTaskSignal TaskManager::_divTask() {
 	}
 	if (_stack.size() < 2)
 		throw LogException::LessThanTwoValuesInStackError();
-	auto a = *(*_stack.begin()); _stack.erase(_stack.begin());
-	auto b = *(*_stack.begin()); _stack.erase(_stack.begin());
-	auto c = std::make_shared<const IOperand*>(*a / *b);
-	delete a;
-	delete b;
+	auto begin = _stack.begin();
+	auto a = *begin;
+	auto b = *(++begin);
+	auto c = std::make_shared<const IOperand*>((**a) / (**b));
+	_stack.erase(_stack.begin()); _stack.erase(_stack.begin());
 	_stack.push_front(c);
 	return TaskDefault;
 }
@@ -151,11 +151,11 @@ eTaskSignal TaskManager::_modTask() {
 	}
 	if (_stack.size() < 2)
 		throw LogException::LessThanTwoValuesInStackError();
-	auto a = *(*_stack.begin()); _stack.erase(_stack.begin());
-	auto b = *(*_stack.begin()); _stack.erase(_stack.begin());
-	auto c = std::make_shared<const IOperand*>(*a % *b);
-	delete a;
-	delete b;
+	auto begin = _stack.begin();
+	auto a = *begin;
+	auto b = *(++begin);
+	auto c = std::make_shared<const IOperand*>((**a) % (**b));
+	_stack.erase(_stack.begin()); _stack.erase(_stack.begin());
 	_stack.push_front(c);
 	return TaskDefault;
 }
@@ -217,7 +217,7 @@ eTaskSignal TaskManager::_exitTask() {
 }
 
 eTaskSignal TaskManager::_endCircleTask() {
-	std::cout << "endCircleTask" << std::endl;
+//	std::cout << "endCircleTask" << std::endl;
 	if (TaskManager::taskSignal() != TaskExit) {
 		throw LogException::NoExitInstructionError();
 	}
@@ -226,7 +226,7 @@ eTaskSignal TaskManager::_endCircleTask() {
 }
 
 eTaskSignal TaskManager::_commentTask() {
-	std::cout << "commentTask" << std::endl;
+//	std::cout << "commentTask" << std::endl;
 	return TaskDefault;
 }
 
