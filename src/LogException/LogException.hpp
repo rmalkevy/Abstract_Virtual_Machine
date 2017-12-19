@@ -17,6 +17,7 @@ private:
 public:
 	LogException(LogException const &) = delete;
 	LogException &operator=(LogException const &) = delete;
+	~LogException() = default;
 
 	static LogException *Instance();
 

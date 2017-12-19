@@ -1,6 +1,13 @@
 # Abstract_Virtual_Machine
 Abstract Virtual Machine, C++, C++11 standard
 
-containers 		-> std::vector, std::array, std::stack, std::list
+For compilation:
+1)	Open console or terminal
+2)	In directory with project write this command:
+	-> make
 
-technologies	-> std::regex (for parsing strings)
+For run program:
+1)	In directory with project write this command:
+	-> ./avm
+	or
+	-> ./avm [arg]

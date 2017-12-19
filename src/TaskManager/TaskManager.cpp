@@ -90,7 +90,7 @@ eTaskSignal TaskManager::_addTask() {
 	auto begin = _stack.begin();
 	auto a = *begin;
 	auto b = *(++begin);
-	auto c = std::make_shared<const IOperand*>((**a) + (**b));
+	auto c = std::make_shared<const IOperand*>((**b) + (**a));
 	_stack.erase(_stack.begin()); _stack.erase(_stack.begin());
 	_stack.push_front(c);
 	return TaskDefault;
@@ -106,7 +106,7 @@ eTaskSignal TaskManager::_subTask() {
 	auto begin = _stack.begin();
 	auto a = *begin;
 	auto b = *(++begin);
-	auto c = std::make_shared<const IOperand*>((**a) - (**b));
+	auto c = std::make_shared<const IOperand*>((**b) - (**a));
 	_stack.erase(_stack.begin()); _stack.erase(_stack.begin());
 	_stack.push_front(c);
 	return TaskDefault;
@@ -122,7 +122,7 @@ eTaskSignal TaskManager::_mulTask() {
 	auto begin = _stack.begin();
 	auto a = *begin;
 	auto b = *(++begin);
-	auto c = std::make_shared<const IOperand*>((**a) * (**b));
+	auto c = std::make_shared<const IOperand*>((**b) * (**a));
 	_stack.erase(_stack.begin()); _stack.erase(_stack.begin());
 	_stack.push_front(c);
 	return TaskDefault;
@@ -138,7 +138,7 @@ eTaskSignal TaskManager::_divTask() {
 	auto begin = _stack.begin();
 	auto a = *begin;
 	auto b = *(++begin);
-	auto c = std::make_shared<const IOperand*>((**a) / (**b));
+	auto c = std::make_shared<const IOperand*>((**b) / (**a));
 	_stack.erase(_stack.begin()); _stack.erase(_stack.begin());
 	_stack.push_front(c);
 	return TaskDefault;
@@ -154,7 +154,7 @@ eTaskSignal TaskManager::_modTask() {
 	auto begin = _stack.begin();
 	auto a = *begin;
 	auto b = *(++begin);
-	auto c = std::make_shared<const IOperand*>((**a) % (**b));
+	auto c = std::make_shared<const IOperand*>((**b) % (**a));
 	_stack.erase(_stack.begin()); _stack.erase(_stack.begin());
 	_stack.push_front(c);
 	return TaskDefault;
@@ -238,7 +238,7 @@ eTaskSignal& TaskManager::breakCircle() {
 	return _breakCircle;
 }
 
-void TaskManager::LogPrint() const {
+void TaskManager::printLogResults() const {
 	for (const auto & item: _logPrints) {
 		std::cout << item << std::endl;
 	}

@@ -24,8 +24,11 @@ private:
 	std::vector<std::string>		_logExceptions;
 
 public:
+	AbstractVM() = default;
 	AbstractVM(int ac, char **av);
 	~AbstractVM() = default;
+	AbstractVM(const AbstractVM &) = delete;
+	const AbstractVM &operator=(const AbstractVM &) = delete;
 
 	void		distributor();
 	void		logic_forConsoleInput();
@@ -40,7 +43,8 @@ public:
 
 	void		log_toFileInstructions();
 	void		log_toFileExceptions();
-	void		log_toConsole();
+	void		log_toConsoleResults() const;
+	void		log_toConsoleExceptions() const;
 };
 
 

@@ -92,6 +92,7 @@ clean:
 
 fclean: clean
 	@ rm -f $(NAME) $(NAMELIB)
+	@ rm -f logExceptions.txt logInstructions.txt
 	@ echo "$(RED)[fclean]$(RESET)"
 
 re: fclean all

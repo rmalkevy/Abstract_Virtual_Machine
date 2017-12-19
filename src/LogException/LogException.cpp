@@ -55,13 +55,13 @@ const char* LogException::DivisionByZeroError::what() const throw() {
 const char* LogException::ModuloByZeroError::what() const throw() {
 //	TaskManager::taskSignal() = TaskExit;
 	std::string errorMassage("Line " + std::to_string(AbstractVM::getNumberLine()) +
-							 " : Error: division by modulo !");
+							 " : Error: modulo by zero !");
 	return errorMassage.c_str();
 }
 
 const char* LogException::NoExitInstructionError::what() const throw() {
 //	TaskManager::taskSignal() = TaskExit;
-	std::string errorMassage("Line " + std::to_string(AbstractVM::getNumberLine()) +
+	std::string errorMassage("Line " + std::to_string(AbstractVM::getNumberLine() + 1) +
 							 " : Error: program doesn't have exit instruction !");
 	return errorMassage.c_str();
 }

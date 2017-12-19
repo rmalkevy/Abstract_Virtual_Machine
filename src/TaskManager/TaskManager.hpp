@@ -46,7 +46,7 @@ public:
 	eTaskSignal	taskDistributor(const InfoForTask &info);
 	static eTaskSignal &taskSignal();
 	static eTaskSignal &breakCircle();
-	void	LogPrint() const;
+	void	printLogResults() const;
 };
 
 #endif //ABSTRACTVM_TASKER_HPP

@@ -39,6 +39,9 @@ public:
 	Parser();
 	~Parser() = default;
 
+	Parser(const Parser &) = delete;
+	const Parser &operator=(const Parser &) = delete;
+
 	void	processLine_forTaskManager(const std::string &input);
 	void	analyzeTokens_fromRegexPushAssert(const std::string &input);
 	void	initializeCheckers();

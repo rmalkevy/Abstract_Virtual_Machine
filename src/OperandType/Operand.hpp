@@ -20,16 +20,15 @@ private:
 	std::string		_value;
 
 public:
-	Operand<T>() = delete;
-	Operand<T>(Operand<T> const &) = delete;
-	Operand<T> &operator=(Operand<T> const &) = delete;
-
 	explicit Operand<T>(std::string const & valueString)
 			: _eType(T),
 			  _value(valueString)
 	{}
-
 	~Operand<T>() = default;
+
+	Operand<T>() = delete;
+	Operand<T>(Operand<T> const &) = delete;
+	Operand<T> &operator=(Operand<T> const &) = delete;
 
 	int getPrecision() const override {
 		return _eType;
@@ -69,13 +68,13 @@ IOperand const * Operand<T>::operator+( IOperand const & rhs ) const {
 	if (eType <= Int32) {
 		auto value = std::stol(_value) + std::stol(rhs.toString());
 		LogException::Instance()->IsInRange<long>(value, eType);
-		return FactoryOperand::Instance()->createOperand(std::to_string(value), _eType);
+		return FactoryOperand::Instance()->createOperand(std::to_string(value), eType);
 	}
 
 	// Processing floating point type variables
 	auto value = std::stod(_value) + std::stod(rhs.toString());
 	LogException::Instance()->IsInRange<double>(value, eType);
-	return FactoryOperand::Instance()->createOperand(std::to_string(value), _eType);
+	return FactoryOperand::Instance()->createOperand(std::to_string(value), eType);
 }
 
 //*** Difference operator ***//
@@ -89,13 +88,13 @@ IOperand const * Operand<T>::operator-( IOperand const & rhs ) const {
 	if (eType <= Int32) {
 		auto value = std::stol(_value) - std::stol(rhs.toString());
 		LogException::Instance()->IsInRange<long>(value, eType);
-		return FactoryOperand::Instance()->createOperand(std::to_string(value), _eType);
+		return FactoryOperand::Instance()->createOperand(std::to_string(value), eType);
 	}
 
 	// Processing floating point type variables
 	auto value = std::stod(_value) - std::stod(rhs.toString());
 	LogException::Instance()->IsInRange<double>(value, eType);
-	return FactoryOperand::Instance()->createOperand(std::to_string(value), _eType);
+	return FactoryOperand::Instance()->createOperand(std::to_string(value), eType);
 }
 
 //*** Product operator ***//
@@ -109,13 +108,13 @@ IOperand const * Operand<T>::operator*( IOperand const & rhs ) const {
 	if (eType <= Int32) {
 		auto value = std::stol(_value) * std::stol(rhs.toString());
 		LogException::Instance()->IsInRange<long>(value, eType);
-		return FactoryOperand::Instance()->createOperand(std::to_string(value), _eType);
+		return FactoryOperand::Instance()->createOperand(std::to_string(value), eType);
 	}
 
 	// Processing floating point type variables
 	auto value = std::stod(_value) * std::stod(rhs.toString());
 	LogException::Instance()->IsInRange<double>(value, eType);
-	return FactoryOperand::Instance()->createOperand(std::to_string(value), _eType);
+	return FactoryOperand::Instance()->createOperand(std::to_string(value), eType);
 }
 
 //*** Quotient operator ***//
@@ -131,7 +130,7 @@ IOperand const * Operand<T>::operator/( IOperand const & rhs ) const {
 		if (denominator == 0) throw LogException::DivisionByZeroError();
 		auto value = std::stol(_value) / denominator;
 		LogException::Instance()->IsInRange<long>(value, eType);
-		return FactoryOperand::Instance()->createOperand(std::to_string(value), _eType);
+		return FactoryOperand::Instance()->createOperand(std::to_string(value), eType);
 	}
 
 	// Processing floating point type variables
@@ -139,7 +138,7 @@ IOperand const * Operand<T>::operator/( IOperand const & rhs ) const {
 	if (denominator == 0) throw LogException::DivisionByZeroError();
 	auto value = std::stod(_value) / denominator;
 	LogException::Instance()->IsInRange<double>(value, eType);
-	return FactoryOperand::Instance()->createOperand(std::to_string(value), _eType);
+	return FactoryOperand::Instance()->createOperand(std::to_string(value), eType);
 }
 
 //*** Modulo operator ***//
@@ -155,7 +154,7 @@ IOperand const * Operand<T>::operator%( IOperand const & rhs ) const {
 		if (denominator == 0) throw LogException::ModuloByZeroError();
 		auto value = std::stol(_value) % denominator;
 		LogException::Instance()->IsInRange<long>(value, eType);
-		return FactoryOperand::Instance()->createOperand(std::to_string(value), _eType);
+		return FactoryOperand::Instance()->createOperand(std::to_string(value), eType);
 	}
 
 	// Processing floating point type variables
@@ -163,7 +162,7 @@ IOperand const * Operand<T>::operator%( IOperand const & rhs ) const {
 	if (denominator == 0) throw LogException::ModuloByZeroError();
 	auto value = fmod(std::stod(_value), denominator);
 	LogException::Instance()->IsInRange<double>(value, eType);
-	return FactoryOperand::Instance()->createOperand(std::to_string(value), _eType);
+	return FactoryOperand::Instance()->createOperand(std::to_string(value), eType);
 }
 
 #endif //ABSTRACTVM_OPERAND_HPP

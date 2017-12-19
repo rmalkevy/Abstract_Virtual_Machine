@@ -45,7 +45,6 @@ void AbstractVM::logic_forConsoleInput() {
 		}
 		catch (const std::exception & e) {
 			_logExceptions.push_back(e.what());
-			std::cout << e.what() << std::endl;
 		}
 
 		if (TaskManager::taskSignal() == TaskExit
@@ -53,8 +52,18 @@ void AbstractVM::logic_forConsoleInput() {
 			break;
 		}
 	}
+	try {
+		if (TaskManager::taskSignal() != TaskExit) {
+			throw LogException::NoExitInstructionError();
+		}
+	}
+	catch (const std::exception & e) {
+		_logExceptions.push_back(e.what());
+	}
 	if (_logExceptions.empty())
-		log_toConsole();
+		log_toConsoleResults();
+	else
+		log_toConsoleExceptions();
 	log_toFileInstructions();
 	log_toFileExceptions();
 }
@@ -72,7 +81,6 @@ void AbstractVM::logic_forReadingFiles() {
 	}
 	catch (const std::exception & e) {
 		_logExceptions.push_back(std::string(e.what()));
-		std::cout << e.what() << std::endl;
 	}
 
 	// *** Read file and processing all lines *** //
@@ -89,16 +97,25 @@ void AbstractVM::logic_forReadingFiles() {
 		}
 		catch (const std::exception & e) {
 			_logExceptions.push_back(e.what());
-			std::cout << e.what() << std::endl;
 		}
 
 		if (TaskManager::taskSignal() == TaskExit) {
 			break;
 		}
 	}
+	try {
+		if (TaskManager::taskSignal() != TaskExit) {
+			throw LogException::NoExitInstructionError();
+		}
+	}
+	catch (const std::exception & e) {
+		_logExceptions.push_back(e.what());
+	}
 	inStream.close();
 	if (_logExceptions.empty())
-		log_toConsole();
+		log_toConsoleResults();
+	else
+		log_toConsoleExceptions();
 	log_toFileExceptions();
 }
 
@@ -128,6 +145,12 @@ void AbstractVM::log_toFileExceptions() {
 	}
 }
 
-void AbstractVM::log_toConsole() {
-	_taskManager->LogPrint();
+void AbstractVM::log_toConsoleResults() const {
+	_taskManager->printLogResults();
+}
+
+void AbstractVM::log_toConsoleExceptions() const {
+	for (const auto & item : _logExceptions) {
+		std::cout << item << std::endl;
+	}
 }

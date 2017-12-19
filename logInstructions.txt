@@ -1,15 +1,6 @@
-push int64(99)
-pushint32(9999);sldfjlsdjflksdjf
-push int16(89);sdlfjlkjsdf
-add
-p[u
-pop
-pop
-push int16(3333333)
-push double(999999999999999999999999999999999999)
-push float(99999999999999999595959595995949549584958495894589458945948594859485948594859485)
-exit
-puhs
-push
 push int8(9);
+push int32(99);
+sub
+dump
+exit
 ;;

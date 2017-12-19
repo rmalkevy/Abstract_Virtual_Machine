@@ -80,60 +80,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/main.cpp">
-			<Option target="AbstractVM_"/>
-		</Unit>
-		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/src/AbstractVM/AbstractVM.cpp">
-			<Option target="AbstractVM_"/>
-		</Unit>
-		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/src/AbstractVM/AbstractVM.hpp">
-			<Option target="AbstractVM_"/>
-		</Unit>
-		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/src/General/General.cpp">
-			<Option target="AbstractVM_"/>
-		</Unit>
-		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/src/General/General.hpp">
-			<Option target="AbstractVM_"/>
-		</Unit>
-		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/src/Lexer/Lexer.cpp">
-			<Option target="AbstractVM_"/>
-		</Unit>
-		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/src/Lexer/Lexer.hpp">
-			<Option target="AbstractVM_"/>
-		</Unit>
-		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/src/LogException/LogException.cpp">
-			<Option target="AbstractVM_"/>
-		</Unit>
-		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/src/LogException/LogException.hpp">
-			<Option target="AbstractVM_"/>
-		</Unit>
-		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/src/OperandFactory/OperandFactory.cpp">
-			<Option target="AbstractVM_"/>
-		</Unit>
-		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/src/OperandFactory/OperandFactory.hpp">
-			<Option target="AbstractVM_"/>
-		</Unit>
-		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/src/OperandType/IOperand.hpp">
-			<Option target="AbstractVM_"/>
-		</Unit>
-		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/src/OperandType/Operand.hpp">
-			<Option target="AbstractVM_"/>
-		</Unit>
-		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/src/Parser/Parser.cpp">
-			<Option target="AbstractVM_"/>
-		</Unit>
-		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/src/Parser/Parser.hpp">
-			<Option target="AbstractVM_"/>
-		</Unit>
-		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/src/TaskManager/TaskManager.cpp">
-			<Option target="AbstractVM_"/>
-		</Unit>
-		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/src/TaskManager/TaskManager.hpp">
-			<Option target="AbstractVM_"/>
-		</Unit>
-		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/src/main.cpp">
-			<Option target="AbstractVM_"/>
-		</Unit>
 		<Unit filename="/Users/Henprokuror/CLionProjects/AbstractVM_/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
