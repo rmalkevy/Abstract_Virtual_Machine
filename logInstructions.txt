@@ -1,6 +1,0 @@
-push int8(9);
-push int32(99);
-sub
-dump
-exit
-;;
